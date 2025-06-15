@@ -15408,27 +15408,75 @@
     "date_found": "2025-06-15T13:03:24.402391"
   },
   {
-    "url": "https://www.microsoft.com/",
-    "title": "Microsoft – IA, Cloud, Productivité, Informatique, Jeux et applications",
-    "description": "Découvrez les produits et services Microsoft et l’assistance pour votre famille ou votre entreprise. Découvrez Microsoft 365, Copilot, Teams, Xbox, Windows, Azure, Surface, etc.",
-    "date_found": "2025-06-15T13:06:50.661251"
+    "url": "https://www.root-me.org/",
+    "title": "Bienvenue                                        \n[Root Me : plateforme d'apprentissage dédiée au Hacking et à la Sécurité de l'Information]",
+    "description": "Root Me est une plateforme permettant à chacun de tester et d'améliorer ses connaissances dans le domaine de la sécurité informatique et du hacking à travers la publication de challenges, de solutions, d'articles.",
+    "date_found": "2025-06-15T13:06:50.462621"
   },
   {
-    "url": "https://www.microsoft.com/surface/devices/surface-pro",
-    "title": "Meet the Surface Pro – A powerful AI 2-in-1 laptop tablet | Microsoft Surface",
-    "description": "Experience all-day battery life and versatility in AI-powered Surface Pro 2-in-1 device. This detachable laptop turns into an AI tablet and is our most powerful Surface Pro ever.",
-    "date_found": "2025-06-15T13:06:54.565798"
+    "url": "https://www.root-me.org/?lang=ru",
+    "title": "Добро пожаловать на                                        \n[Root Me : plateforme d’apprentissage dédiée au Hacking et à la Sécurité de l’Information]",
+    "description": "Root Me est une plateforme permettant à chacun de tester et d'améliorer ses connaissances dans le domaine de la sécurité informatique et du hacking à travers la publication de challenges, de solutions, d'articles.",
+    "date_found": "2025-06-15T13:06:52.531539"
   },
   {
-    "url": "https://www.microsoft.com/investor/default.aspx",
-    "title": "Home page",
+    "url": "https://www.root-me.org/?lang=zh",
+    "title": "Bienvenue                                        \n[Root Me : plateforme d’apprentissage dédiée au Hacking et à la Sécurité de l’Information]",
+    "description": "Root Me est une plateforme permettant à chacun de tester et d'améliorer ses connaissances dans le domaine de la sécurité informatique et du hacking à travers la publication de challenges, de solutions, d'articles.",
+    "date_found": "2025-06-15T13:06:54.743929"
+  },
+  {
+    "url": "https://www.root-me.org/?page=structure&inc=modeles%2Finformations_cotisation&lang=fr",
+    "title": "[Root Me : plateforme d'apprentissage dédiée au Hacking et à la Sécurité de l'Information]",
+    "description": "Root Me est une plateforme permettant à chacun de tester et d'améliorer ses connaissances dans le domaine de la sécurité informatique et du hacking à travers la publication de challenges, de solutions, d'articles.",
+    "date_found": "2025-06-15T13:06:56.515431"
+  },
+  {
+    "url": "https://www.root-me.org/fr/Challenges/Reseau/",
+    "title": "Challenges/Réseau [Root Me : plateforme d'apprentissage dédiée au Hacking et à la Sécurité de l'Information]",
     "description": "",
-    "date_found": "2025-06-15T13:06:57.162872"
+    "date_found": "2025-06-15T13:06:58.443545"
   },
   {
-    "url": "https://www.microsoft.com/surface",
-    "title": "Microsoft Surface Copilot Plus PCs, touchscreen 2-in-1, laptop, and all-in-one computers | Microsoft Surface",
-    "description": "Experience the power, speed, and battery life of Surface touchscreen computers and tablets. From sleek designs to supercharged AI, do more with Surface 2-in-1, laptop, tablet, and all-in-one computers.",
-    "date_found": "2025-06-15T13:07:11.077318"
+    "url": "https://www.root-me.org/fr/Challenges/App-Systeme/",
+    "title": "Challenges/App - Système [Root Me : plateforme d'apprentissage dédiée au Hacking et à la Sécurité de l'Information]",
+    "description": "",
+    "date_found": "2025-06-15T13:07:00.523464"
+  },
+  {
+    "url": "https://www.root-me.org/fr/Challenges/Cryptanalyse/",
+    "title": "Challenges/Cryptanalyse [Root Me : plateforme d'apprentissage dédiée au Hacking et à la Sécurité de l'Information]",
+    "description": "",
+    "date_found": "2025-06-15T13:07:02.291662"
+  },
+  {
+    "url": "https://www.root-me.org?page=structure&inc=page-confidentialite&lang=fr",
+    "title": "[Root Me : plateforme d'apprentissage dédiée au Hacking et à la Sécurité de l'Information]",
+    "description": "Root Me est une plateforme permettant à chacun de tester et d'améliorer ses connaissances dans le domaine de la sécurité informatique et du hacking à travers la publication de challenges, de solutions, d'articles.",
+    "date_found": "2025-06-15T13:07:02.805459"
+  },
+  {
+    "url": "https://www.root-me.org/fr/Challenges/Cracking/",
+    "title": "Challenges/Cracking [Root Me : plateforme d'apprentissage dédiée au Hacking et à la Sécurité de l'Information]",
+    "description": "",
+    "date_found": "2025-06-15T13:07:05.598412"
+  },
+  {
+    "url": "https://www.root-me.org/fr/Challenges/Realiste/",
+    "title": "Challenges/Réaliste [Root Me : plateforme d'apprentissage dédiée au Hacking et à la Sécurité de l'Information]",
+    "description": "",
+    "date_found": "2025-06-15T13:07:07.670567"
+  },
+  {
+    "url": "https://www.root-me.org?page=structure&inc=page-mentions_legales&lang=fr",
+    "title": "[Root Me : plateforme d'apprentissage dédiée au Hacking et à la Sécurité de l'Information]",
+    "description": "Root Me est une plateforme permettant à chacun de tester et d'améliorer ses connaissances dans le domaine de la sécurité informatique et du hacking à travers la publication de challenges, de solutions, d'articles.",
+    "date_found": "2025-06-15T13:07:09.484348"
+  },
+  {
+    "url": "https://www.root-me.org/?lang=de",
+    "title": "Willkommen                                        \n[Root Me : Hacking und Informationssicherheit Learning-Plattform]",
+    "description": "Hacking und Informationssicherheit Learning-Plattform",
+    "date_found": "2025-06-15T13:07:12.310143"
   }
 ]
