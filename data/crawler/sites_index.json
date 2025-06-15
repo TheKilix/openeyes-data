@@ -11544,507 +11544,747 @@
     "date_found": "2025-06-14T22:01:45.505646"
   },
   {
-    "url": "https://www.reddit.com/r/all/",
-    "title": "r/all",
-    "description": "Today's top content from hundreds of thousands of Reddit communities.",
-    "date_found": "2025-06-15T13:31:13.200405"
+    "url": "https://www.wikipedia.org/",
+    "title": "Wikipedia",
+    "description": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation.",
+    "date_found": "2025-06-15T13:31:11.518919"
   },
   {
-    "url": "https://www.reddit.com/best/communities/1/",
-    "title": "Reddit - The heart of the internet",
-    "description": "Browse more Reddit communities - Page 1. Reddit has hundreds of thousands of interest-based communities.",
-    "date_found": "2025-06-15T13:31:15.620719"
+    "url": "https://ami.wikipedia.org/",
+    "title": "Wikipedia",
+    "description": "",
+    "date_found": "2025-06-15T13:31:14.664351"
+  },
+  {
+    "url": "https://kl.wikipedia.org/",
+    "title": "Wikipedia",
+    "description": "",
+    "date_found": "2025-06-15T13:31:16.606199"
+  },
+  {
+    "url": "https://lld.wikipedia.org/",
+    "title": "Wikipedia",
+    "description": "",
+    "date_found": "2025-06-15T13:31:18.691478"
+  },
+  {
+    "url": "https://ban.wikipedia.org/",
+    "title": "Wikipédia",
+    "description": "",
+    "date_found": "2025-06-15T13:31:19.480016"
+  },
+  {
+    "url": "https://sl.wikipedia.org/",
+    "title": "Wikipedija",
+    "description": "",
+    "date_found": "2025-06-15T13:31:21.743137"
+  },
+  {
+    "url": "https://inh.wikipedia.org/",
+    "title": "Википеди",
+    "description": "",
+    "date_found": "2025-06-15T13:31:24.317805"
+  },
+  {
+    "url": "https://roa-rup.wikipedia.org/",
+    "title": "Wikipedia",
+    "description": "",
+    "date_found": "2025-06-15T13:31:26.538205"
+  },
+  {
+    "url": "https://ty.wikipedia.org/",
+    "title": "Wikipedia",
+    "description": "",
+    "date_found": "2025-06-15T13:31:29.064237"
+  },
+  {
+    "url": "https://qu.wikipedia.org/",
+    "title": "Wikipedia",
+    "description": "",
+    "date_found": "2025-06-15T13:31:31.586802"
+  },
+  {
+    "url": "https://gl.wikipedia.org/",
+    "title": "Wikipedia, a enciclopedia libre",
+    "description": "",
+    "date_found": "2025-06-15T13:31:33.921458"
+  },
+  {
+    "url": "https://tum.wikipedia.org/",
+    "title": "Wikipedia",
+    "description": "",
+    "date_found": "2025-06-15T13:31:36.880492"
+  },
+  {
+    "url": "https://ks.wikipedia.org/",
+    "title": "وِکیٖپیٖڈیا",
+    "description": "",
+    "date_found": "2025-06-15T13:31:38.633331"
+  },
+  {
+    "url": "https://www.mediawiki.org/",
+    "title": "MediaWiki",
+    "description": "",
+    "date_found": "2025-06-15T13:31:41.491639"
+  },
+  {
+    "url": "https://yi.wikipedia.org/",
+    "title": "װיקיפּעדיע",
+    "description": "",
+    "date_found": "2025-06-15T13:31:43.562814"
+  },
+  {
+    "url": "https://or.wikipedia.org/",
+    "title": "ଉଇକିପିଡ଼ିଆ",
+    "description": "",
+    "date_found": "2025-06-15T13:31:46.670045"
+  },
+  {
+    "url": "https://sah.wikipedia.org/",
+    "title": "Бикипиэдьийэ",
+    "description": "",
+    "date_found": "2025-06-15T13:31:47.475414"
+  },
+  {
+    "url": "https://pl.wikipedia.org/",
+    "title": "Wikipedia, wolna encyklopedia",
+    "description": "",
+    "date_found": "2025-06-15T13:31:49.828718"
+  },
+  {
+    "url": "https://ksh.wikipedia.org/",
+    "title": "Wikipedia",
+    "description": "",
+    "date_found": "2025-06-15T13:31:52.782352"
+  },
+  {
+    "url": "https://sn.wikipedia.org/",
+    "title": "Wikipedia",
+    "description": "",
+    "date_found": "2025-06-15T13:31:55.603687"
+  },
+  {
+    "url": "https://lbe.wikipedia.org/",
+    "title": "Википедия",
+    "description": "",
+    "date_found": "2025-06-15T13:31:57.762412"
+  },
+  {
+    "url": "https://kbp.wikipedia.org/",
+    "title": "Wikipediya",
+    "description": "",
+    "date_found": "2025-06-15T13:32:00.195854"
+  },
+  {
+    "url": "https://gor.wikipedia.org/",
+    "title": "Wikipedia",
+    "description": "",
+    "date_found": "2025-06-15T13:32:02.373968"
+  },
+  {
+    "url": "https://fj.wikipedia.org/",
+    "title": "Wikipedia",
+    "description": "",
+    "date_found": "2025-06-15T13:32:04.887530"
+  },
+  {
+    "url": "https://el.wikipedia.org/",
+    "title": "Βικιπαίδεια",
+    "description": "",
+    "date_found": "2025-06-15T13:32:07.606684"
+  },
+  {
+    "url": "https://nia.wikipedia.org/",
+    "title": "Wikipedia",
+    "description": "",
+    "date_found": "2025-06-15T13:32:10.206847"
+  },
+  {
+    "url": "https://mai.wikipedia.org/",
+    "title": "विकिपिडिया",
+    "description": "",
+    "date_found": "2025-06-15T13:32:12.919879"
+  },
+  {
+    "url": "https://mos.wikipedia.org/",
+    "title": "Wikipidiya",
+    "description": "",
+    "date_found": "2025-06-15T13:32:15.404907"
+  },
+  {
+    "url": "https://btm.wikipedia.org/",
+    "title": "Wikipedia",
+    "description": "",
+    "date_found": "2025-06-15T13:32:18.112013"
+  },
+  {
+    "url": "https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter",
+    "title": "Make your donation now - Wikimedia Foundation",
+    "description": "Donate to the Wikimedia Foundation, the nonprofit that hosts Wikipedia and other crucial free knowledge projects. Each year, the generosity of the 2% of readers who donate allows us to expand the reach of Wikipedia and its sister projects. Our goal is to ensure knowledge remains freely available for generations to come and for that, we need your support.",
+    "date_found": "2025-06-15T13:32:22.405783"
+  },
+  {
+    "url": "https://dv.wikipedia.org/",
+    "title": "ވިކިޕީޑިއާ",
+    "description": "",
+    "date_found": "2025-06-15T13:32:24.892795"
+  },
+  {
+    "url": "https://ltg.wikipedia.org/",
+    "title": "Vikipedeja",
+    "description": "",
+    "date_found": "2025-06-15T13:32:27.730240"
+  },
+  {
+    "url": "https://kaa.wikipedia.org/",
+    "title": "Wikipedia",
+    "description": "",
+    "date_found": "2025-06-15T13:32:30.025455"
+  },
+  {
+    "url": "https://trv.wikipedia.org/",
+    "title": "Wikipidiya",
+    "description": "",
+    "date_found": "2025-06-15T13:32:32.132862"
+  },
+  {
+    "url": "https://ceb.wikipedia.org/",
+    "title": "Wikipedia",
+    "description": "",
+    "date_found": "2025-06-15T13:32:34.623602"
+  },
+  {
+    "url": "https://om.wikipedia.org/",
+    "title": "Wikipedia",
+    "description": "",
+    "date_found": "2025-06-15T13:32:35.762408"
+  },
+  {
+    "url": "https://gu.wikipedia.org/",
+    "title": "વિકિપીડિયા",
+    "description": "",
+    "date_found": "2025-06-15T13:32:39.732544"
+  },
+  {
+    "url": "https://pap.wikipedia.org/",
+    "title": "Wikipedia",
+    "description": "",
+    "date_found": "2025-06-15T13:32:40.342961"
+  },
+  {
+    "url": "https://bs.wikipedia.org/",
+    "title": "Wikipedia",
+    "description": "",
+    "date_found": "2025-06-15T13:32:42.626471"
+  },
+  {
+    "url": "https://fur.wikipedia.org/",
+    "title": "Vichipedie",
+    "description": "",
+    "date_found": "2025-06-15T13:32:44.784436"
   },
   {
-    "url": "https://reddit.com/t/romance_movies_and_series/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications",
+    "title": "List of Wikipedia mobile applications - Wikipedia",
     "description": "",
-    "date_found": "2025-06-15T13:31:18.638218"
+    "date_found": "2025-06-15T13:32:46.932283"
   },
   {
-    "url": "https://www.reddit.com/r/nfl",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://simple.wikipedia.org/",
+    "title": "Wikipedia",
     "description": "",
-    "date_found": "2025-06-15T13:31:22.242565"
+    "date_found": "2025-06-15T13:32:47.567594"
   },
   {
-    "url": "https://www.reddit.com/policies/privacy-policy",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://syl.wikipedia.org/",
+    "title": "ꠃꠁꠇꠤꠙꠤꠒꠤꠀ",
     "description": "",
-    "date_found": "2025-06-15T13:31:24.584586"
+    "date_found": "2025-06-15T13:32:50.430689"
   },
   {
-    "url": "https://www.reddit.com/r/Music",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://krc.wikipedia.org/",
+    "title": "Википедия",
     "description": "",
-    "date_found": "2025-06-15T13:31:28.046217"
+    "date_found": "2025-06-15T13:32:52.600870"
   },
   {
-    "url": "https://www.reddit.com/r/IAmA",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://is.wikipedia.org/",
+    "title": "Wikipedia, frjálsa alfræðiritið",
     "description": "",
-    "date_found": "2025-06-15T13:31:31.862840"
+    "date_found": "2025-06-15T13:32:54.775547"
   },
   {
-    "url": "https://reddit.com/t/funny/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://koi.wikipedia.org/",
+    "title": "Википедия",
     "description": "",
-    "date_found": "2025-06-15T13:31:35.532990"
+    "date_found": "2025-06-15T13:32:57.284896"
   },
   {
-    "url": "https://reddit.com/t/stories_and_confessions/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://ml.wikipedia.org/",
+    "title": "വിക്കിപീഡിയ",
     "description": "",
-    "date_found": "2025-06-15T13:31:39.220673"
+    "date_found": "2025-06-15T13:32:59.738939"
   },
   {
-    "url": "https://www.reddit.com/r/all/hot/",
-    "title": "r/all",
-    "description": "Today's top content from hundreds of thousands of Reddit communities.",
-    "date_found": "2025-06-15T13:31:42.561135"
+    "url": "https://cdo.wikipedia.org/",
+    "title": "Wikipedia - Cê̤ṳ-iù gì Báik-kuŏ-ciòng-cṳ̆",
+    "description": "",
+    "date_found": "2025-06-15T13:33:02.015411"
+  },
+  {
+    "url": "https://min.wikipedia.org/",
+    "title": "Wikipedia Minangkabau",
+    "description": "",
+    "date_found": "2025-06-15T13:33:03.879674"
   },
   {
-    "url": "https://reddit.com/t/memes/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://lg.wikipedia.org/",
+    "title": "Wikipedia",
     "description": "",
-    "date_found": "2025-06-15T13:31:46.592460"
+    "date_found": "2025-06-15T13:33:06.530359"
   },
   {
-    "url": "https://reddit.com/t/action_movies_and_series/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://kk.wikipedia.org/",
+    "title": "Уикипедия",
     "description": "",
-    "date_found": "2025-06-15T13:31:50.106392"
+    "date_found": "2025-06-15T13:33:08.434047"
   },
   {
-    "url": "https://reddit.com/t/comedy_movies_and_series/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://su.wikipedia.org/",
+    "title": "Wikipédia Sunda, énsiklopédi bébas",
     "description": "",
-    "date_found": "2025-06-15T13:31:52.567745"
+    "date_found": "2025-06-15T13:33:10.516391"
   },
   {
-    "url": "https://www.reddit.com/r/classicwow",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://dz.wikipedia.org/",
+    "title": "Wikipedia",
     "description": "",
-    "date_found": "2025-06-15T13:31:56.695555"
+    "date_found": "2025-06-15T13:33:12.046861"
   },
   {
-    "url": "https://www.redditinc.com/policies/content-policy",
-    "title": "Reddit Rules",
-    "description": "Reddit Rules - Reddit",
-    "date_found": "2025-06-15T13:31:59.190307"
+    "url": "https://gd.wikipedia.org/",
+    "title": "Uicipeid",
+    "description": "",
+    "date_found": "2025-06-15T13:33:13.724777"
   },
   {
-    "url": "https://reddit.com/t/celebrities/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://udm.wikipedia.org/",
+    "title": "Википедия",
     "description": "",
-    "date_found": "2025-06-15T13:32:02.469265"
+    "date_found": "2025-06-15T13:33:15.772522"
   },
   {
-    "url": "https://reddit.com/t/sports_and_racing_games/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://shi.wikipedia.org/",
+    "title": "Wikipedia",
     "description": "",
-    "date_found": "2025-06-15T13:32:04.492729"
+    "date_found": "2025-06-15T13:33:17.571650"
   },
   {
-    "url": "https://reddit.com/t/gaming_news_and_discussion/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://os.wikipedia.org/",
+    "title": "Википеди",
     "description": "",
-    "date_found": "2025-06-15T13:32:09.054291"
+    "date_found": "2025-06-15T13:33:20.059914"
   },
   {
-    "url": "https://reddit.com/t/simulation_games/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://kg.wikipedia.org/",
+    "title": "Wikipedia",
     "description": "",
-    "date_found": "2025-06-15T13:32:12.967298"
+    "date_found": "2025-06-15T13:33:20.674740"
   },
   {
-    "url": "https://ads.reddit.com/register?utm_source=web3x_consumer&utm_name=left_nav_cta",
-    "title": "Reddit Ads",
-    "description": "Start advertising on Reddit today! Reach 250 million users and connect with passionate communities sharing stories and engaging conversations.",
-    "date_found": "2025-06-15T13:32:13.484476"
+    "url": "https://ig.wikipedia.org/",
+    "title": "Wikipedia, njikotá édémédé nke onyobulạ",
+    "description": "",
+    "date_found": "2025-06-15T13:33:23.072304"
   },
   {
-    "url": "https://reddit.com/t/3d_printing/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://zh-min-nan.wikipedia.org/",
+    "title": "Wikipedia, chū-iû ê pek-kho-choân-su",
     "description": "",
-    "date_found": "2025-06-15T13:32:17.579406"
+    "date_found": "2025-06-15T13:33:25.491731"
   },
   {
-    "url": "https://reddit.com/t/adventure_games/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://anp.wikipedia.org/",
+    "title": "विकिपीडिया",
     "description": "",
-    "date_found": "2025-06-15T13:32:21.919216"
+    "date_found": "2025-06-15T13:33:27.435871"
   },
   {
-    "url": "https://www.reddit.com/r/FORTnITE",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "title": "Deed - Attribution-ShareAlike 4.0 International\n - Creative Commons",
     "description": "",
-    "date_found": "2025-06-15T13:32:25.054883"
+    "date_found": "2025-06-15T13:33:28.835194"
   },
   {
-    "url": "https://www.redditinc.com/careers",
-    "title": "Careers - Reddit",
-    "description": "Careers - Reddit",
-    "date_found": "2025-06-15T13:32:26.285284"
+    "url": "https://bi.wikipedia.org/",
+    "title": "Wikipedia",
+    "description": "",
+    "date_found": "2025-06-15T13:33:30.812973"
   },
   {
-    "url": "https://reddit.com/t/podcasts/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://cy.wikipedia.org/",
+    "title": "Wicipedia",
     "description": "",
-    "date_found": "2025-06-15T13:32:31.070246"
+    "date_found": "2025-06-15T13:33:32.498198"
   },
   {
-    "url": "https://reddit.com/t/tech_news_and_discussion/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://bo.wikipedia.org/",
+    "title": "Wikipedia",
     "description": "",
-    "date_found": "2025-06-15T13:32:34.615045"
+    "date_found": "2025-06-15T13:33:34.316893"
   },
   {
-    "url": "https://reddit.com/t/tarot_and_astrology/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://roa-tara.wikipedia.org/",
+    "title": "Wikipedia",
     "description": "",
-    "date_found": "2025-06-15T13:32:39.529780"
+    "date_found": "2025-06-15T13:33:36.126216"
   },
   {
-    "url": "https://reddit.com/t/streamers/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://ie.wikipedia.org/",
+    "title": "Wikipedia",
     "description": "",
-    "date_found": "2025-06-15T13:32:43.609228"
+    "date_found": "2025-06-15T13:33:38.770636"
   },
   {
-    "url": "https://reddit.com/t/tv_news_and_discussion/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://tk.wikipedia.org/",
+    "title": "Wikipediýa",
     "description": "",
-    "date_found": "2025-06-15T13:32:46.831788"
+    "date_found": "2025-06-15T13:33:41.192506"
   },
   {
-    "url": "https://www.reddit.com/r/clevercomebacks/comments/1lbz25q/4_seasons_total_landscaping_is_back/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://atj.wikipedia.org/",
+    "title": "Wikipetcia",
     "description": "",
-    "date_found": "2025-06-15T13:32:49.721162"
+    "date_found": "2025-06-15T13:33:42.726846"
   },
   {
-    "url": "https://www.reddit.com/r/Overwatch",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://mrj.wikipedia.org/",
+    "title": "Википеди",
     "description": "",
-    "date_found": "2025-06-15T13:32:55.297409"
+    "date_found": "2025-06-15T13:33:44.549640"
   },
   {
-    "url": "https://www.reddit.com/r/explainlikeimfive",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://mr.wikipedia.org/",
+    "title": "विकिपीडिया",
     "description": "",
-    "date_found": "2025-06-15T13:32:58.357635"
+    "date_found": "2025-06-15T13:33:46.439799"
   },
   {
-    "url": "https://www.reddit.com/r/clevercomebacks/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://arc.wikipedia.org/",
+    "title": "ܘܝܩܝܦܕܝܐ",
     "description": "",
-    "date_found": "2025-06-15T13:33:01.277915"
+    "date_found": "2025-06-15T13:33:48.338520"
   },
   {
-    "url": "https://reddit.com/t/generations_and_nostalgia/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://zgh.wikipedia.org/",
+    "title": "ⵡⵉⴽⵉⴱⵉⴷⵢⴰ",
     "description": "",
-    "date_found": "2025-06-15T13:33:05.345226"
+    "date_found": "2025-06-15T13:33:50.488765"
   },
   {
-    "url": "https://reddit.com/t/gaming_consoles_and_gear/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://mwl.wikipedia.org/",
+    "title": "Biquipédia",
     "description": "",
-    "date_found": "2025-06-15T13:33:08.173954"
+    "date_found": "2025-06-15T13:33:52.487044"
   },
   {
-    "url": "https://reddit.com/t/scifi_movies_and_series/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://tdd.wikipedia.org/",
+    "title": "ᥝᥤᥱ ᥑᥤᥱ ᥚᥤᥱ ᥖᥤᥱ ᥕᥣᥱ",
     "description": "",
-    "date_found": "2025-06-15T13:33:11.117143"
+    "date_found": "2025-06-15T13:33:54.733432"
   },
   {
-    "url": "https://www.reddit.com/r/DotA2",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://sm.wikipedia.org/",
+    "title": "Wikipedia",
     "description": "",
-    "date_found": "2025-06-15T13:33:13.894770"
+    "date_found": "2025-06-15T13:33:57.463806"
   },
   {
-    "url": "https://reddit.com/t/reddit_meta/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://kn.wikipedia.org/",
+    "title": "ವಿಕಿಪೀಡಿಯ",
     "description": "",
-    "date_found": "2025-06-15T13:33:16.880120"
+    "date_found": "2025-06-15T13:33:59.696704"
   },
   {
-    "url": "https://reddit.com/t/software_and_apps/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://ug.wikipedia.org/",
+    "title": "Wikipedia",
     "description": "",
-    "date_found": "2025-06-15T13:33:19.978206"
+    "date_found": "2025-06-15T13:34:02.327849"
   },
   {
-    "url": "https://www.reddit.com/r/todayilearned",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://szl.wikipedia.org/",
+    "title": "Wikipedyjo, swobodno yncyklopedyjo",
     "description": "",
-    "date_found": "2025-06-15T13:33:23.087152"
+    "date_found": "2025-06-15T13:34:04.624371"
   },
   {
-    "url": "https://reddit.com/t/other_games/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://vo.wikipedia.org/",
+    "title": "Vükiped",
     "description": "",
-    "date_found": "2025-06-15T13:33:24.987737"
+    "date_found": "2025-06-15T13:34:06.511655"
   },
   {
-    "url": "https://reddit.com/t/wholesome_and_heartwarming/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://io.wikipedia.org/",
+    "title": "Wikipedio",
     "description": "",
-    "date_found": "2025-06-15T13:33:28.456661"
+    "date_found": "2025-06-15T13:34:08.393331"
   },
   {
-    "url": "https://www.redditinc.com/policies/user-agreement",
-    "title": "User Agreement",
-    "description": "User Agreement - Reddit",
-    "date_found": "2025-06-15T13:33:30.458938"
+    "url": "https://br.wikipedia.org/",
+    "title": "Wikipedia",
+    "description": "",
+    "date_found": "2025-06-15T13:34:09.098194"
   },
   {
-    "url": "https://reddit.com/t/consumer_electronics/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://ny.wikipedia.org/",
+    "title": "Wikipedia – Encyclopedia Yaulere",
     "description": "",
-    "date_found": "2025-06-15T13:33:33.573980"
+    "date_found": "2025-06-15T13:34:11.488528"
   },
   {
-    "url": "https://reddit.com/t/q_and_as/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://lb.wikipedia.org/",
+    "title": "Wikipedia",
     "description": "",
-    "date_found": "2025-06-15T13:33:36.020758"
+    "date_found": "2025-06-15T13:34:13.485858"
   },
   {
-    "url": "https://reddit.com/t/computers_and_hardware/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://pag.wikipedia.org/",
+    "title": "Wikipedia",
     "description": "",
-    "date_found": "2025-06-15T13:33:37.436162"
+    "date_found": "2025-06-15T13:34:16.027985"
   },
   {
-    "url": "https://www.reddit.com/r/all/?feedViewType=cardView",
-    "title": "r/all",
-    "description": "Today's top content from hundreds of thousands of Reddit communities.",
-    "date_found": "2025-06-15T13:33:40.200947"
+    "url": "https://ast.wikipedia.org/",
+    "title": "Wikipedia",
+    "description": "",
+    "date_found": "2025-06-15T13:34:18.721551"
   },
   {
-    "url": "https://www.reddit.com/r/pics/comments/1lbygy2/donald_trump_was_seen_falling_asleep_at_the/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://cbk-zam.wikipedia.org/",
+    "title": "Wikipedia",
     "description": "",
-    "date_found": "2025-06-15T13:33:41.909645"
+    "date_found": "2025-06-15T13:34:20.894146"
   },
   {
-    "url": "https://reddit.com/t/virtual_and_augmented_reality/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://mzn.wikipedia.org/",
+    "title": "ویکی‌پدیا، آزاد دانشنومه",
     "description": "",
-    "date_found": "2025-06-15T13:33:44.847803"
+    "date_found": "2025-06-15T13:34:23.570443"
   },
   {
-    "url": "https://reddit.com/t/role_playing_games/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://kcg.wikipedia.org/",
+    "title": "Wikipedia",
     "description": "",
-    "date_found": "2025-06-15T13:33:48.112041"
+    "date_found": "2025-06-15T13:34:26.001261"
   },
   {
-    "url": "https://www.reddit.com/posts/2025/global/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://be.wikipedia.org/",
+    "title": "Вікіпедыя",
     "description": "",
-    "date_found": "2025-06-15T13:33:54.498650"
+    "date_found": "2025-06-15T13:34:27.853946"
   },
   {
-    "url": "https://www.reddit.com/r/keto",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://gur.wikipedia.org/",
+    "title": "Wikipiidiya",
     "description": "",
-    "date_found": "2025-06-15T13:33:57.160259"
+    "date_found": "2025-06-15T13:34:29.653633"
   },
   {
-    "url": "https://reddit.com/t/amazing/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://iba.wikipedia.org/",
+    "title": "Wikipedia",
     "description": "",
-    "date_found": "2025-06-15T13:34:00.485138"
+    "date_found": "2025-06-15T13:34:31.823513"
   },
   {
-    "url": "https://www.reddit.com/reddit-pro?utm_source=reddit&utm_medium=left_nav_resources",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://fa.wikipedia.org/",
+    "title": "ویکی‌پدیا، دانشنامهٔ آزاد",
     "description": "",
-    "date_found": "2025-06-15T13:34:02.690037"
+    "date_found": "2025-06-15T13:34:33.495180"
   },
   {
-    "url": "https://www.reddit.com/r/all/new/",
-    "title": "r/all",
-    "description": "Today's top content from hundreds of thousands of Reddit communities.",
-    "date_found": "2025-06-15T13:34:05.539417"
+    "url": "https://bcl.wikipedia.org/",
+    "title": "Wikipedia",
+    "description": "",
+    "date_found": "2025-06-15T13:34:35.450188"
   },
   {
-    "url": "https://reddit.com/t/diy_electronics/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://ce.wikipedia.org/",
+    "title": "Википеди — маьрша энциклопеди",
     "description": "",
-    "date_found": "2025-06-15T13:34:08.349981"
+    "date_found": "2025-06-15T13:34:37.199014"
   },
   {
-    "url": "https://redditblog.com/",
-    "title": "Reddit Inc Blog Homepage",
-    "description": "Get the latest product news, company announcements, and user insights from the official Reddit blog.",
-    "date_found": "2025-06-15T13:34:11.309708"
+    "url": "https://kbd.wikipedia.org/",
+    "title": "Уикипедиэ",
+    "description": "",
+    "date_found": "2025-06-15T13:34:39.471168"
   },
   {
-    "url": "https://www.reddit.com/r/worldnews",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://mk.wikipedia.org/",
+    "title": "Википедија",
     "description": "",
-    "date_found": "2025-06-15T13:34:14.576419"
+    "date_found": "2025-06-15T13:34:42.061892"
   },
   {
-    "url": "https://www.reddit.com/r/piercing",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://gv.wikipedia.org/",
+    "title": "Wikipedia",
     "description": "",
-    "date_found": "2025-06-15T13:34:17.826859"
+    "date_found": "2025-06-15T13:34:44.166981"
   },
   {
-    "url": "https://www.reddit.com/r/ffxiv",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://ay.wikipedia.org/",
+    "title": "Wikipedia",
     "description": "",
-    "date_found": "2025-06-15T13:34:20.760835"
+    "date_found": "2025-06-15T13:34:46.661547"
   },
   {
-    "url": "https://www.reddit.com/r/all/?feedViewType=compactView",
-    "title": "r/all",
-    "description": "Today's top content from hundreds of thousands of Reddit communities.",
-    "date_found": "2025-06-15T13:34:24.238786"
+    "url": "https://as.wikipedia.org/",
+    "title": "অসমীয়া ৱিকিপিডিয়া",
+    "description": "",
+    "date_found": "2025-06-15T13:34:49.026601"
   },
   {
-    "url": "https://redditinc.com",
-    "title": "Reddit Inc Homepage",
-    "description": "Homepage - Reddit",
-    "date_found": "2025-06-15T13:34:26.120950"
+    "url": "https://arz.wikipedia.org/",
+    "title": "ويكيبيديا",
+    "description": "",
+    "date_found": "2025-06-15T13:34:51.375834"
   },
   {
-    "url": "https://reddit.com/t/mobile_games/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://xmf.wikipedia.org/",
+    "title": "ვიკიპედია",
     "description": "",
-    "date_found": "2025-06-15T13:34:29.336892"
+    "date_found": "2025-06-15T13:34:53.550395"
   },
   {
-    "url": "https://reddit.com/t/creators_and_influencers/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://eo.wikipedia.org/",
+    "title": "Vikipedio",
     "description": "",
-    "date_found": "2025-06-15T13:34:33.506251"
+    "date_found": "2025-06-15T13:34:55.539973"
   },
   {
-    "url": "https://reddit.com/t/movie_news_and_discussion/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://iu.wikipedia.org/",
+    "title": "ᐅᐃᑭᐱᑎᐊ",
     "description": "",
-    "date_found": "2025-06-15T13:34:35.964881"
+    "date_found": "2025-06-15T13:34:56.198216"
   },
   {
-    "url": "https://reddit.com/t/crime_mystery_and_thriller_movies_and_series/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://pwn.wikipedia.org/",
+    "title": "Wikipedia",
     "description": "",
-    "date_found": "2025-06-15T13:34:40.455529"
+    "date_found": "2025-06-15T13:34:58.722412"
   },
   {
-    "url": "https://reddit.com/t/oddly_satisfying/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://skr.wikipedia.org/",
+    "title": "وکیپیڈیا",
     "description": "",
-    "date_found": "2025-06-15T13:34:43.329424"
+    "date_found": "2025-06-15T13:35:01.394534"
   },
   {
-    "url": "https://www.reddit.com/r/all/top/",
-    "title": "r/all",
-    "description": "Today's top content from hundreds of thousands of Reddit communities.",
-    "date_found": "2025-06-15T13:34:46.790718"
+    "url": "https://so.wikipedia.org/",
+    "title": "Wikipedia",
+    "description": "",
+    "date_found": "2025-06-15T13:35:03.575441"
   },
   {
-    "url": "https://reddit.com/t/reality_tv/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://kab.wikipedia.org/",
+    "title": "Wikipedia",
     "description": "",
-    "date_found": "2025-06-15T13:34:48.757159"
+    "date_found": "2025-06-15T13:35:05.683689"
   },
   {
-    "url": "https://www.reddit.com/r/NintendoSwitch",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://da.wikipedia.org/",
+    "title": "Wikipedia, den frie encyklopædi",
     "description": "",
-    "date_found": "2025-06-15T13:34:52.437320"
+    "date_found": "2025-06-15T13:35:07.266009"
   },
   {
-    "url": "https://www.reddit.com/r/iphone",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://crh.wikipedia.org/",
+    "title": "Vikipediya",
     "description": "",
-    "date_found": "2025-06-15T13:34:55.260004"
+    "date_found": "2025-06-15T13:35:09.700860"
   },
   {
-    "url": "https://reddit.com/t/esports/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://lfn.wikipedia.org/",
+    "title": "Vicipedia",
     "description": "",
-    "date_found": "2025-06-15T13:35:00.016644"
+    "date_found": "2025-06-15T13:35:10.334270"
   },
   {
-    "url": "https://www.reddit.com/r/Frugal",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://ext.wikipedia.org/",
+    "title": "Güiquipeya",
     "description": "",
-    "date_found": "2025-06-15T13:35:03.295167"
+    "date_found": "2025-06-15T13:35:12.386827"
   },
   {
-    "url": "https://reddit.com/t/horror_movies_and_series/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://tw.wikipedia.org/",
+    "title": "Wikipedia",
     "description": "",
-    "date_found": "2025-06-15T13:35:06.663210"
+    "date_found": "2025-06-15T13:35:14.860186"
   },
   {
-    "url": "https://reddit.com/t/streaming_services/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://wa.wikipedia.org/",
+    "title": "Wikipedia",
     "description": "",
-    "date_found": "2025-06-15T13:35:09.606824"
+    "date_found": "2025-06-15T13:35:16.890884"
   },
   {
-    "url": "https://reddit.com/t/animals_and_pets/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://yo.wikipedia.org/",
+    "title": "Wikipedia",
     "description": "",
-    "date_found": "2025-06-15T13:35:12.865948"
+    "date_found": "2025-06-15T13:35:19.450561"
   },
   {
-    "url": "https://reddit.com/t/strategy_games/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://pam.wikipedia.org/",
+    "title": "Wikipedia",
     "description": "",
-    "date_found": "2025-06-15T13:35:16.645919"
+    "date_found": "2025-06-15T13:35:21.491076"
   },
   {
-    "url": "https://reddit.com/t/drama_movies_and_series/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob",
+    "title": "Wikipedia - Apps on Google Play",
+    "description": "The official app for Wikipedia, the world’s largest source of information.",
+    "date_found": "2025-06-15T13:35:23.771470"
+  },
+  {
+    "url": "https://ga.wikipedia.org/",
+    "title": "Vicipéid",
     "description": "",
-    "date_found": "2025-06-15T13:35:20.308203"
+    "date_found": "2025-06-15T13:35:25.866645"
   },
   {
-    "url": "https://www.reddit.com/r/all/rising/",
-    "title": "r/all",
-    "description": "Today's top content from hundreds of thousands of Reddit communities.",
-    "date_found": "2025-06-15T13:35:23.575040"
+    "url": "https://olo.wikipedia.org/",
+    "title": "Wikipedii",
+    "description": "",
+    "date_found": "2025-06-15T13:35:28.925696"
   },
   {
-    "url": "https://www.reddit.com/r/Instagram",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://tyv.wikipedia.org/",
+    "title": "Википедия",
     "description": "",
-    "date_found": "2025-06-15T13:35:26.124687"
+    "date_found": "2025-06-15T13:35:31.351023"
   },
   {
-    "url": "https://reddit.com/t/artificial_intelligence_and_machine_learning/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://frr.wikipedia.org/",
+    "title": "Wikipedia – Jü fri Änsiiklopedii",
     "description": "",
-    "date_found": "2025-06-15T13:35:30.254540"
+    "date_found": "2025-06-15T13:35:33.847224"
   },
   {
-    "url": "https://reddit.com/t/action_games/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://tet.wikipedia.org/",
+    "title": "Wikipedia",
     "description": "",
-    "date_found": "2025-06-15T13:35:33.665718"
+    "date_found": "2025-06-15T13:35:36.254479"
   },
   {
-    "url": "https://reddit.com/t/tabletop_games/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://ha.wikipedia.org/",
+    "title": "Wikipedia",
     "description": "",
-    "date_found": "2025-06-15T13:35:37.258898"
+    "date_found": "2025-06-15T13:35:38.121687"
   },
   {
-    "url": "https://reddit.com/en-us/policies/cookies",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://nv.wikipedia.org/",
+    "title": "Wikiibíídiiya Dinék'ehjí (Navajo) - Yá'át'ééh!",
     "description": "",
-    "date_found": "2025-06-15T13:35:39.316023"
+    "date_found": "2025-06-15T13:35:39.883518"
   }
 ]
