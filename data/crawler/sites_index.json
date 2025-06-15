@@ -19852,5 +19852,11 @@
     "title": "Account settings: Your browser is not supported.",
     "description": "",
     "date_found": "2025-06-15T14:23:27.576227"
+  },
+  {
+    "url": "https://support.google.com/googlehome?p=privpol_homedata&hl=fr",
+    "title": "Sécurité et confidentialité des données sur les appareils compatibles avec l'Assistant - Aide Google Nest",
+    "description": "Cet article du centre d'aide fournit des informations détaillées sur la sécurité et la confidentialité des données concernant les services et appareils Google pour la maison connectée qui fonctionnent",
+    "date_found": "2025-06-15T14:23:29.396769"
   }
 ]
