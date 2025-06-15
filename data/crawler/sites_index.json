@@ -20922,33 +20922,33 @@
     "date_found": "2025-06-15T15:38:31.264170"
   },
   {
-    "url": "https://news.google.com/search?q=intitle:ia",
+    "url": "https://news.google.com/search?q=intitle:hack",
     "title": "Before you continue",
     "description": "",
-    "date_found": "2025-06-15T15:38:55.797004"
+    "date_found": "2025-06-15T15:38:55.801739"
   },
   {
-    "url": "https://accounts.google.com/ServiceLogin?hl=en-US&continue=https://news.google.com/search?q%3Dintitle:ia&gae=cb-",
+    "url": "https://accounts.google.com/ServiceLogin?hl=en-US&continue=https://news.google.com/search?q%3Dintitle:hack&gae=cb-",
     "title": "Sign in - Google Accounts",
     "description": "",
-    "date_found": "2025-06-15T15:38:56.123551"
+    "date_found": "2025-06-15T15:38:58.102972"
   },
   {
-    "url": "https://consent.google.com/dl?continue=https://news.google.com/search?q%3Dintitle:ia&gl=FR&hl=en-US&cm=2&pc=n&src=1",
+    "url": "https://consent.google.com/dl?continue=https://news.google.com/search?q%3Dintitle:hack&gl=FR&hl=en-US&cm=2&pc=n&src=1",
     "title": "Personalization settings & cookies",
     "description": "",
-    "date_found": "2025-06-15T15:38:58.302972"
+    "date_found": "2025-06-15T15:38:59.791911"
   },
   {
-    "url": "https://accounts.google.com/signin/usernamerecovery?continue=https://news.google.com/search?q%3Dintitle:ia&dsh=S-147196603:1750001936190454&flowEntry=ServiceLogin&flowName=WebLiteSignIn&gae=cb-&hl=en-US&ifkv=AdBytiOAyBYoyzUs8pKK9hmao0Ic1PRh-KrV1Zh-l9rovzeyCTRfG1Op1r7eps268wlnlhp9pEf9",
+    "url": "https://accounts.google.com/signin/usernamerecovery?continue=https://news.google.com/search?q%3Dintitle:hack&dsh=S-98619902:1750001938166894&flowEntry=ServiceLogin&flowName=WebLiteSignIn&gae=cb-&hl=en-US&ifkv=AdBytiPPGvrxiL-zMRXoNR3S502leT1e7lSrILxt9eqo2oI2ZCepf1hDC1qGS8nd9aSTKbZ4XBsI",
     "title": "Sign in - Google Accounts",
     "description": "",
-    "date_found": "2025-06-15T15:39:00.339312"
+    "date_found": "2025-06-15T15:39:02.733437"
   },
   {
     "url": "https://accounts.google.com/TOS?loc=FR&hl=en-US&privacy=true",
     "title": "Privacy Policy – Privacy & Terms – Google",
     "description": "",
-    "date_found": "2025-06-15T15:39:02.980863"
+    "date_found": "2025-06-15T15:39:05.174805"
   }
 ]
