@@ -1,0 +1,1225 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#954F72;
+	text-decoration:underline;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link=blue vlink="#954F72">
+
+<div class=WordSection1>
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><b><span style='font-size:16.0pt'>The Algebra of an
+  Infinite Grid of Resistors</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>In a previous <a href="../kmath668/kmath668.htm">note</a>
+  we discussed the well-known problem of determining the resistance between two
+  nodes of an infinite square lattice of resistors. The most common approach
+  is to superimpose two monopole solutions, one representing the field for
+  one amp of current entering a given node and flowing to infinity, and the
+  other representing the field for one amp of current being withdrawn from a
+  given node flowing in from infinity. If the two nodes are adjacent, the
+  solution is fairly unambiguous, but the resistance between two arbitrary
+  nodes of an infinite resistor grid is actually indeterminate unless we
+  impose restrictions on the voltage and current levels at infinity (such as
+  stipulating that we seek the solution for a finite grid in the limit as the
+  size of the grid increases to infinity).</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>According to the naïve approach, we imagine injecting 1
+  amp of current into a single node at the origin, and allow it to flow outward
+  symmetrically to infinity. Let V<sub>m,n</sub> denote the voltage drop from
+  the source node with coordinates (0,0) to any given node with coordinates
+  (m,n). Likewise we could imagine extracting one amp from the node at (m,n),
+  flowing in symmetrically from infinity, and the voltage drop from the origin
+  to (m,n) would also be V<sub>m,n</sub>. Superimposing these two solutions, we
+  have one amp entering node (0,0) and exiting node (m,n), and the voltage drop
+  is 2V<sub>m,n</sub>, so the net effective resistance between (0,0) and (m,n)
+  is R<sub>m,n</sub> = 2V<sub>m,n</sub>/I, where I = 1 amp. Of course, as
+  mentioned in the previous note, the voltage at infinity must go to infinity
+  relative to the voltage at the source, because the resistance to infinity is
+  infinite. Nevertheless, it might seem that with suitable care we can evaluate
+  the limit to arrive at an unambiguous answer.</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>However, the stated problem has a unique solution only if
+  we stipulate some restriction on the boundary conditions. This is a delicate
+  proposition, since the boundary is at infinity and the voltage approaches
+  infinity. The ambiguity can be seen immediately by examining the figure below,
+  which shows a node from which two amp of current is being extracted,
+  surrounded by nodes of higher voltage necessary to supply this current. The
+  figure shows just the lower quadrant of the grid, with the understanding that
+  that other three quadrants are symmetrical. The voltages along the diagonals
+  are denoted by &#945;<sub>1</sub>, &#945;<sub>2</sub>, &#945;<sub>3</sub>, ,
+  and all the other voltages are expressed in terms of these, in such a way
+  that the difference equation governing the system is satisfied.</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='position:relative;top:0.0pt'><img border=0 width=523 height=192
+  src="kmath669_files/image001.png"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>For a grid with 1 ohm resistors between each pair of
+  adjacent nodes, the effective resistance between the origin and any given
+  node equals half the value listed for the node in the table below. Obviously
+  this construction can be continued to infinity, since each succeeding row is
+  computable from the prior rows, noting that the outer-most cells adjacent to
+  the diagonals are determined by symmetry with the neighboring quadrants. Thus
+  for any arbitrary choice of the diagonal parameters &#945;<sub>1</sub>,
+  &#945;<sub>2</sub>, &#945;<sub>3</sub>, , we can construct an entire
+  infinite grid. For example, if we set all the diagonals to zero, we get</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='position:relative;top:0.0pt'><img border=0 width=508 height=168
+  src="kmath669_files/image002.png"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>We will refer to the value in the ith row and jth column
+  of this array as &#961;<sub>i,j</sub>. The sum of the terms of the nth row is
+  n. The terms are generated by the basic two dimensional recurrence
+  (representing the discrete form of the Laplace equation)</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='position:relative;top:0.0pt'><img border=0 width=248 height=24
+  src="kmath669_files/image003.png"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>This table implies that the resistance between the origin
+  and any node on either diagonal is zero. Does this mean that an infinite grid
+  of resistors acts as a superconductor with zero resistance between two
+  arbitrarily distant nodes? (Its interesting to compare this with the
+  pseudo-metric of Minkowski spacetime, in which the diagonals represent
+  light-like intervals of null magnitude.) Notice that we achieved this
+  superconductivity along the diagonals at the expense of introducing large
+  voltages and currents at the off-diagonal nodes. The fact that these voltages
+  increase to infinity is not really objectionable, because <i>any</i> monopole
+  solution must have the voltages increasing to infinity as we move away from
+  the origin. On the other hand, we might object to the fact that the voltages
+  alternate between positive and negative values on adjacent nodes in the
+  transverse direction, and hence the transverse currents between adjacent
+  nodes go to infinity. However, nothing in the original problem statement
+  restricts the behavior of the voltages and currents at arbitrarily large
+  distances from the origin. The only requirement is to specify a set of
+  voltages and currents on the infinite grid that everywhere satisfy Ohms Law
+  across each resistor, with a certain amount of current entering one
+  particular node and exiting one other particular node. One might argue that
+  the superposition of the two monopole solutions yields finite behavior at
+  infinite distances from the two monopoles, because the infinities of the
+  individual monopole solutions cancel each other, but its conceivable that
+  similar cancellation could occur for superpositions of diagonally null grids.
+  Notice that the signs alternate by columns in the past and future
+  regions, and by rows in the present regions, so if the two poles are
+  separated by an even number of nodes in both directions, they will tend to
+  cancel (i.e., destructively interfere with each other) in all regions except
+  along the stripes between their null diagonals, as shown below.</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><img border=0
+  width=262 height=196 src="kmath669_files/image004.png"></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>In the light-like regions between the two interacting
+  poles, the voltages and currents are alternately re-enforcing and canceling,
+  as depicted below.</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><img border=0
+  width=258 height=210 src="kmath669_files/image005.png"></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>This could be regarded as an analog to polarized vacuum
+  solutions of the Laplace equation. Of course, rather than setting the
+  diagonal voltages to zero, we can set them to any values we choose. The
+  result is given by superimposing the null solution (whose values were given
+  in the preceding table) with the product of each diagonal value times the
+  corresponding array that satisfies the usual Laplace recurrence relation
+  (noting that the recurrence for the nodes adjacent to the diagonal actually
+  involve the symmetrical nodes in the neighboring quadrant). For example, if
+  &#945;<sub>1</sub> is not zero, we must superimpose &#945;<sub>1</sub> times
+  the array shown below.</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='position:relative;top:0.0pt'><img border=0 width=416 height=133
+  src="kmath669_files/image006.png"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Similarly, if &#945;<sub>2</sub> is not zero, we must
+  superimpose &#945;<sub>2</sub> times the array shown below.</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='position:relative;top:0.0pt'><img border=0 width=380 height=133
+  src="kmath669_files/image007.png"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>And so on. In general, each of these arrays consists of
+  the superposition of two mirror-symmetrical arrays, with their vertices
+  placed at the locations of the respective &#945;<sub>j</sub>, and having the
+  values shown in the table below for the left hand side, and reflected for the
+  right hand side. For future reference, we refer to the value in the ith row
+  and jth column of this array as &#963;<sub>i,j</sub>.</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='position:relative;top:0.0pt'><img border=0 width=456 height=149
+  src="kmath669_files/image008.png"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>By selecting suitable values of &#945;<sub>1</sub>, &#945;<sub>2</sub>,
+  &#945;<sub>3</sub>,  we can make the effective resistance between any two
+  (non-adjacent) nodes anything we like. Whether such solutions are physically
+  meaningful is questionable  but no more so than the physical meaningfulness
+  of an infinite grid of resistors. No such physical entity can exist, so we
+  have no basis for claiming that we know how it would behave. (Even if we
+  accepted the existence of an actual infinite grid, it would necessarily have
+  capacitance and inductance so that the propagation speed was finite, and
+  hence no equilibrium state could come into existence in finite time.) We can
+  certainly examine the behavior of finite grids of progressively larger sizes,
+  and note that the steady-state behavior near the center of such grids
+  approaches a unique limit, but we are not justified in claiming that this limiting
+  behavior for large finite grids is even qualitatively the same as the
+  behavior of a (hypothetical) truly infinite grid. (In calculus, the fallacy
+  that the limit of a sequence must possess the limiting attributes of the
+  members of that sequence underlies what is known as the <a
+  href="../KMATH063.HTM">Limit Paradox</a>.) Before dismissing such
+  considerations as purely academic, its well to remember that the fundamental
+  relation <b>pq</b>  <b>qp</b> = ih<b>I</b> for position and momentum
+  matrices in quantum mechanics relies on the existence of infinite matrices
+  with terms that increase to infinity. The relation is algebraically
+  impossible for any finite or well-behaved matrices (as can be seen by
+  considering the traces of the products). </p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Incidentally, there are stories about job applicants being
+  asked questions about the hypothetical infinite grid of resistors during
+  job interviews, by certain organizations that ostensibly value abstract
+  problem solving talent. Ironically, the reasoning behind the standard
+  solution is sufficiently questionable that one could argue that the
+  applicants who declare they cant solve the problem are actually more
+  insightful than the ones who give the standard solution. At the very least,
+  the question should either be posed in terms of the limit of increasingly
+  large but finite grids, or else some constraint on the behavior at infinity
+  must be specified. Otherwise, the answer is completely indeterminate. (The
+  standard answer for adjacent nodes is arguably less ambiguous than for other
+  pairs of nodes, but even in that case the superposition method involves the
+  concept of flowing current into a grid of infinite resistance.)</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Recognizing that some physically reasonable constraint
+  must be placed on the behavior at infinity in order to determine a unique
+  answer, we might ask what constraint is sufficient. In the table showing the
+  complete solution in terms of the arbitrary diagonal parameters, suppose we
+  stipulate that, for some n, the voltages along the outer perimeter of the nth
+  concentric square (excluding the corners for n &gt; 1) are all equal to each
+  other. If we impose this on the first concentric square, we have the
+  condition 2&#945;<sub>1</sub> = 1, from which we get &#945;<sub>1</sub> = 1/2,
+  but of course this leaves the rest of the diagonal voltages indeterminate. If
+  we impose the condition on the perimeter of the second concentric square, we
+  have <span style='font-family:Symbol'>-</span>1 + 4&#945;<sub>1</sub> = 4 
+  4&#945;<sub>1</sub>, which implies &#945;<sub>1</sub> = 5/8 = 0.625. If,
+  instead, we impose the condition on the third concentric square, we get two
+  equations</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='position:relative;top:0.0pt'><img border=0 width=220 height=45
+  src="kmath669_files/image009.png"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Solving these two equations in two unknowns, we get</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='position:relative;top:0.0pt'><img border=0 width=411 height=52
+  src="kmath669_files/image010.png"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Applying the condition to the 4th concentric square, by
+  equating the expressions for adjacent nodes on the perimeter of that square,
+  we get the following three conditions</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='position:relative;top:0.0pt'><img border=0 width=311 height=71
+  src="kmath669_files/image011.png"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Solving this linear system of three equations in three
+  unknowns, we have</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='position:relative;top:0.0pt'><img border=0 width=467 height=79
+  src="kmath669_files/image012.png"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>If we impose the uniformity condition on the perimeter of
+  the 5th concentric square, and solve the resulting system of four equations
+  in four unknowns, we get</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='position:relative;top:0.0pt'><img border=0 width=571 height=100
+  src="kmath669_files/image013.png"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Clearly if we impose the uniformity condition on the
+  perimeter of the (n+1)th concentric square we get a linear system of n
+  equations that can be solved for the first n diagonal parameters, and these
+  parameters converge on specific values as n increases. From these diagonal
+  terms, all the remaining terms are easily computed, as shown above. Thus we
+  have a straightforward algebraic way of solving, in principle, for the
+  resistance between any two nodes  at least numerically  for a finite square
+  grid with uniform boundary. In general the vector <b>&#945;</b> of voltages
+  &#945;<sub>1</sub>, &#945;<sub>2</sub>, , &#945;<sub>N</sub><sub><span
+  style='font-family:Symbol'>-</span>1</sub> along the diagonal for any given N
+  (i.e., imposing uniformity on the (N+1)th concentric square) are given by</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='position:relative;top:0.0pt'><img border=0 width=63 height=20
+  src="kmath669_files/image014.png"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>where the components of <b>S</b> and <b>V</b> are
+  expressible in terms of the previously defined &#961; and &#963; arrays
+  as</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='position:relative;top:0.0pt'><img border=0 width=476 height=29
+  src="kmath669_files/image015.png"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>For example, with N = 5 (i.e., imposing uniformity on the
+  6th concentric square) we get</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='position:relative;top:0.0pt'><img border=0 width=495 height=124
+  src="kmath669_files/image016.png"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>For one more example, with N = 6 we get</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='position:relative;top:0.0pt'><img border=0 width=568 height=148
+  src="kmath669_files/image017.png"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>By this method we can approach arbitrarily close to the
+  limiting values as the grid side increases. However, this doesnt provide an
+  exact analytical expression for the limiting values. We would like to
+  determine whether there are simple closed-form expressions for these
+  resistances. One approach is to notice that the central node is connected to
+  the first concentric square by 4 links in parallel, and this square is
+  connected to the next by 12 links in parallel, and this square is connected
+  to the next by 20 links in parallel, and so on. Therefore, we expect the
+  resistances from the origin to the corners of the mth concentric square to be
+  roughly</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='position:relative;top:0.0pt'><img border=0 width=321 height=109
+  src="kmath669_files/image018.png"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>for some constant &#981;. In other words, we conjecture
+  that the voltages at the corners of the concentric squares are proportional
+  to the partial sums of the odd geometric series, which is to say</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='position:relative;top:0.0pt'><img border=0 width=259 height=53
+  src="kmath669_files/image019.png"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>For example, we expect &#945;<sub>2</sub> to approach (1 +
+  1/3) = 1.3333 times &#945;<sub>1</sub> as the grid size increases, and we
+  find support for this in the preceding algebraic solution for N = 6, which
+  gave &#945;<sub>2</sub>/&#945;<sub>1</sub> = 1.3323 Likewise &#945;<sub>3</sub>/&#945;<sub>1</sub>
+  seems to be approaching (1 + 1/3 + 1/5), and so on. Of course, we already
+  know that the choice of the diagonal parameters is arbitrary, so we are free
+  to impose this constraint on the values of those parameters. The question is
+  merely whether, for some value of &#945;<sub>1</sub>, the resulting behavior
+  at infinity for the entire grid satisfies whatever constraints we choose to
+  impose.</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>As noted above, the requirement for uniform voltage along
+  the perimeter of the 4th concentric square implies, for the two nodes closest
+  to the corner, the equality</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='position:relative;top:0.0pt'><img border=0 width=307 height=23
+  src="kmath669_files/image020.png"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>The corresponding conditions for the next few concentric
+  squares are</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='position:relative;top:0.0pt'><img border=0 width=571 height=71
+  src="kmath669_files/image021.png"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>As we proceed to larger and larger squares, the left hand
+  contributions to the coefficients of the &#945; parameters do not increase,
+  but the right-hand contributions increase linearly. Specifically, the
+  magnitudes of the coefficients on the right side are 4n, 16(n<span
+  style='font-family:Symbol'>-</span>1)+2, 16(n<span style='font-family:Symbol'>-</span>2),
+  16(n<span style='font-family:Symbol'>-</span>3), , 16(1), 2. In the limit as
+  n increases, only the factors proportional to n affect the final result, so
+  the limiting condition is</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='position:relative;top:0.0pt'><img border=0 width=444 height=29
+  src="kmath669_files/image022.png"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Letting s<sub>n</sub> denote the nth partial sum of the
+  odd harmonic series, i.e.,</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='position:relative;top:0.0pt'><img border=0 width=221 height=41
+  src="kmath669_files/image023.png"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>our conjecture is that &#945;<sub>n</sub> = s<sub>n</sub>&#945;<sub>1</sub>,
+  and hence the prior equation can be written as</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='position:relative;top:0.0pt'><img border=0 width=439 height=29
+  src="kmath669_files/image024.png"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Making use of the identity</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='position:relative;top:0.0pt'><img border=0 width=224 height=51
+  src="kmath669_files/image025.png"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>and noting that as N increases to infinity the right hand
+  side is proportional to ±N/2, the preceding equation for sufficiently large n
+  approaches</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='position:relative;top:0.0pt'><img border=0 width=431 height=48
+  src="kmath669_files/image026.png"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Therefore, in the limit as n increases to infinity, we
+  have</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='position:relative;top:0.0pt'><img border=0 width=181 height=45
+  src="kmath669_files/image027.png"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>The infinite series in the square brackets, sometimes called
+  Leibnizs series, is easily shown to equal <span style='font-family:Symbol'>p</span>/4,
+  so it follows that</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='position:relative;top:0.0pt'><img border=0 width=48 height=41
+  src="kmath669_files/image028.png"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>By the same analysis we can show that, equating the
+  voltages of each pair of adjacent nodes on the perimeter leads to the same
+  conclusion. For example, the coefficients of the voltage for the next node
+  are of the form 32(n-j)<sup>2</sup>  24(n-j) + 396, and equating the voltage
+  of this node to that of the previous node leads to the asymptotic equation</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='position:relative;top:0.0pt'><img border=0 width=389 height=43
+  src="kmath669_files/image029.png"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Noting that the sum of the squares up to N<sup>2</sup>
+  with alternating signs is asymptotic to N<sup>2</sup>/2, this again leads to
+  the conclusion that &#945;<sub>1</sub> = 2/&#960;. One might argue that,
+  instead of evaluating the right side of the above equation and then dividing
+  through by n<sup>2</sup> and showing that the coefficients of 1, 1/3, 1/5,
+  etc, approach ±1, we could just as well have divided through the above
+  equation by n<sup>2</sup> immediately, which seems to imply that the
+  coefficients of s<sub>1</sub>, s<sub>2</sub>, s<sub>3</sub>, etc., approach
+  ±1. On this basis, the partial sums alternate between 1 + 1/5 + 1/9 + 1/13 +
+   and <span style='font-family:Symbol'>-</span>1/3  1/7  1/11  1/15 - 
+  However, the asymptotic average of these two sums if &#960;/8, which again
+  leads to &#945;<sub>1</sub> = 2/&#960;. But working out the sums exactly for
+  any finite case shows that the partial sums are actually all positive, and
+  they converge uniformly, consistent with evaluating the right hand side of
+  the above equation prior to dividing through by n<sup>2</sup> and taking the
+  limit.</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>From this, the voltages (and hence the resistances) from
+  the origin to every other node of the grid can easily be given in closed
+  form. The table below gives the resistances (in ohms) between the origin and
+  each of the surrounding nodes, assuming each lattice resistor is 1 ohm.</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='position:relative;top:0.0pt'><img border=0 width=440 height=277
+  src="kmath669_files/image030.png"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Another approach is to simply arrange the system equations
+  into a meta-matrix of matrices for a monopole solution, similar to the
+  approach taken in a previous note on the dipole solution. Letting a<sub>mn</sub>
+  denote the voltage at node (m,n), the system equations are</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='position:relative;top:0.0pt'><img border=0 width=547 height=119
+  src="kmath669_files/image031.png"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>and so on. If we define the column vectors <b>a</b><sub>j</sub>
+  = [a<sub>j0</sub>, a<sub>j1</sub>, a<sub>j2</sub>, ]<sup>T</sup>, these
+  equations can be written in the form</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='position:relative;top:0.0pt'><img border=0 width=113 height=91
+  src="kmath669_files/image032.png"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>where</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='position:relative;top:0.0pt'><img border=0 width=333 height=144
+  src="kmath669_files/image033.png"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>These matrix equations can then be written as a
+  meta-matrix equation, whose coefficient matrix is formally identical to the
+  coefficient matrix of the individual matrix equations. Thus, letting a denote
+  the meta column vector <b>a</b> = [<b>a</b><sub>0</sub>, <b>a</b><sub>1</sub>,
+  <b>a</b><sub>2</sub>, ]<sup>T</sup>, and letting <b>I</b> denote the
+  identity matrix, the overall system equation can be written as </p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='position:relative;top:0.0pt'><img border=0 width=56 height=19
+  src="kmath669_files/image034.png"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>where</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='position:relative;top:0.0pt'><img border=0 width=340 height=144
+  src="kmath669_files/image035.png"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>The formal similarity of the meta matrix M and the matrix
+  A is to be expected, since these two levels represent the evaluations of the
+  rows and columns, and they could just as well be reversed, treating the
+  columns at the first level and the rows at the meta level. The solution,
+  giving the voltages at every node, is simply <b>a</b> = <b>M</b><sup>1</sup><b>U</b>.
+  To evaluate this, first consider a finite example, truncated at just seven
+  rows and columns. Formally this gives</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='position:relative;top:0.0pt'><img border=0 width=383 height=171
+  src="kmath669_files/image036.png"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>The elements of this expression are Legendre polynomials,
+  whose roots are just 4 times the squares of the sines or the cosines of
+  fractional multiples of &#960;. This enables us to write the general solution
+  in a simple product form. For example, the vector <b>a</b><sub>0</sub> is
+  given as</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='position:relative;top:0.0pt'><img border=0 width=409 height=99
+  src="kmath669_files/image037.png"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>In general, for any odd N, with the <b>A</b>, <b>u</b>,
+  and <b>I</b> matrices defined to order N, we have</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='position:relative;top:0.0pt'><img border=0 width=420 height=83
+  src="kmath669_files/image038.png"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>This already gives good results for relatively small
+  values of N, and the accuracy improves as N increases. For example, with N =
+  39 we get</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='position:relative;top:0.0pt'><img border=0 width=271 height=167
+  src="kmath669_files/image039.png"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>These drops in voltage agree with the closed form
+  analytical expressions derived previously. Note that the values of <b>a</b><sub>0</sub>
+  are sufficient to determine all other values by simple recursive application
+  of the Laplace equation. The drawback of this approach is that the absolute
+  values of the voltages dont converge; only the differences between voltages
+  converge. To derive the exact analytical expressions for the voltages by this
+  method, it would probably be necessary to re-express it in terms that
+  explicitly give 0 voltage at the origin. This is discussed further in another
+  <a href="../kmath670/kmath670.htm">note</a>.</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr>
+  <td width=623 valign=top style='width:467.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><a href="../index.htm">Return to MathPages Main Menu</a></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>
