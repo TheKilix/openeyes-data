@@ -1,0 +1,2323 @@
+ 
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="ru" xml:lang="ru">
+<head>
+<base href="https://www.root-me.org/" />
+<title>Задачи и проблемы/Криптоанализ [Root Me : plateforme d’apprentissage dédiée au Hacking et à la Sécurité de l’Information]</title>
+<meta name="Description" content="&#1040;&#1083;&#1075;&#1086;&#1088;&#1080;&#1090;&#1084;&#1099; &#1096;&#1080;&#1092;&#1088;&#1086;&#1074;&#1072;&#1085;&#1080;&#1103; &#1074;&#1079;&#1083;&#1086;&#1084;&#1072;"/>
+<meta name="keywords" content="&#1047;&#1072;&#1076;&#1072;&#1095;&#1080; &#1080; &#1087;&#1088;&#1086;&#1073;&#1083;&#1077;&#1084;&#1099;,&#1050;&#1088;&#1080;&#1087;&#1090;&#1086;&#1072;&#1085;&#1072;&#1083;&#1080;&#1079;,&#1050;&#1088;&#1080;&#1087;&#1090;&#1086;&#1072;&#1085;&#1072;&#1083;&#1080;&#1079;"/>
+<link rel="alternate" type="application/rss+xml" title="RSS [Root Me : plateforme d&#039;apprentissage d&#233;di&#233;e au Hacking et &#224; la S&#233;curit&#233; de l&#039;Information]" href="https://www.root-me.org?page=backend&amp;lang=ru" />
+<link rel="alternate" type="application/rss+xml" title="RSS (breves) [Root Me : plateforme d&#039;apprentissage d&#233;di&#233;e au Hacking et &#224; la S&#233;curit&#233; de l&#039;Information]" href="https://www.root-me.org?page=backend-breves&amp;lang=ru" />
+<link rel="alternate" type="application/rss+xml" title="RSS Форум [Root Me : plateforme d&#039;apprentissage d&#233;di&#233;e au Hacking et &#224; la S&#233;curit&#233; de l&#039;Information]" href="https://www.root-me.org?page=backend-forums&amp;lang=ru" />
+<link rel="alternate" type="application/rss+xml" title="RSS challenges [Root Me : plateforme d&#039;apprentissage d&#233;di&#233;e au Hacking et &#224; la S&#233;curit&#233; de l&#039;Information]" href="https://www.root-me.org?page=backend-challenges&amp;lang=ru" />
+<link rel="alternate" type="application/rss+xml" title="RSS solutions [Root Me : plateforme d&#039;apprentissage d&#233;di&#233;e au Hacking et &#224; la S&#233;curit&#233; de l&#039;Information]" href="https://www.root-me.org?page=backend-solutions&amp;lang=ru" />
+<link rel="alternate" type="application/rss+xml" title="RSS CTF all the day [Root Me : plateforme d&#039;apprentissage d&#233;di&#233;e au Hacking et &#224; la S&#233;curit&#233; de l&#039;Information]" href="https://www.root-me.org?page=backend-ctfalltheday&amp;lang=ru" />
+<link rel="alternate" type="application/rss+xml" title="RSS CTF calendar [Root Me : plateforme d&#039;apprentissage d&#233;di&#233;e au Hacking et &#224; la S&#233;curit&#233; de l&#039;Information]" href="https://www.root-me.org?page=backend-ctf&amp;lang=ru" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />            
+<meta name="color-scheme" content="light dark"/>
+<link rel='stylesheet' href='local/cache-css/79909d31a85f6ab49a36ee1047c62d85.css?1749548917' type='text/css' />    
+<script type="text/javascript">/* <![CDATA[ */
+var mediabox_settings={"auto_detect":true,"ns":"box","tt_img":true,"sel_g":"#documents_portfolio a[type='image\/jpeg'],#documents_portfolio a[type='image\/png'],#documents_portfolio a[type='image\/gif']","sel_c":".mediabox, .popin","str_ssStart":"\u041f\u0440\u043e\u0441\u043c\u043e\u0442\u0440 \u0438\u0437\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u0439","str_ssStop":"\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0442\u044c","str_cur":"{current}\/{total}","str_prev":"\u041f\u0440\u0435\u0434\u044b\u0434\u0443\u0449\u0438\u0439","str_next":"\u0421\u043b\u0435\u0434\u0443\u044e\u0449\u0438\u0439","str_close":"\u0417\u0430\u043a\u0440\u044b\u0442\u044c","str_loading":"Chargement\u2026","str_petc":"Taper \u2019Echap\u2019 pour fermer","str_dialTitDef":"Boite de dialogue","str_dialTitMed":"Affichage d\u2019un media","splash_url":"","colorbox":{"skin":"black-striped","transition":"elastic","speed":"100","maxWidth":"90%","maxHeight":"90%","minWidth":"400px","minHeight":"","slideshow_speed":"2500","opacite":"0.8"}};
+/* ]]> */</script>
+<!-- insert_head_css -->
+<script type='text/javascript'>
+var jQl={q:[],dq:[],gs:[],ready:function(a){"function"==typeof a&&jQl.q.push(a);return jQl},getScript:function(a,c){jQl.gs.push([a,c])},unq:function(){for(var a=0;a<jQl.q.length;a++)jQl.q[a]();jQl.q=[]},ungs:function(){for(var a=0;a<jQl.gs.length;a++)jQuery.getScript(jQl.gs[a][0],jQl.gs[a][1]);jQl.gs=[]},bId:null,boot:function(a){"undefined"==typeof window.jQuery.fn?jQl.bId||(jQl.bId=setInterval(function(){jQl.boot(a)},25)):(jQl.bId&&clearInterval(jQl.bId),jQl.bId=0,jQl.unqjQdep(),jQl.ungs(),jQuery(jQl.unq()), "function"==typeof a&&a())},booted:function(){return 0===jQl.bId},loadjQ:function(a,c){setTimeout(function(){var b=document.createElement("script");b.src=a;document.getElementsByTagName("head")[0].appendChild(b)},1);jQl.boot(c)},loadjQdep:function(a){jQl.loadxhr(a,jQl.qdep)},qdep:function(a){a&&("undefined"!==typeof window.jQuery.fn&&!jQl.dq.length?jQl.rs(a):jQl.dq.push(a))},unqjQdep:function(){if("undefined"==typeof window.jQuery.fn)setTimeout(jQl.unqjQdep,50);else{for(var a=0;a<jQl.dq.length;a++)jQl.rs(jQl.dq[a]); jQl.dq=[]}},rs:function(a){var c=document.createElement("script");document.getElementsByTagName("head")[0].appendChild(c);c.text=a},loadxhr:function(a,c){var b;b=jQl.getxo();b.onreadystatechange=function(){4!=b.readyState||200!=b.status||c(b.responseText,a)};try{b.open("GET",a,!0),b.send("")}catch(d){}},getxo:function(){var a=!1;try{a=new XMLHttpRequest}catch(c){for(var b=["MSXML2.XMLHTTP.5.0","MSXML2.XMLHTTP.4.0","MSXML2.XMLHTTP.3.0","MSXML2.XMLHTTP","Microsoft.XMLHTTP"],d=0;d<b.length;++d){try{a= new ActiveXObject(b[d])}catch(e){continue}break}}finally{return a}}};if("undefined"==typeof window.jQuery){var $=jQl.ready,jQuery=$;$.getScript=jQl.getScript};
+jQl.loadjQ('local/cache-js/10ac7f99f220f3dbb3975b2ae4dd111d.js?1749548918')
+</script>
+<!-- insert_head -->
+<script>jQl.loadjQ("https://www.root-me.org/local/cache-js/jsdyn-script_onload_js-3a8dd50f.js?1749548917");</script>
+<script  defer src="https://www.googletagmanager.com/gtag/js?id=G-SRYSKX09J7"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-SRYSKX09J7', { 'anonymize_ip': true });
+</script>        
+<link rel="icon" type="image/x-icon" href="https://www.root-me.org/squelettes/img/rblack.ico?1448449194" />
+<link rel="icon" type="image/png" href="https://www.root-me.org/squelettes/img/rblackGrand32.png?1556531825" sizes="32x32" />
+<link rel="icon" type="image/png" href="https://www.root-me.org/squelettes/img/rblackGrand16.png?1556531831" sizes="16x16" />   
+</head>
+<body class="antialiased hide-extras" dir="ltr" itemscope itemtype="https://schema.org/CollectionPage">
+<header id="header" role="banner">
+<nav class="top-bar" data-topbar>
+<ul class="title-area" itemprop="isPartOf" itemscope itemtype="https://schema.org/WebSite">
+<li class="name">
+<a itemprop="url" href="https://www.root-me.org?lang=ru" title="la root est longue mais la voie est Libre" target="_top">
+<img width="48" height="48" class="show-for-medium-up vmiddle invert" alt="logo https://www.root-me.org" src="IMG/logo/siteon0.svg?1637496509" itemprop="image"  />
+<img width="48" height="48" class="show-for-small-only toggleSidebar vmiddle" alt="logo https://www.root-me.org" src="IMG/logo/siteon0.svg?1637496509" itemprop="image" />
+<span class="show-for-large-up blanc" itemprop="name">Root&nbsp;Me</span>
+</a>
+</li>    
+</ul>
+<section class="top-bar-section">
+<ul class="right">    
+<li class="lang">
+<span>
+<span>
+<a id="url_fr" href="fr/Challenges/Cryptanalyse/"><img class="vmiddle" src="squelettes/img/pays/fr.svg" alt="fran&#231;ais" height="16" width="16" title="fran&#231;ais" /></a>
+<a id="url_en" href="en/Challenges/Cryptanalysis/"><img class="vmiddle" src="squelettes/img/pays/en.svg" alt="English" height="16" width="16" title="English" /></a>
+<a id="url_de" href="de/Herausforderungen/Kryptoanalyse/"><img class="vmiddle" src="squelettes/img/pays/de.svg" alt="Deutsch" height="16" width="16" title="Deutsch" /></a>
+<a id="url_es" href="es/Desafios/Criptoanalisis/"><img class="vmiddle" src="squelettes/img/pays/es.svg" alt="Espa&#241;ol" height="16" width="16" title="Espa&#241;ol" /></a>
+<a id="url_zh" href="zh/%E6%8C%91%E6%88%98/%E5%AF%86%E7%A0%81%E5%88%86%E6%9E%90/"><img class="vmiddle" src="squelettes/img/pays/zh.svg" alt="&#20013;&#25991;" height="16" width="16" title="&#20013;&#25991;" /></a>
+</span>
+<a href="/ru/Zadachi-i-problemy/Kriptoanaliz/#"><img width="16" height="16" src="squelettes/img/pays/ru.svg" alt="ru" class="grayscale" title="ru"/></a>
+</span>
+</li>
+<li>
+<a style="height: 24px; padding: 10px 10px 0 10px;" class="mediabox pageajax boxHeight-620px" data-box-type="ajax" href="./?page=identifiants&amp;lang=ru" title="Создать аккаунт"><img src="squelettes/img/register.svg" height="16" width="16" alt="0x0" class="vtop"/></a>
+<a style="height: 24px; padding: 15px 10px 0 10px;" class="mediabox pageajax boxHeight-390px" data-box-type="ajax" href="./?page=login&amp;lang=ru" title="Вход"><img src="squelettes/img/login.svg" height="16" width="16" alt="0x0" class="vtop"/></a>
+</li>            </ul>   
+<ul class="left">
+<li class="hide-for-small-only"><a title="Часто задаваемые вопросы" href="https://www.root-me.org?page=faq&amp;lang=ru"><img src='squelettes/img/faq_nb.svg?1566640929' alt='faq' width='32' height='32' /></a></li>
+<li class="hide-for-small-only"><a title="Карта сайта" href="https://www.root-me.org?page=plan&amp;lang=ru"><img src='squelettes/img/plan_nb.svg?1566640893' alt='plan' width='32' height='32' /></a></li>
+<li class="hide-for-small-only"><a title="Контактная информация" href="https://www.root-me.org?page=contact&amp;lang=ru"><img src='squelettes/img/contact_nb.svg?1566640717' alt='contact' width='32' height='32' /></a></li>
+<li class="hide-for-small-only"><a title="Состояние служб" href="https://www.root-me.org?page=structure&amp;inc=inclusions%2Fservices&amp;lang=ru"><img src="squelettes/img/service_state_nb.svg" width="32" height="32" alt="services" /></a></li>
+<li class="hide-for-small-only"><a title="Shop" href="https://shop.root-me.org"><img src="squelettes/img/shop_nb.svg" alt="shop" width="32" height="32"/></a></li>            
+<li class="search">
+<form action="https://www.root-me.org" method="get">
+<input type="hidden" value="recherche" name="page"/>
+<input type="hidden" value="ru" name="lang" />                    
+<input class="search" name="recherche" placeholder="Поиск" minlength="3" type="search" />
+</form>
+</li>
+</ul>
+</section>
+</nav>
+</header>      
+<div id="container">
+<div id="main_row">
+<div id="aside_wrapper">
+<aside id="aside" role="complementary" itemscope itemtype="https://schema.org/WPSideBar">
+<nav class="top-bar" data-topbar="" >
+<div class="top-bar-section" role="navigation" itemprop="hasPart" itemscope itemtype="https://schema.org/SiteNavigationElement">
+<ul class="right">
+<li class="has-dropdown active">
+<a itemprop="url" href="ru/Zadachi-i-problemy/">
+<span class="logo left">
+<img  src="IMG/logo/rubon5.svg?1637496507" width="16" height="16" alt="0x0"/>
+</span>
+<span class="hide-for-medium-only">Задачи и проблемы</span>
+</a>
+<ul class="dropdown">
+<li class="show-for-medium-only first">Задачи и проблемы</li>
+<li class="hide-for-small-only">
+<a class="smenu" href="ru/Zadachi-i-problemy/App-Scenarij/" title="&#1069;&#1082;&#1089;&#1087;&#1083;&#1091;&#1072;&#1090;&#1072;&#1094;&#1080;&#1103; &#1089;&#1083;&#1072;&#1073;&#1099;&#1093; &#1084;&#1077;&#1089;&#1090; &#1089;&#1088;&#1077;&#1076;&#1099;, &#1086;&#1096;&#1080;&#1073;&#1086;&#1082; &#1082;&#1086;&#1085;&#1092;&#1080;&#1075;&#1091;&#1088;&#1072;&#1094;&#1080;&#1080; &#1080; &#1091;&#1103;&#1079;&#1074;&#1080;&#1084;&#1086;&#1089;&#1090;&#1077;&#1081; &#1074; &#1089;&#1094;&#1077;&#1085;&#1072;&#1088;&#1080;&#1103;&#1093; &#1080; &#1089;&#1080;&#1089;&#1090;&#1077;&#1084;&#1072;&#1093;."  itemprop="url">
+<img src='IMG/logo/rubon189.svg?1637496499' alt='App - &#1057;&#1094;&#1077;&#1085;&#1072;&#1088;&#1080;&#1081;' width='16' height='16' class='vmiddle grayscale grayscale_hoveroff' />
+App - Сценарий
+</a>
+</li>
+<li class="hide-for-small-only">
+<a class="smenu" href="ru/Zadachi-i-problemy/Veb-Klient/" title="&#1058;&#1077;&#1093;&#1085;&#1086;&#1083;&#1086;&#1075;&#1080;&#1080; &#1085;&#1072; &#1089;&#1090;&#1086;&#1088;&#1086;&#1085;&#1077; &#1082;&#1083;&#1080;&#1077;&#1085;&#1090;&#1072;, &#1088;&#1077;&#1072;&#1083;&#1080;&#1079;&#1086;&#1074;&#1072;&#1085;&#1085;&#1099;&#1077; &#1074; &#1074;&#1077;&#1073;-&#1073;&#1088;&#1072;&#1091;&#1079;&#1077;&#1088;&#1077;"  itemprop="url">
+<img src='IMG/logo/rubon16.svg?1637496498' alt='&#1042;&#1077;&#1073; - &#1050;&#1083;&#1080;&#1077;&#1085;&#1090;' width='16' height='16' class='vmiddle grayscale grayscale_hoveroff' />
+Веб - Клиент
+</a>
+</li>
+<li class="hide-for-small-only">
+<a class="smenu" href="ru/Zadachi-i-problemy/Veb-server/" title="&#1059;&#1079;&#1085;&#1072;&#1081;&#1090;&#1077; &#1086; &#1084;&#1077;&#1093;&#1072;&#1085;&#1080;&#1079;&#1084;&#1072;&#1093;, &#1087;&#1088;&#1086;&#1090;&#1086;&#1082;&#1086;&#1083;&#1072;&#1093; &#1080; &#1090;&#1077;&#1093;&#1085;&#1086;&#1083;&#1086;&#1075;&#1080;&#1103;&#1093;, &#1080;&#1089;&#1087;&#1086;&#1083;&#1100;&#1079;&#1091;&#1077;&#1084;&#1099;&#1093; &#1074; &#1048;&#1085;&#1090;&#1077;&#1088;&#1085;&#1077;&#1090;&#1077;, &#1080; &#1085;&#1072;&#1091;&#1095;&#1080;&#1090;&#1077;&#1089;&#1100; &#1079;&#1083;&#1086;&#1091;&#1087;&#1086;&#1090;&#1088;&#1077;&#1073;&#1083;&#1103;&#1090;&#1100; &#1080;&#1084;&#1080;!"  itemprop="url">
+<img src='IMG/logo/rubon68.svg?1637496507' alt='&#1042;&#1077;&#1073; - &#1089;&#1077;&#1088;&#1074;&#1077;&#1088;' width='16' height='16' class='vmiddle grayscale grayscale_hoveroff' />
+Веб - сервер
+</a>
+</li>
+<li class="hide-for-small-only">
+<a class="smenu" href="ru/Zadachi-i-problemy/Vzlom/" title="&#1054;&#1073;&#1088;&#1072;&#1090;&#1085;&#1072;&#1103; &#1087;&#1077;&#1088;&#1077;&#1079;&#1072;&#1075;&#1088;&#1091;&#1079;&#1082;&#1072; &#1080;&#1089;&#1087;&#1086;&#1083;&#1085;&#1103;&#1077;&#1084;&#1099;&#1093; &#1092;&#1072;&#1081;&#1083;&#1086;&#1074; &#1080; &#1074;&#1079;&#1083;&#1072;&#1084;&#1099;&#1074;&#1072;&#1085;&#1080;&#1077; &#1080;&#1089;&#1087;&#1086;&#1083;&#1085;&#1103;&#1077;&#1084;&#1099;&#1093; &#1092;&#1072;&#1081;&#1083;&#1086;&#1074;."  itemprop="url">
+<img src='IMG/logo/rubon69.svg?1637496508' alt='&#1042;&#1079;&#1083;&#1086;&#1084;' width='16' height='16' class='vmiddle grayscale grayscale_hoveroff' />
+Взлом
+</a>
+</li>
+<li class="hide-for-small-only">
+<a class="smenu" href="ru/Zadachi-i-problemy/Kriptoanaliz/" title="&#1040;&#1083;&#1075;&#1086;&#1088;&#1080;&#1090;&#1084;&#1099; &#1096;&#1080;&#1092;&#1088;&#1086;&#1074;&#1072;&#1085;&#1080;&#1103; &#1074;&#1079;&#1083;&#1086;&#1084;&#1072;"  itemprop="url">
+<img src='IMG/logo/rubon18.svg?1637496499' alt='&#1050;&#1088;&#1080;&#1087;&#1090;&#1086;&#1072;&#1085;&#1072;&#1083;&#1080;&#1079;' width='16' height='16' class='vmiddle grayscale grayscale_hoveroff' />
+Криптоанализ
+</a>
+</li>
+<li class="hide-for-small-only">
+<a class="smenu" href="ru/Zadachi-i-problemy/Prilozhenie-Sistema/" title="&#1069;&#1090;&#1080; &#1087;&#1088;&#1086;&#1073;&#1083;&#1077;&#1084;&#1099; &#1087;&#1086;&#1084;&#1086;&#1075;&#1091;&#1090; &#1074;&#1072;&#1084; &#1088;&#1072;&#1079;&#1086;&#1073;&#1088;&#1072;&#1090;&#1100;&#1089;&#1103; &#1074; &#1087;&#1088;&#1080;&#1082;&#1083;&#1072;&#1076;&#1085;&#1099;&#1093; &#1091;&#1103;&#1079;&#1074;&#1080;&#1084;&#1086;&#1089;&#1090;&#1103;&#1093;."  itemprop="url">
+<img src='IMG/logo/rubon203.svg?1637496500' alt='&#1055;&#1088;&#1080;&#1083;&#1086;&#1078;&#1077;&#1085;&#1080;&#1077; - &#1057;&#1080;&#1089;&#1090;&#1077;&#1084;&#1072;' width='16' height='16' class='vmiddle grayscale grayscale_hoveroff' />
+Приложение - Система
+</a>
+</li>
+<li class="hide-for-small-only">
+<a class="smenu" href="ru/Zadachi-i-problemy/Programmirovanie/" title="&#1040;&#1074;&#1090;&#1086;&#1084;&#1072;&#1090;&#1080;&#1079;&#1072;&#1094;&#1080;&#1103; &#1079;&#1072;&#1076;&#1072;&#1095; &#1080; &#1087;&#1086;&#1089;&#1090;&#1088;&#1086;&#1077;&#1085;&#1080;&#1077; &#1096;&#1077;&#1083;&#1083;-&#1082;&#1086;&#1076;&#1086;&#1074;."  itemprop="url">
+<img src='IMG/logo/rubon17.svg?1637496498' alt='&#1055;&#1088;&#1086;&#1075;&#1088;&#1072;&#1084;&#1084;&#1080;&#1088;&#1086;&#1074;&#1072;&#1085;&#1080;&#1077;' width='16' height='16' class='vmiddle grayscale grayscale_hoveroff' />
+Программирование
+</a>
+</li>
+<li class="hide-for-small-only">
+<a class="smenu" href="ru/Zadachi-i-problemy/Realist/" title="&#1056;&#1077;&#1072;&#1083;&#1080;&#1089;&#1090;&#1080;&#1095;&#1085;&#1099;&#1077; &#1074;&#1099;&#1079;&#1086;&#1074;&#1099;."  itemprop="url">
+<img src='IMG/logo/rubon70.svg?1637496509' alt='&#1056;&#1077;&#1072;&#1083;&#1080;&#1089;&#1090;' width='16' height='16' class='vmiddle grayscale grayscale_hoveroff' />
+Реалист
+</a>
+</li>
+<li class="hide-for-small-only">
+<a class="smenu" href="ru/Zadachi-i-problemy/Set/" title="&#1048;&#1089;&#1089;&#1083;&#1077;&#1076;&#1086;&#1074;&#1072;&#1090;&#1100; &#1087;&#1077;&#1088;&#1077;&#1093;&#1074;&#1072;&#1095;&#1077;&#1085;&#1085;&#1099;&#1081; &#1090;&#1088;&#1072;&#1092;&#1080;&#1082;, &#1089;&#1077;&#1090;&#1077;&#1074;&#1099;&#1077; &#1089;&#1083;&#1091;&#1078;&#1073;&#1099; &#1080; &#1074;&#1099;&#1087;&#1086;&#1083;&#1085;&#1103;&#1090;&#1100; &#1072;&#1085;&#1072;&#1083;&#1080;&#1079; &#1087;&#1072;&#1082;&#1077;&#1090;&#1086;&#1074;"  itemprop="url">
+<img src='IMG/logo/rubon182.svg?1637496499' alt='&#1057;&#1077;&#1090;&#1100;' width='16' height='16' class='vmiddle grayscale grayscale_hoveroff' />
+Сеть
+</a>
+</li>
+<li class="hide-for-small-only">
+<a class="smenu" href="ru/Zadachi-i-problemy/Steganografiya/" title="&#1048;&#1089;&#1082;&#1091;&#1089;&#1089;&#1090;&#1074;&#1086; &#1089;&#1082;&#1088;&#1099;&#1074;&#1072;&#1090;&#1100; &#1080;&#1085;&#1092;&#1086;&#1088;&#1084;&#1072;&#1094;&#1080;&#1102; &#1074; &#1076;&#1086;&#1082;&#1091;&#1084;&#1077;&#1085;&#1090;&#1077;."  itemprop="url">
+<img src='IMG/logo/rubon67.svg?1637496507' alt='&#1057;&#1090;&#1077;&#1075;&#1072;&#1085;&#1086;&#1075;&#1088;&#1072;&#1092;&#1080;&#1103;' width='16' height='16' class='vmiddle grayscale grayscale_hoveroff' />
+Стеганография
+</a>
+</li>
+<li class="hide-for-small-only">
+<a class="smenu" href="ru/Zadachi-i-problemy/Sudebnaya-ekspertiza/" title="&#1054;&#1073;&#1091;&#1095;&#1077;&#1085;&#1080;&#1077; &#1085;&#1072;&#1074;&#1099;&#1082;&#1072;&#1084; &#1087;&#1088;&#1086;&#1074;&#1077;&#1076;&#1077;&#1085;&#1080;&#1103; &#1094;&#1080;&#1092;&#1088;&#1086;&#1074;&#1099;&#1093; &#1088;&#1072;&#1089;&#1089;&#1083;&#1077;&#1076;&#1086;&#1074;&#1072;&#1085;&#1080;&#1081; &#1087;&#1091;&#1090;&#1077;&#1084; &#1072;&#1085;&#1072;&#1083;&#1080;&#1079;&#1072; &#1076;&#1072;&#1084;&#1087;&#1086;&#1074; &#1087;&#1072;&#1084;&#1103;&#1090;&#1080;, &#1083;&#1086;&#1075;-&#1092;&#1072;&#1081;&#1083;&#1086;&#1074;, &#1089;&#1077;&#1090;&#1077;&#1074;&#1099;&#1093; &#1079;&#1072;&#1093;&#1074;&#1072;&#1090;&#1086;&#1074;..."  itemprop="url">
+<img src='IMG/logo/rubon208.svg?1637496500' alt='&#1057;&#1091;&#1076;&#1077;&#1073;&#1085;&#1072;&#1103; &#1101;&#1082;&#1089;&#1087;&#1077;&#1088;&#1090;&#1080;&#1079;&#1072;' width='16' height='16' class='vmiddle grayscale grayscale_hoveroff' />
+Судебная экспертиза
+</a>
+</li>
+</ul>
+</li>
+<li class="has-dropdown">
+<a itemprop="url" href="ru/Zahvatit-flag/">
+<span class="logo left">
+<img  class="grayscale grayscale_hoveroff" src="IMG/logo/rubon188.svg?1637496499" width="16" height="16" alt="0x0"/>
+</span>
+<span class="hide-for-medium-only">Захватить флаг</span>
+</a>
+<ul class="dropdown">
+<li class="show-for-medium-only first">Захватить флаг</li>
+<li class="hide-for-small-only">
+<a class="smenu" href="ru/Zahvatit-flag/CTF-ves-den/" title="&#1059;&#1083;&#1091;&#1095;&#1096;&#1080;&#1090;&#1077; &#1089;&#1074;&#1086;&#1080; &#1085;&#1072;&#1074;&#1099;&#1082;&#1080; &#1074;&#1079;&#1083;&#1086;&#1084;&#1072; &#1074; &#1088;&#1077;&#1072;&#1083;&#1080;&#1089;&#1090;&#1080;&#1095;&#1085;&#1086;&#1081; &#1089;&#1088;&#1077;&#1076;&#1077;, &#1075;&#1076;&#1077; &#1094;&#1077;&#1083;&#1100; &#1079;&#1072;&#1082;&#1083;&#1102;&#1095;&#1072;&#1077;&#1090;&#1089;&#1103; &#1074; &#1087;&#1086;&#1083;&#1085;&#1086;&#1084; &#1082;&#1086;&#1084;&#1087;&#1088;&#1086;&#1084;&#1080;&#1089;&#1089;&#1077; &#034;&#1082;&#1086;&#1088;&#1077;&#1085;&#1100;&#034; &#1093;&#1086;&#1079;&#1103;&#1080;&#1085;&#1072; !"  itemprop="url">
+<img src='IMG/logo/rubon196.svg?1637496499' alt='CTF &#1074;&#1077;&#1089;&#1100; &#1076;&#1077;&#1085;&#1100;' width='16' height='16' class='vmiddle grayscale grayscale_hoveroff' />
+CTF весь день
+</a>
+</li>
+<li class="hide-for-small-only">
+<a class="smenu" href="ru/Zahvatit-flag/Kalendar/" title="&#1050;&#1072;&#1083;&#1077;&#1085;&#1076;&#1072;&#1088;&#1100; CTF &#1089;&#1082;&#1086;&#1088;&#1086; &#1087;&#1088;&#1080;&#1076;&#1077;&#1090;. &#1053;&#1077; &#1089;&#1090;&#1077;&#1089;&#1085;&#1103;&#1081;&#1090;&#1077;&#1089;&#1100; &#1089;&#1086;&#1086;&#1073;&#1097;&#1080;&#1090;&#1100; &#1085;&#1072;&#1084; &#1086; &#1090;&#1077;&#1093;, &#1082;&#1086;&#1075;&#1086; &#1084;&#1099; &#1079;&#1072;&#1073;&#1099;&#1083;&#1080;, &#1086;&#1090;&#1087;&#1088;&#1072;&#1074;&#1080;&#1074; &#1089;&#1086;&#1086;&#1073;&#1097;&#1077;&#1085;&#1080;&#1077; &#1085;&#1072; &#1089;&#1090;&#1088;&#1072;&#1085;&#1080;&#1094;&#1077; &#1050;&#1086;&#1085;&#1090;&#1072;&#1082;&#1090;&#1099;!"  itemprop="url">
+<img src='IMG/logo/rubon195.svg?1637496499' alt='&#1050;&#1072;&#1083;&#1077;&#1085;&#1076;&#1072;&#1088;&#1100;' width='16' height='16' class='vmiddle grayscale grayscale_hoveroff' />
+Календарь
+</a>
+</li>
+</ul>
+</li>
+<li class="has-dropdown">
+<a itemprop="url" href="ru/Informaciya/">
+<span class="logo left">
+<img  class="grayscale grayscale_hoveroff" src="IMG/logo/rubon106.svg?1637496496" width="16" height="16" alt="0x0"/>
+</span>
+<span class="hide-for-medium-only">Информация</span>
+</a>
+<ul class="dropdown">
+<li class="show-for-medium-only first">Информация</li>
+<li class="hide-for-small-only">
+<a class="smenu" href="ru/Informaciya/Obnaruzhennye-slabye-storony/" title="&#1050;&#1072;&#1082; &#1080; &#1074; &#1083;&#1102;&#1073;&#1086;&#1081; &#1080;&#1085;&#1092;&#1086;&#1088;&#1084;&#1072;&#1094;&#1080;&#1086;&#1085;&#1085;&#1086;&#1081; &#1089;&#1080;&#1089;&#1090;&#1077;&#1084;&#1077;, &#1085;&#1072; &#1074;&#1077;&#1073;-&#1089;&#1072;&#1081;&#1090;&#1077; &#1073;&#1099;&#1083;&#1080; &#1074;&#1099;&#1103;&#1074;&#1083;&#1077;&#1085;&#1099; &#1085;&#1077;&#1082;&#1086;&#1090;&#1086;&#1088;&#1099;&#1077; &#1085;&#1077;&#1076;&#1086;&#1089;&#1090;&#1072;&#1090;&#1082;&#1080;."  itemprop="url">
+<img src='IMG/logo/rubon111.svg?1637496496' alt='&#1054;&#1073;&#1085;&#1072;&#1088;&#1091;&#1078;&#1077;&#1085;&#1085;&#1099;&#1077; &#1089;&#1083;&#1072;&#1073;&#1099;&#1077; &#1089;&#1090;&#1086;&#1088;&#1086;&#1085;&#1099;' width='16' height='16' class='vmiddle grayscale grayscale_hoveroff' />
+Обнаруженные слабые стороны
+</a>
+</li>
+<li class="hide-for-small-only">
+<a class="smenu" href="ru/Informaciya/Sponsory/" title="&#1042;&#1086;&#1090; &#1082;&#1086;&#1084;&#1087;&#1072;&#1085;&#1080;&#1080; &#1080; &#1091;&#1095;&#1088;&#1077;&#1078;&#1076;&#1077;&#1085;&#1080;&#1103;, &#1082;&#1086;&#1090;&#1086;&#1088;&#1099;&#1077; &#1087;&#1086;&#1079;&#1074;&#1086;&#1083;&#1103;&#1102;&#1090; &#1092;&#1086;&#1085;&#1076;&#1091; &#1087;&#1088;&#1086;&#1076;&#1086;&#1083;&#1078;&#1072;&#1090;&#1100; &#1087;&#1088;&#1077;&#1076;&#1083;&#1072;&#1075;&#1072;&#1090;&#1100; &#1074;&#1089;&#1077; &#1073;&#1086;&#1083;&#1100;&#1096;&#1077; &#1080; &#1073;&#1086;&#1083;&#1100;&#1096;&#1077; &#1082;&#1086;&#1085;&#1090;&#1077;&#1085;&#1090;&#1072;! &#1044;&#1083;&#1103; &#1087;&#1086;&#1083;&#1091;&#1095;&#1077;&#1085;&#1080;&#1103; &#1076;&#1086;&#1087;&#1086;&#1083;&#1085;&#1080;&#1090;&#1077;&#1083;&#1100;&#1085;&#1086;&#1081; &#1080;&#1085;&#1092;&#1086;&#1088;&#1084;&#1072;&#1094;&#1080;&#1080; &#1086; &#1090;&#1086;&#1084;, &#1082;&#1072;&#1082; &#1089;&#1090;&#1072;&#1090;&#1100; &#1089;&#1087;&#1086;&#1085;&#1089;&#1086;&#1088;&#1086;&#1084; &#1080;&#1083;&#1080; &#1087;&#1072;&#1088;&#1090;&#1085;&#1077;&#1088;&#1086;&#1084;, &#1089;&#1074;&#1103;&#1078;&#1080;&#1090;&#1077;&#1089;&#1100; &#1089; [Root-Me PRO-&gt;https://pro.root-me.org/?lang=en]."  itemprop="url">
+<img src='IMG/logo/rubon201.svg?1637496500' alt='&#1057;&#1087;&#1086;&#1085;&#1089;&#1086;&#1088;&#1099;' width='16' height='16' class='vmiddle grayscale grayscale_hoveroff' />
+Спонсоры
+</a>
+</li>
+<li class="hide-for-small-only">
+<a class="smenu" href="ru/Informaciya/Fond/" title="Root-Me - &#1085;&#1077;&#1082;&#1086;&#1084;&#1084;&#1077;&#1088;&#1095;&#1077;&#1089;&#1082;&#1072;&#1103; &#1086;&#1088;&#1075;&#1072;&#1085;&#1080;&#1079;&#1072;&#1094;&#1080;&#1103;, &#1094;&#1077;&#1083;&#1100;&#1102; &#1082;&#1086;&#1090;&#1086;&#1088;&#1086;&#1081; &#1103;&#1074;&#1083;&#1103;&#1077;&#1090;&#1089;&#1103; &#1089;&#1086;&#1076;&#1077;&#1081;&#1089;&#1090;&#1074;&#1080;&#1077; &#1088;&#1072;&#1089;&#1087;&#1088;&#1086;&#1089;&#1090;&#1088;&#1072;&#1085;&#1077;&#1085;&#1080;&#1102; &#1079;&#1085;&#1072;&#1085;&#1080;&#1081;, &#1089;&#1074;&#1103;&#1079;&#1072;&#1085;&#1085;&#1099;&#1093; &#1089;&#1086; &#1074;&#1079;&#1083;&#1086;&#1084;&#1086;&#1084; &#1080; &#1080;&#1085;&#1092;&#1086;&#1088;&#1084;&#1072;&#1094;&#1080;&#1086;&#1085;&#1085;&#1086;&#1081; &#1073;&#1077;&#1079;&#1086;&#1087;&#1072;&#1089;&#1085;&#1086;&#1089;&#1090;&#1100;&#1102;."  itemprop="url">
+<img src='IMG/logo/rubon107.svg?1637496496' alt='&#1060;&#1086;&#1085;&#1076;' width='16' height='16' class='vmiddle grayscale grayscale_hoveroff' />
+Фонд
+</a>
+</li>
+</ul>
+</li>
+<li class="has-dropdown">
+<a itemprop="url" href="ru/Soobschestvo/">
+<span class="logo left">
+<img  class="grayscale grayscale_hoveroff" src="IMG/logo/rubon19.svg?1714487248" width="16" height="16" alt="0x0"/>
+</span>
+<span class="hide-for-medium-only">Сообщество</span>
+</a>
+<ul class="dropdown">
+<li class="show-for-medium-only first">Сообщество</li>
+<li class="hide-for-small-only">
+<a class="smenu" href="ru/Soobschestvo/Vnesti-svoj-vklad-v-rabotu/" title="&#1059; &#1074;&#1072;&#1089; &#1077;&#1089;&#1090;&#1100; &#1085;&#1072;&#1074;&#1099;&#1082;&#1080; &#1082;&#1086;&#1084;&#1087;&#1100;&#1102;&#1090;&#1077;&#1088;&#1085;&#1086;&#1081; &#1073;&#1077;&#1079;&#1086;&#1087;&#1072;&#1089;&#1085;&#1086;&#1089;&#1090;&#1080; &#1080;&#1083;&#1080; &#1074;&#1079;&#1083;&#1086;&#1084;&#1072;? &#1055;&#1088;&#1080;&#1089;&#1086;&#1077;&#1076;&#1080;&#1085;&#1103;&#1081;&#1090;&#1077;&#1089;&#1100; &#1082; &#1085;&#1072;&#1084; &#1080; &#1087;&#1086;&#1084;&#1086;&#1075;&#1072;&#1081;&#1090;&#1077; &#1088;&#1072;&#1079;&#1074;&#1080;&#1074;&#1072;&#1090;&#1100; &#1089;&#1086;&#1086;&#1073;&#1097;&#1077;&#1089;&#1090;&#1074;&#1086;! &#1053;&#1077; &#1089;&#1090;&#1077;&#1089;&#1085;&#1103;&#1081;&#1090;&#1077;&#1089;&#1100; ;-)"  itemprop="url">
+<img src='IMG/logo/rubon175.svg?1637496498' alt='&#1042;&#1085;&#1077;&#1089;&#1090;&#1080; &#1089;&#1074;&#1086;&#1081; &#1074;&#1082;&#1083;&#1072;&#1076; &#1074; &#1088;&#1072;&#1073;&#1086;&#1090;&#1091;' width='16' height='16' class='vmiddle grayscale grayscale_hoveroff' />
+Внести свой вклад в работу
+</a>
+</li>
+<li class="hide-for-small-only">
+<a class="smenu" href="ru/Soobschestvo/Pogovorite/" title="&#1042; &#1074;&#1072;&#1096;&#1077;&#1084; &#1088;&#1072;&#1089;&#1087;&#1086;&#1088;&#1103;&#1078;&#1077;&#1085;&#1080;&#1080; &#1085;&#1077;&#1089;&#1082;&#1086;&#1083;&#1100;&#1082;&#1086; &#1082;&#1072;&#1085;&#1072;&#1083;&#1086;&#1074; &#1089;&#1074;&#1103;&#1079;&#1080; &#1076;&#1083;&#1103; &#1086;&#1073;&#1084;&#1077;&#1085;&#1072; &#1080;&#1085;&#1092;&#1086;&#1088;&#1084;&#1072;&#1094;&#1080;&#1077;&#1081; &#1089; &#1076;&#1088;&#1091;&#1075;&#1080;&#1084;&#1080; &#1087;&#1086;&#1083;&#1100;&#1079;&#1086;&#1074;&#1072;&#1090;&#1077;&#1083;&#1103;&#1084;&#1080; &#1087;&#1083;&#1072;&#1090;&#1092;&#1086;&#1088;&#1084;&#1099;."  itemprop="url">
+<img src='IMG/logo/rubon388.svg?1647250612' alt='&#1055;&#1086;&#1075;&#1086;&#1074;&#1086;&#1088;&#1080;&#1090;&#1077;' width='16' height='16' class='vmiddle grayscale grayscale_hoveroff' />
+Поговорите
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</nav>
+<div class="small-12 columns hide-for-medium-only">
+<h3>3307 visiteurs en ce moment</h3>
+последние зарегистрировавшиеся&nbsp;:
+<ul class="inline-list ts">
+<li><a class=" txt_6forum"  title="Профиль просмотра Alejandro" href="/Alejandro-1007498?lang=ru">Alejandro</a></li>
+<li><a class=" txt_6forum"  title="Профиль просмотра ajaj" href="/ajaj-1007497?lang=ru">ajaj</a></li>
+<li><a class=" txt_6forum"  title="Профиль просмотра jean mayderson" href="/spip.php?auteur1007495&amp;lang=ru">jean mayderson</a></li>
+<li><a class=" txt_6forum"  title="Профиль просмотра Borgen83" href="/Borgen83?lang=ru">Borgen83</a></li>
+<li><a class=" txt_6forum"  title="Профиль просмотра web101" href="/spip.php?auteur1007493&amp;lang=ru">web101</a></li>
+<li><a class=" txt_6forum"  title="Профиль просмотра lyrol00" href="/lyrol00?lang=ru">lyrol00</a></li>
+<li><a class=" txt_6forum"  title="Профиль просмотра mass140" href="/mass140?lang=ru">mass140</a></li>
+</ul>     
+<div class='ajaxbloc' data-ajax-env='glcZV8AU53GkHX/I+kWWTx0wNIqYHz6kQ4p9sANK9SdEDJNWoAO4ltJY8J6hkQ6lhgyO+3lEf6tJ7fqDt+ZGqZy3BsBvqGdWxv0fX3Zuvwrs+TuZrl45WMLImPq/I5htpWvoJMqVrVyghb92lbBTtg6mimqc2pySQCUrGJ738f8QFtJHt7FS5YNX95iXXTSxXAixttnuWpQKocbdrgHJc8BWDYPmQQOPtEXXa00PbXx69aeWaN0RZQ1xKA==' data-origin="/ru/Zadachi-i-problemy/Kriptoanaliz/">
+<h3>Предложения</h3>
+<a id='pagination_offres' class='pagination_ancre'></a>
+<ul>
+<li>
+<a href="https://elysium-security.com" title="Elysium Security" target="_BLANK"><span style="background: white; border-radius: 3px;width:24px; height: 24px; line-height: 32px; padding: 2px; margin:2px;"><img class="vmiddle" src="https://console.pro.root-me.org/IMG/logo/organisationon32.png?1678276537" alt="organisation_logo" style="width: 20px; height:20px; object-fit: cover;" /></span></a>&nbsp;<span class="gras txs">CDI</span>&nbsp;<a title="Elysium Security : Consultant en cybers&#233;curit&#233; - offensif/d&#233;fensif - confirm&#233; (H/F)" class="txs" href="./?page=news&amp;inc=offre&amp;id_offre=93&amp;lang=ru"><span lang="fr">Consultant sécurité</span></a>
+</li>
+</ul>
+<div class="pagination"></div>
+</div><!--ajaxbloc-->                        <h3>При спонсорской поддержке</h3>
+<ul>
+<li><a href="https://www.algosecure.fr" target="_BLANK" >Algosecure</a></li>
+<li><a href="https://www.ecole2600.com/" target="_BLANK" >École 2600</a></li>
+<li><a href="https://www.elysium-security.com/" target="_BLANK" >Elysium Security</a></li>
+<li><a href="https://public.geoide.fr" target="_BLANK" >GEOIDE</a></li>    
+<li><a href="https://www.oteria.fr/?utm_source=RootMe&utm_medium=partnership" target="_BLANK" >Oteria Cyber School</a></li>
+<li><a href="https://www.synacktiv.com" target="_BLANK" >Synacktiv</a></li>
+<li><a class="mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=page-don&amp;lang=ru">Вы&nbsp;;-)</a></li>
+</ul>        </div>
+</aside>
+</div>             
+<div id="main_wrapper" class="row">
+<ul id="breadcrumb" class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+<a href="https://www.root-me.org?lang=ru" title="Главная страница" itemprop="item"><span itemprop="name">Главная страница</span></a>
+<meta itemprop="position" content="1">
+</li>
+<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+<a title="Задачи и проблемы" href="https://www.root-me.org/ru/Zadachi-i-problemy/" itemprop="item"><span itemprop="name">Задачи и проблемы</span></a>
+<meta itemprop="position" content="2">
+</li>
+<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+<a title="Криптоанализ" href="https://www.root-me.org/ru/Zadachi-i-problemy/Kriptoanaliz/" itemprop="item"><span itemprop="name">Криптоанализ</span></a>
+<meta itemprop="position" content="3">
+</li>
+</ul>                  <main id="main" itemprop="mainContentOfPage" itemscope itemtype="https://schema.org/WebPageElement" itemid="urn:ru/Zadachi-i-problemy/Kriptoanaliz/">
+<div class='ajaxbloc' data-ajax-env='akkVV8AU57EEPebDgd4nU3gJEtrkW8TOazCPnty9YZDybXtWG9nbPqjicxqRDesNWFiV7jNuYqJqtVnwiqaGpsZFDNGalCObwbXPPNo9Vn7Qwdq04Gqghyw11lXZC1j02fLQGYGfViFL1KJn8h4bolEBi23qVzJX8sgCMM+rv3/X00bQKGoIvkTYsje8ydqB24tYR6UpCtQ6jE6/WkOkXmuR+Oin72cIhjaKJca+1feB7KUP2gdHChE13Lm//H1pzAZfhU4/GDo=' data-origin="/ru/Zadachi-i-problemy/Kriptoanaliz/">
+<div  class="small-12 columns"  >
+<div class="tile">
+<div class="t-body tb-padding"  >
+<h1 class="crayon rubrique-titre-325 "><img src='IMG/logo/rubon18.svg?1637496499' alt='&#1050;&#1088;&#1080;&#1087;&#1090;&#1086;&#1072;&#1085;&#1072;&#1083;&#1080;&#1079;' width='48' height='48' class='vmiddle' itemprop='image' />&nbsp;<span itemprop="headline name">Криптоанализ</span></h1>
+<h3 class="crayon rubrique-descriptif-325 " itemprop="description">Алгоритмы шифрования взлома
+</h3>
+<div class="texte crayon rubrique-texte-325 " itemprop="text"><p>Эти тесты позволят вам отточить навыки криптографии. Вы столкнетесь с закодированными данными. Задача состоит в том, чтобы найти тип кодирования или шифрования и вернуть его обратно, чтобы найти решение.</p>
+<p>Предпосылки:</p>
+<p><span class="spip-puce ltr"><b>–</b></span> Знание наиболее распространенных форматов кодирования.
+<br /><span class="spip-puce ltr"><b>–</b></span> Знание наиболее распространенных хэш-алгоритмов и шифров.
+<br /><span class="spip-puce ltr"><b>–</b></span> Знание скриптового языка.</p></div>
+</div>
+</div>
+</div>
+<div class='ajaxbloc ajax-id-liste_challenge' data-ajax-env='gkkTU8cE+3CkHeXpKyFmptUe8bR83mn3INRlQAOpf/DG8F2XJ7pZkfD1wRmxI1TShBSqh+ACrdvxt1QvoJcY72wZEX+bYbHs+3nG+ztv4wDYG+bNKR+tX7AlpyZqDzW4dXbgGJqsH6ybCkQhT6QGDAlAwJH9VnD5xB+XY6BYNNLFYU9JpvsBz4xDmODsOFYt4Hf4PdksCV/r+x80T5OOolrD0yVKBg7kCG7AWNig/BG1oXN4fM4hBe9KpFN9haBGYIJPFD2YEX02u4s3Rrl+C5jiHFOEhU4QV+IM3lGg/1eRJLGOPh6RolWiKoqgADZDLHEZn4E=' data-origin="/ru/Zadachi-i-problemy/Kriptoanaliz/">
+<script> 
+function reload_liste_challenge(){
+ajaxReload('liste_challenge_inc',{args:{id_rubrique:325,titre_co:$('#titre_co').val()},history:false});
+}
+$(document).ready(function(){
+var t = null;
+$("#titre_co").on('input propertychange paste', function() {
+if (t) clearTimeout(t);
+t = setTimeout(reload_liste_challenge, 250);
+});
+});
+</script>
+<div  class="small-12 columns"  >
+<div class="tile">
+<div class="t-body tb-padding"  >
+<div class="right">
+<form id="filtrer_liste_challenge" action="/ru/Zadachi-i-problemy/Kriptoanaliz/?q=%2Fde%2FCapture-The-Flag%2FCTF-all-the-day%2Fru%2FZadachi-i-problemy%2FKriptoanaliz%2F#liste_challenge" method="get">
+<input type="search" id="titre_co" name="titre_co"  placeholder="Filtrer" />
+</form>
+</div>                
+<div class='ajaxbloc ajax-id-liste_challenge_inc' data-ajax-env='UlSTN8AU53Y0ipq+BtTWIfPwr9mmW41jXkSOtYlk0VFgsp4pTHgjYYHyJYj8QlZrAqMDS/5tuLw4tH1IqHsOlMV9DecLEnIQDb6pfg+OCnxk5VWS20cD0RRLo8aM0ePvD76VojhS1z2IrhnAtejYE2boTqn8D+75kQWlxCgJI00vJy9ez2aGjGzMCaAw+gfNINIGVHwUwmx2XdTu' data-origin="/ru/Zadachi-i-problemy/Kriptoanaliz/">
+<h1 id="liste_challenge">
+<img src='IMG/logo/rubon5.svg?1637496507' alt='challenges' width='48' height='48' class='vmiddle' />&nbsp;<b class="color1">75</b>&nbsp;Задачи и проблемы
+</h1>
+<a id='pagination_co' class='pagination_ancre'></a>
+<table class="text-center" style="width: 100%">
+<thead>
+<tr class="row_first">
+<td>Результаты</td>
+<td><a href='/ru/Zadachi-i-problemy/Kriptoanaliz/File-PKZIP-2?tri_co=titre' class='ajax'>Имя</a></td>
+<td class="hide-for-small-only"><a href='/ru/Zadachi-i-problemy/Kriptoanaliz/File-PKZIP-2?tri_co=nombre_validation' class='ajax'>Валидации</a></td>
+<td><a href='/ru/Zadachi-i-problemy/Kriptoanaliz/File-PKZIP-2?tri_co=score' class='ajax'>Количество очков</a>&nbsp;&nbsp;<a class="mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Flegende&amp;lang=ru#score" title="Объяснения баллов"><img src="squelettes/img/question_mark.svg" width="16" height="16" alt="Объяснения баллов"/></a></td>
+<td class="text-center show-for-medium-up"><a href='/ru/Zadachi-i-problemy/Kriptoanaliz/File-PKZIP-2?tri_co=id_mot' class='ajax'>Трудность</a>&nbsp;&nbsp;<a class="mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Flegende&amp;lang=ru#difficulte" title="Трудность"><img src="squelettes/img/question_mark.svg" width="16" height="16" alt="Трудность"/></a></td>
+<td class="text-center show-for-large-up"><a href='/ru/Zadachi-i-problemy/Kriptoanaliz/File-PKZIP-2?tri_co=auteurs' class='ajax'>Автор</a></td>
+<td class="show-for-medium-up"><a href='/ru/Zadachi-i-problemy/Kriptoanaliz/File-PKZIP-2?tri_co=note_ponderee' class='ajax'>Примечание</a>&nbsp;&nbsp;<a class="mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Flegende&amp;lang=ru#note" title="Рейтинг"><img src="squelettes/img/question_mark.svg" width="16" height="16" alt="Рейтинг"/></a></td>
+<td class="show-for-large-up"><a href='/ru/Zadachi-i-problemy/Kriptoanaliz/File-PKZIP-2?tri_co=nombre_solution' class='ajax'>Решение</a></td>
+<td class="show-for-large-up"><a href='/ru/Zadachi-i-problemy/Kriptoanaliz/File-PKZIP-2?tri_co=date_publication' class='ajax'>Дата</a></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/Encoding-ASCII" title="">Encoding - ASCII</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 26%; background-color: #ff9c70;">26%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=140&amp;lang=ru" title="Кто это подтвердил?">92171</a>
+</span>
+</td>
+<td>5</td>
+<td class="show-for-medium-up">
+<a href="tag/Tres-facile?lang=ru" title="Tr&#232;s facile : Premier niveau des challenges"><span class="difficulte difficulte1   difficulte1a" style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3 " style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_6forum" title="Профиль просмотра Xartrick" href="/Xartrick?lang=ru">Xartrick</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note5.svg?1640086090" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">4 Декабрь 2012</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/Encoding-UU" title="&#1054;&#1095;&#1077;&#1085;&#1100; &#1080;&#1089;&#1087;&#1086;&#1083;&#1100;&#1079;&#1091;&#1077;&#1090;&#1089;&#1103; &#1087;&#1088;&#1086;&#1090;&#1086;&#1082;&#1086;&#1083;&#1086;&#1084; HTTP">Encoding - UU</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 20%; background-color: #ff9c70;">20%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=15&amp;lang=ru" title="Кто это подтвердил?">70989</a>
+</span>
+</td>
+<td>5</td>
+<td class="show-for-medium-up">
+<a href="tag/Tres-facile?lang=ru" title="Tr&#232;s facile : Premier niveau des challenges"><span class="difficulte difficulte1   difficulte1a" style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3 " style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_1comite" title="Профиль просмотра g0uZ" href="/g0uZ?lang=ru">g0uZ</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note5.svg?1640086090" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">7 Октябрь 2006</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/Hash-DCC" title=" ">Hash - DCC</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 3%; background-color: #ff4b4b;">3%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=2934&amp;lang=ru" title="Кто это подтвердил?">8681</a>
+</span>
+</td>
+<td>5</td>
+<td class="show-for-medium-up">
+<a href="tag/Tres-facile?lang=ru" title="Tr&#232;s facile : Premier niveau des challenges"><span class="difficulte difficulte1   difficulte1a" style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3 " style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_1comite" title="Профиль просмотра Podalirius" href="/Podalirius?lang=ru">Podalirius</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note4.svg?1640086082" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">13 Июль 2021</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/Hash-DCC2" title=" ">Hash - DCC2</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 3%; background-color: #ff4b4b;">3%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=2936&amp;lang=ru" title="Кто это подтвердил?">7990</a>
+</span>
+</td>
+<td>5</td>
+<td class="show-for-medium-up">
+<a href="tag/Tres-facile?lang=ru" title="Tr&#232;s facile : Premier niveau des challenges"><span class="difficulte difficulte1   difficulte1a" style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3 " style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_1comite" title="Профиль просмотра Podalirius" href="/Podalirius?lang=ru">Podalirius</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note5.svg?1640086090" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">13 Июль 2021</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/Hash-LM" title=" ">Hash - LM</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 3%; background-color: #ff4b4b;">3%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=2932&amp;lang=ru" title="Кто это подтвердил?">8467</a>
+</span>
+</td>
+<td>5</td>
+<td class="show-for-medium-up">
+<a href="tag/Tres-facile?lang=ru" title="Tr&#232;s facile : Premier niveau des challenges"><span class="difficulte difficulte1   difficulte1a" style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3 " style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_1comite" title="Профиль просмотра Podalirius" href="/Podalirius?lang=ru">Podalirius</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note5.svg?1640086090" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">13 Июль 2021</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/Hash-Message-Digest-5" title="&#1041;&#1086;&#1073; &#1086;&#1073;&#1085;&#1072;&#1088;&#1091;&#1078;&#1080;&#1083;, &#1095;&#1090;&#1086; &#1056;&#1086;&#1085;&#1072;&#1083;&#1100;&#1076; &#1056;&#1080;&#1074;&#1077;&#1089;&#1090; - &#1087;&#1086;&#1090;&#1088;&#1103;&#1089;&#1072;&#1102;&#1097;&#1080;&#1081; &#1082;&#1088;&#1080;&#1087;&#1090;&#1086;&#1072;&#1085;&#1072;&#1083;&#1080;&#1090;&#1080;&#1082;.">Hash - Message Digest 5</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 18%; background-color: #ff4b4b;">18%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=70&amp;lang=ru" title="Кто это подтвердил?">62052</a>
+</span>
+</td>
+<td>5</td>
+<td class="show-for-medium-up">
+<a href="tag/Tres-facile?lang=ru" title="Tr&#232;s facile : Premier niveau des challenges"><span class="difficulte difficulte1   difficulte1a" style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3 " style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_1comite" title="Профиль просмотра g0uZ" href="/g0uZ?lang=ru">g0uZ</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note5.svg?1640086090" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">1</td>
+<td class="show-for-large-up">31 Январь 2010</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/Hash-NT" title="&#1054;&#1076;&#1085;&#1086; &#1087;&#1088;&#1072;&#1074;&#1080;&#1083;&#1086; &#1076;&#1083;&#1103; &#1074;&#1089;&#1077;&#1093;">Hash - NT</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 2%; background-color: #ff4b4b;">2%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=2930&amp;lang=ru" title="Кто это подтвердил?">6837</a>
+</span>
+</td>
+<td>5</td>
+<td class="show-for-medium-up">
+<a href="tag/Tres-facile?lang=ru" title="Tr&#232;s facile : Premier niveau des challenges"><span class="difficulte difficulte1   difficulte1a" style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3 " style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_1comite" title="Профиль просмотра Podalirius" href="/Podalirius?lang=ru">Podalirius</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note5.svg?1640086090" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">13 Июль 2021</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/Hash-SHA-2" title="">Hash - SHA-2</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 9%; background-color: #ff4b4b;">9%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=238&amp;lang=ru" title="Кто это подтвердил?">32750</a>
+</span>
+</td>
+<td>5</td>
+<td class="show-for-medium-up">
+<a href="tag/Tres-facile?lang=ru" title="Tr&#232;s facile : Premier niveau des challenges"><span class="difficulte difficulte1   difficulte1a" style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3 " style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_6forum" title="Профиль просмотра koma" href="/koma?lang=ru">koma</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note4.svg?1640086082" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">2</td>
+<td class="show-for-large-up">3 Июнь 2012</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/Shift-cipher" title="&#1042;&#1086;&#1089;&#1089;&#1090;&#1072;&#1085;&#1086;&#1074;&#1080;&#1090;&#1100; &#1087;&#1072;&#1088;&#1086;&#1083;&#1100;">Shift cipher</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 6%; background-color: #ff4b4b;">6%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=130&amp;lang=ru" title="Кто это подтвердил?">21027</a>
+</span>
+</td>
+<td>10</td>
+<td class="show-for-medium-up">
+<a href="tag/Tres-facile?lang=ru" title="Tr&#232;s facile : Premier niveau des challenges"><span class="difficulte difficulte1   difficulte1a" style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3 " style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_6forum" title="Профиль просмотра m31z0nyx" href="/m31z0nyx?lang=ru">m31z0nyx</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note4.svg?1640086082" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">16 Февраль 2011</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/CISCO-Salted-Password" title="&#1053;&#1077; &#1079;&#1072;&#1073;&#1091;&#1076;&#1100;&#1090;&#1077; &#1087;&#1086;&#1089;&#1086;&#1083;&#1080;&#1090;&#1100; &#1087;&#1077;&#1088;&#1077;&#1076; &#1093;&#1101;&#1096;&#1080;&#1088;&#1086;&#1074;&#1072;&#1085;&#1080;&#1077;&#1084;!">CISCO - Salted Password</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 2%; background-color: #ff4b4b;">2%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=2938&amp;lang=ru" title="Кто это подтвердил?">5500</a>
+</span>
+</td>
+<td>10</td>
+<td class="show-for-medium-up">
+<a href="tag/Tres-facile?lang=ru" title="Tr&#232;s facile : Premier niveau des challenges"><span class="difficulte difficulte1   difficulte1a" style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3 " style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_6forum" title="Профиль просмотра Tidusrose" href="/Tidusrose?lang=ru">Tidusrose</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note5.svg?1640086090" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">13 Июль 2021</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/Pixel-Madness" title=" ">Pixel Madness</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 5%; background-color: #ff4b4b;">5%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=85&amp;lang=ru" title="Кто это подтвердил?">16324</a>
+</span>
+</td>
+<td>15</td>
+<td class="show-for-medium-up">
+<a href="tag/Facile?lang=ru" title="Facile : Deuxi&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2   difficulte2a" style="height: 0.4rem;"></span><span class="difficulte difficulte3 " style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_6forum" title="Профиль просмотра Ryscrow" href="/Ryscrow?lang=ru">Ryscrow</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note4.svg?1640086082" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">3 Февраль 2011</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/ELF64-PID-encryption" title="&#1055;&#1083;&#1086;&#1093;&#1072;&#1103; &#1080;&#1076;&#1077;&#1103; &#1080;&#1089;&#1087;&#1086;&#1083;&#1100;&#1079;&#1086;&#1074;&#1072;&#1090;&#1100; &#1087;&#1088;&#1077;&#1076;&#1089;&#1082;&#1072;&#1079;&#1091;&#1077;&#1084;&#1099;&#1077; &#1074;&#1077;&#1097;&#1080;.">ELF64 - PID encryption</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 3%; background-color: #ff4b4b;">3%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=208&amp;lang=ru" title="Кто это подтвердил?">8124</a>
+</span>
+</td>
+<td>15</td>
+<td class="show-for-medium-up">
+<a href="tag/Facile?lang=ru" title="Facile : Deuxi&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2   difficulte2a" style="height: 0.4rem;"></span><span class="difficulte difficulte3 " style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_6forum" title="Профиль просмотра Lu33Y" href="/Lu33Y?lang=ru">Lu33Y</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note5.svg?1640086090" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">8 Февраль 2012</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/File-PKZIP" title="&#1047;&#1072;&#1097;&#1080;&#1097;&#1077;&#1085;&#1085;&#1099;&#1081; ZIP-&#1092;&#1072;&#1081;&#1083;, &#1074;&#1099; &#1076;&#1086;&#1083;&#1078;&#1085;&#1099; &#1085;&#1072;&#1081;&#1090;&#1080; &#1090;&#1086;, &#1095;&#1090;&#1086; &#1074;&#1085;&#1091;&#1090;&#1088;&#1080;.">File - PKZIP</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 4%; background-color: #ff4b4b;">4%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=94&amp;lang=ru" title="Кто это подтвердил?">13356</a>
+</span>
+</td>
+<td>15</td>
+<td class="show-for-medium-up">
+<a href="tag/Facile?lang=ru" title="Facile : Deuxi&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2   difficulte2a" style="height: 0.4rem;"></span><span class="difficulte difficulte3 " style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_1comite" title="Профиль просмотра g0uZ" href="/g0uZ?lang=ru">g0uZ</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note4.svg?1640086082" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">1</td>
+<td class="show-for-large-up">30 Август 2010</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/Monoalphabetic-substitution-Caesar" title="&#1080;&#1084;&#1087;&#1077;&#1088;&#1072;&#1090;&#1086;&#1088;&#1089;&#1082;&#1080;&#1077; &#1088;&#1077;&#1075;&#1088;&#1077;&#1089;&#1089;&#1099;">Monoalphabetic substitution - Caesar</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 5%; background-color: #ff4b4b;">5%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=178&amp;lang=ru" title="Кто это подтвердил?">16871</a>
+</span>
+</td>
+<td>15</td>
+<td class="show-for-medium-up">
+<a href="tag/Facile?lang=ru" title="Facile : Deuxi&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2   difficulte2a" style="height: 0.4rem;"></span><span class="difficulte difficulte3 " style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_1comite" title="Профиль просмотра Arod" href="/Arod?lang=ru">Arod</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note4.svg?1640086082" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">22 Октябрь 2011</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/Circular-Bit-Shift" title="&#1059;&#1087;&#1086;&#1088;&#1103;&#1076;&#1086;&#1095;&#1077;&#1085;&#1085;&#1072;&#1103; &#1089;&#1084;&#1077;&#1089;&#1100;">Circular Bit Shift</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 1%; background-color: #ff4b4b;">1%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=3875&amp;lang=ru" title="Кто это подтвердил?">1669</a>
+</span>
+</td>
+<td>20</td>
+<td class="show-for-medium-up">
+<a href="tag/Moyen?lang=ru" title="Moyen : Troisi&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3   difficulte3a" style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_5pre" title="Профиль просмотра BlackRaven" href="/BlackRaven-489765?lang=ru">BlackRaven</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note3.svg?1640086076" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">21 Март 2023</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/Known-plaintext-XOR" title="&#1044;&#1083;&#1103; &#1101;&#1090;&#1086;&#1081; &#1079;&#1072;&#1076;&#1072;&#1095;&#1080; &#1074;&#1072;&#1084; &#1085;&#1091;&#1078;&#1085;&#1086; &#1073;&#1091;&#1076;&#1077;&#1090; &#1088;&#1072;&#1089;&#1096;&#1080;&#1092;&#1088;&#1086;&#1074;&#1072;&#1090;&#1100; &#1087;&#1088;&#1086;&#1089;&#1090;&#1086;&#1077; XOR-&#1080;&#1079;&#1086;&#1073;&#1088;&#1072;&#1078;&#1077;&#1085;&#1080;&#1077;.">Known plaintext - XOR</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 3%; background-color: #ff4b4b;">3%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=76&amp;lang=ru" title="Кто это подтвердил?">9406</a>
+</span>
+</td>
+<td>20</td>
+<td class="show-for-medium-up">
+<a href="tag/Facile?lang=ru" title="Facile : Deuxi&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2   difficulte2a" style="height: 0.4rem;"></span><span class="difficulte difficulte3 " style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_6forum" title="Профиль просмотра Ryscrow" href="/Ryscrow?lang=ru">Ryscrow</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note5.svg?1640086090" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">3 Февраль 2011</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/Code-Pseudo-Random-Number-Generator" title="&#1057;&#1090;&#1088;&#1072;&#1085;&#1085;&#1086;&#1077; &#1096;&#1080;&#1092;&#1088;&#1086;&#1074;&#1072;&#1085;&#1080;&#1077;.">Code - Pseudo Random Number Generator</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 2%; background-color: #ff4b4b;">2%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=278&amp;lang=ru" title="Кто это подтвердил?">3665</a>
+</span>
+</td>
+<td>20</td>
+<td class="show-for-medium-up">
+<a href="tag/Facile?lang=ru" title="Facile : Deuxi&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2   difficulte2a" style="height: 0.4rem;"></span><span class="difficulte difficulte3 " style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_6forum" title="Профиль просмотра Tosh" href="/Tosh?lang=ru">Tosh</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note5.svg?1640086090" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">19 Декабрь 2012</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/Encoding-Codebook" title="&#1062;&#1080;&#1084;&#1084;&#1077;&#1088;&#1084;&#1072;&#1085;&#1085; &#1083;&#1102;&#1073;&#1080;&#1090; &#1090;&#1077;&#1083;&#1077;&#1075;&#1088;&#1072;&#1084;&#1084;&#1099;">Encoding - Codebook</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 1%; background-color: #ff4b4b;">1%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=3793&amp;lang=ru" title="Кто это подтвердил?">426</a>
+</span>
+</td>
+<td>20</td>
+<td class="show-for-medium-up">
+<a href="tag/Moyen?lang=ru" title="Moyen : Troisi&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3   difficulte3a" style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_6forum" title="Профиль просмотра n3rada" href="/n3rada?lang=ru">n3rada</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note3.svg?1640086076" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">21 Март 2023</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/File-PKZIP-2" title="PKZIP-&#1096;&#1080;&#1092;&#1088;&#1086;&#1074;&#1072;&#1085;&#1080;&#1077; &#1089;&#1083;&#1072;&#1073;&#1086;&#1077;">File - PKZIP 2</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 1%; background-color: #ff4b4b;">1%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=4662&amp;lang=ru" title="Кто это подтвердил?">318</a>
+</span>
+</td>
+<td>20</td>
+<td class="show-for-medium-up">
+<a href="tag/Moyen?lang=ru" title="Moyen : Troisi&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3   difficulte3a" style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_5pre" title="Профиль просмотра kevin.mille" href="/kevin-mille?lang=ru">kevin.mille</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note4.svg?1640086082" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">8 Ноябрь 2024</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/File-Insecure-storage-1" title="Mozilla Firefox 14">File - Insecure storage 1</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 3%; background-color: #ff4b4b;">3%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=198&amp;lang=ru" title="Кто это подтвердил?">9393</a>
+</span>
+</td>
+<td>20</td>
+<td class="show-for-medium-up">
+<a href="tag/Facile?lang=ru" title="Facile : Deuxi&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2   difficulte2a" style="height: 0.4rem;"></span><span class="difficulte difficulte3 " style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_1comite" title="Профиль просмотра g0uZ" href="/g0uZ?lang=ru">g0uZ</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note5.svg?1640086090" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">6 Февраль 2012</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/Polyalphabetic-substitution-Vigenere" title="&#1054;&#1089;&#1085;&#1086;&#1074;&#1099;">Polyalphabetic substitution - Vigenère</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 3%; background-color: #ff4b4b;">3%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=166&amp;lang=ru" title="Кто это подтвердил?">10590</a>
+</span>
+</td>
+<td>20</td>
+<td class="show-for-medium-up">
+<a href="tag/Facile?lang=ru" title="Facile : Deuxi&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2   difficulte2a" style="height: 0.4rem;"></span><span class="difficulte difficulte3 " style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_1comite" title="Профиль просмотра Arod" href="/Arod?lang=ru">Arod</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note5.svg?1640086090" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">26 Октябрь 2011</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/System-Android-lock-pattern" title="&#1054;&#1073;&#1088;&#1072;&#1079;&#1077;&#1094;">System - Android lock pattern</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 2%; background-color: #ff4b4b;">2%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=286&amp;lang=ru" title="Кто это подтвердил?">7016</a>
+</span>
+</td>
+<td>20</td>
+<td class="show-for-medium-up">
+<a href="tag/Facile?lang=ru" title="Facile : Deuxi&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2   difficulte2a" style="height: 0.4rem;"></span><span class="difficulte difficulte3 " style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_6forum" title="Профиль просмотра Silentd" href="/Silentd?lang=ru">Silentd</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note5.svg?1640086090" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">23 Декабрь 2012</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/Transposition-Rail-Fence" title="&#1047;&#1072;&#1093;&#1074;&#1072;&#1090;&#1095;&#1080;&#1082;&#1080; &#1076;&#1086;&#1083;&#1078;&#1085;&#1099; &#1091;&#1084;&#1077;&#1088;&#1077;&#1090;&#1100;">Transposition - Rail Fence</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 2%; background-color: #ff4b4b;">2%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=394&amp;lang=ru" title="Кто это подтвердил?">6610</a>
+</span>
+</td>
+<td>20</td>
+<td class="show-for-medium-up">
+<a href="tag/Facile?lang=ru" title="Facile : Deuxi&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2   difficulte2a" style="height: 0.4rem;"></span><span class="difficulte difficulte3 " style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_6forum" title="Профиль просмотра YellowS4" href="/YellowS4?lang=ru">YellowS4</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note4.svg?1640086082" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">6 Апрель 2014</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/AES-CBC-Bit-Flipping-Attack" title="&#1041;&#1088;&#1086;&#1089;&#1072;&#1081;!">AES - CBC - Bit-Flipping Attack</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 1%; background-color: #ff4b4b;">1%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=1754&amp;lang=ru" title="Кто это подтвердил?">1679</a>
+</span>
+</td>
+<td>25</td>
+<td class="show-for-medium-up">
+<a href="tag/Moyen?lang=ru" title="Moyen : Troisi&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3   difficulte3a" style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_6forum" title="Профиль просмотра Tie21" href="/Tie21?lang=ru">Tie21</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note5.svg?1640086090" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">17 Июнь 2018</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/AES-ECB" title="&#1047;&#1072; &#1079;&#1072;&#1082;&#1088;&#1099;&#1090;&#1099;&#1084;&#1080; &#1076;&#1074;&#1077;&#1088;&#1103;&#1084;&#1080;">AES - ECB</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 1%; background-color: #ff4b4b;">1%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=839&amp;lang=ru" title="Кто это подтвердил?">2741</a>
+</span>
+</td>
+<td>25</td>
+<td class="show-for-medium-up">
+<a href="tag/Moyen?lang=ru" title="Moyen : Troisi&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3   difficulte3a" style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_6forum" title="Профиль просмотра cez40" href="/cez40?lang=ru">cez40</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note3.svg?1640086076" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">29 Ноябрь 2015</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/AES-ECB-Copy-Paste" title="&#1042;&#1089;&#1077;&#1075;&#1086; &#1090;&#1088;&#1080; &#1073;&#1091;&#1082;&#1074;&#1099;...">AES - ECB - Copy Paste</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 1%; background-color: #ff4b4b;">1%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=4155&amp;lang=ru" title="Кто это подтвердил?">331</a>
+</span>
+</td>
+<td>25</td>
+<td class="show-for-medium-up">
+<a href="tag/Moyen?lang=ru" title="Moyen : Troisi&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3   difficulte3a" style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_5pre" title="Профиль просмотра Vozec" href="/Vozec?lang=ru">Vozec</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note5.svg?1640086090" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">5 Февраль 2024</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/DSA-Implementation-error" title="&#1053;&#1077; &#1074;&#1099;&#1087;&#1091;&#1089;&#1082;&#1072;&#1081;&#1090;&#1077; &#1089;&#1086;&#1073;&#1089;&#1090;&#1074;&#1077;&#1085;&#1085;&#1091;&#1102; &#1082;&#1088;&#1080;&#1087;&#1090;&#1086;&#1074;&#1072;&#1083;&#1102;&#1090;&#1091;">DSA - Implementation error</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 1%; background-color: #ff4b4b;">1%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=4710&amp;lang=ru" title="Кто это подтвердил?">24</a>
+</span>
+</td>
+<td>25</td>
+<td class="show-for-medium-up">
+<a href="tag/Moyen?lang=ru" title="Moyen : Troisi&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3   difficulte3a" style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_5pre" title="Профиль просмотра Vozec" href="/Vozec?lang=ru">Vozec</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note5.svg?1640086090" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">13 Декабрь 2024</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/LFSR-Known-plaintext" title="&#1057;&#1076;&#1074;&#1080;&#1075; &#1088;&#1077;&#1075;&#1080;&#1089;&#1090;&#1088;&#1072; &#1083;&#1080;&#1085;&#1077;&#1081;&#1085;&#1086;&#1081; &#1086;&#1073;&#1088;&#1072;&#1090;&#1085;&#1086;&#1081; &#1089;&#1074;&#1103;&#1079;&#1080;">LFSR - Known plaintext</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 1%; background-color: #ff4b4b;">1%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=1671&amp;lang=ru" title="Кто это подтвердил?">1074</a>
+</span>
+</td>
+<td>25</td>
+<td class="show-for-medium-up">
+<a href="tag/Moyen?lang=ru" title="Moyen : Troisi&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3   difficulte3a" style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_6forum" title="Профиль просмотра Brissouille" href="/Brissouille?lang=ru">Brissouille</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note4.svg?1640086082" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">28 Ноябрь 2017</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/RSA-Factorisation" title="&#1056;&#1072;&#1089;&#1096;&#1080;&#1092;&#1088;&#1086;&#1074;&#1072;&#1090;&#1100; &#1087;&#1072;&#1088;&#1086;&#1083;&#1100;">RSA - Factorisation</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 2%; background-color: #ff4b4b;">2%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=110&amp;lang=ru" title="Кто это подтвердил?">5075</a>
+</span>
+</td>
+<td>25</td>
+<td class="show-for-medium-up">
+<a href="tag/Moyen?lang=ru" title="Moyen : Troisi&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3   difficulte3a" style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_6forum" title="Профиль просмотра HacKSpider" href="/HacKSpider?lang=ru">HacKSpider</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note4.svg?1640086082" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">12 Сентябрь 2010</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/RSA-Decipher-Oracle" title="&#1058;&#1077;&#1084;&#1085;&#1086;&#1090;&#1072; &#1085;&#1077; &#1084;&#1086;&#1078;&#1077;&#1090; &#1080;&#1079;&#1075;&#1085;&#1072;&#1090;&#1100; &#1090;&#1100;&#1084;&#1091;; &#1101;&#1090;&#1086; &#1084;&#1086;&#1078;&#1077;&#1090; &#1089;&#1076;&#1077;&#1083;&#1072;&#1090;&#1100; &#1090;&#1086;&#1083;&#1100;&#1082;&#1086; &#1089;&#1074;&#1077;&#1090;.">RSA - Decipher Oracle</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 1%; background-color: #ff4b4b;">1%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=1513&amp;lang=ru" title="Кто это подтвердил?">2064</a>
+</span>
+</td>
+<td>25</td>
+<td class="show-for-medium-up">
+<a href="tag/Moyen?lang=ru" title="Moyen : Troisi&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3   difficulte3a" style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_6forum" title="Профиль просмотра Zweisamkeit" href="/Zweisamkeit?lang=ru">Zweisamkeit</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note5.svg?1640086090" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">11 Май 2017</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/Service-Timing-attack" title="&#1041;&#1091;&#1076;&#1100; &#1090;&#1077;&#1088;&#1087;&#1077;&#1083;&#1080;&#1074;.">Service - Timing attack</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 1%; background-color: #ff4b4b;">1%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=269&amp;lang=ru" title="Кто это подтвердил?">2926</a>
+</span>
+</td>
+<td>25</td>
+<td class="show-for-medium-up">
+<a href="tag/Moyen?lang=ru" title="Moyen : Troisi&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3   difficulte3a" style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_1comite" title="Профиль просмотра g0uZ" href="/g0uZ?lang=ru">g0uZ</a> ,  
+<a class="txt_6forum" title="Профиль просмотра koma" href="/koma?lang=ru">koma</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note5.svg?1640086090" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">28 Октябрь 2012</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/Monoalphabetic-substitution-Polybe" title="&#1058;&#1086;&#1095;&#1082;&#1072;, &#1083;&#1080;&#1085;&#1080;&#1103;, &#1090;&#1088;&#1077;&#1091;&#1075;&#1086;&#1083;&#1100;&#1085;&#1080;&#1082;...">Monoalphabetic substitution - Polybe</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 2%; background-color: #ff4b4b;">2%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=180&amp;lang=ru" title="Кто это подтвердил?">3966</a>
+</span>
+</td>
+<td>25</td>
+<td class="show-for-medium-up">
+<a href="tag/Moyen?lang=ru" title="Moyen : Troisi&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3   difficulte3a" style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_6forum" title="Профиль просмотра koma" href="/koma?lang=ru">koma</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note5.svg?1640086090" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">6 Декабрь 2011</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/Twisted-secret" title="&#1052;&#1077;&#1088;&#1089;&#1077;&#1085; &#1058;&#1074;&#1080;&#1089;&#1090;&#1077;&#1088;">Twisted secret</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 1%; background-color: #ff4b4b;">1%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=2178&amp;lang=ru" title="Кто это подтвердил?">507</a>
+</span>
+</td>
+<td>25</td>
+<td class="show-for-medium-up">
+<a href="tag/Moyen?lang=ru" title="Moyen : Troisi&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3   difficulte3a" style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_6forum" title="Профиль просмотра NonStandardModel" href="/NonStandardModel?lang=ru">NonStandardModel</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note5.svg?1640086090" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">14 Август 2020</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/Initialisation-Vector" title="&#1042;&#1077;&#1082;&#1090;&#1086;&#1088; &#1080;&#1085;&#1080;&#1094;&#1080;&#1072;&#1083;&#1080;&#1079;&#1072;&#1094;&#1080;&#1080; &#1087;&#1086;&#1090;&#1077;&#1088;&#1103;&#1085;...">Initialisation Vector</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 1%; background-color: #ff4b4b;">1%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=868&amp;lang=ru" title="Кто это подтвердил?">2275</a>
+</span>
+</td>
+<td>25</td>
+<td class="show-for-medium-up">
+<a href="tag/Moyen?lang=ru" title="Moyen : Troisi&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3   difficulte3a" style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_6forum" title="Профиль просмотра manticore" href="/manticore?lang=ru">manticore</a> ,  
+<a class="txt_6forum" title="Профиль просмотра notfound404" href="/notfound?lang=ru">notfound404</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note5.svg?1640086090" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">25 Август 2015</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/Hill-Cipher" title="&#1041;&#1077;&#1085;&#1085;&#1080; &#1077;&#1089;&#1090;&#1100; &#1085;&#1072; &#1095;&#1090;&#1086; &#1088;&#1072;&#1074;&#1085;&#1103;&#1090;&#1100;&#1089;&#1103;!">Hill Cipher</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 1%; background-color: #ff4b4b;">1%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=1411&amp;lang=ru" title="Кто это подтвердил?">217</a>
+</span>
+</td>
+<td>30</td>
+<td class="show-for-medium-up">
+<a href="tag/Moyen?lang=ru" title="Moyen : Troisi&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3   difficulte3a" style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_6forum" title="Профиль просмотра LetMeR00t" href="/LetMeR00t?lang=ru">LetMeR00t</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note5.svg?1640086090" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">21 Март 2023</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/GEDEFU" title="2 &#1080;&#1102;&#1085;&#1103; 1918 &#1075;&#1086;&#1076;&#1072; &#1086;&#1085; &#1088;&#1072;&#1089;&#1096;&#1080;&#1092;&#1088;&#1086;&#1074;&#1099;&#1074;&#1072;&#1077;&#1090; &#1074;&#1072;&#1078;&#1085;&#1086;&#1077; &#1087;&#1086;&#1089;&#1083;&#1072;&#1085;&#1080;&#1077; &#1086; &#1087;&#1086;&#1073;&#1077;&#1076;&#1077; &#1074; &#1055;&#1077;&#1088;&#1074;&#1086;&#1081; &#1084;&#1080;&#1088;&#1086;&#1074;&#1086;&#1081; &#1074;&#1086;&#1081;&#1085;&#1077;.">GEDEFU</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 1%; background-color: #ff4b4b;">1%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=949&amp;lang=ru" title="Кто это подтвердил?">577</a>
+</span>
+</td>
+<td>30</td>
+<td class="show-for-medium-up">
+<a href="tag/Moyen?lang=ru" title="Moyen : Troisi&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3   difficulte3a" style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_1comite" title="Профиль просмотра makhno" href="/makhno?lang=ru">makhno</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note4.svg?1640086082" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">13 Сентябрь 2016</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/OTP-Implementation-error" title="&#1048;&#1085;&#1086;&#1075;&#1076;&#1072; &#1086;&#1090;&#1089;&#1091;&#1090;&#1089;&#1090;&#1074;&#1080;&#1077; &#1080;&#1085;&#1092;&#1086;&#1088;&#1084;&#1072;&#1094;&#1080;&#1080; &#1089;&#1072;&#1084;&#1086; &#1087;&#1086; &#1089;&#1077;&#1073;&#1077; &#1103;&#1074;&#1083;&#1103;&#1077;&#1090;&#1089;&#1103; &#1080;&#1085;&#1092;&#1086;&#1088;&#1084;&#1072;&#1094;&#1080;&#1077;&#1081;">OTP - Implementation error</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 1%; background-color: #ff4b4b;">1%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=2850&amp;lang=ru" title="Кто это подтвердил?">469</a>
+</span>
+</td>
+<td>30</td>
+<td class="show-for-medium-up">
+<a href="tag/Moyen?lang=ru" title="Moyen : Troisi&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3   difficulte3a" style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_1comite" title="Профиль просмотра Podalirius" href="/Podalirius?lang=ru">Podalirius</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note5.svg?1640086090" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">22 Март 2021</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/RSA-Corrupted-key-1" title="&#1063;&#1072;&#1089;&#1090;&#1085;&#1099;&#1081; &#1101;&#1082;&#1089;&#1087;&#1086;&#1085;&#1077;&#1085;&#1090;">RSA - Corrupted key 1</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 1%; background-color: #ff4b4b;">1%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=1520&amp;lang=ru" title="Кто это подтвердил?">446</a>
+</span>
+</td>
+<td>30</td>
+<td class="show-for-medium-up">
+<a href="tag/Moyen?lang=ru" title="Moyen : Troisi&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3   difficulte3a" style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_5pre" title="Профиль просмотра blackndoor" href="/blackndoor?lang=ru">blackndoor</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note4.svg?1640086082" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">28 Ноябрь 2017</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/RSA-Continued-fractions" title="&#1047;&#1072;&#1082;&#1088;&#1099;&#1090;&#1099;&#1081; &#1082;&#1083;&#1102;&#1095;">RSA - Continued fractions</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 1%; background-color: #ff4b4b;">1%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=945&amp;lang=ru" title="Кто это подтвердил?">1503</a>
+</span>
+</td>
+<td>30</td>
+<td class="show-for-medium-up">
+<a href="tag/Moyen?lang=ru" title="Moyen : Troisi&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3   difficulte3a" style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_1comite" title="Профиль просмотра sambecks" href="/sambecks?lang=ru">sambecks</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note5.svg?1640086090" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">8 Сентябрь 2015</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/RSA-Common-modulus" title="&#1072;&#1088;&#1080;&#1092;&#1084;&#1077;&#1090;&#1080;&#1095;&#1077;&#1089;&#1082;&#1072;&#1103; &#1089;&#1080;&#1083;&#1072;">RSA - Common modulus</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 1%; background-color: #ff4b4b;">1%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=1310&amp;lang=ru" title="Кто это подтвердил?">2053</a>
+</span>
+</td>
+<td>30</td>
+<td class="show-for-medium-up">
+<a href="tag/Moyen?lang=ru" title="Moyen : Troisi&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3   difficulte3a" style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_1comite" title="Профиль просмотра franb" href="/franb?lang=ru">franb</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note5.svg?1640086090" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">24 Декабрь 2016</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/Service-Hash-length-extension-attack" title="H(&#1082;&#1083;&#1102;&#1095;&#1077;&#1074;&#1086;&#1077; &#1089;&#1086;&#1086;&#1073;&#1097;&#1077;&#1085;&#1080;&#1077; &#8741;)">Service - Hash length extension attack</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 1%; background-color: #ff4b4b;">1%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=356&amp;lang=ru" title="Кто это подтвердил?">1187</a>
+</span>
+</td>
+<td>30</td>
+<td class="show-for-medium-up">
+<a href="tag/Moyen?lang=ru" title="Moyen : Troisi&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3   difficulte3a" style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_6forum" title="Профиль просмотра koma" href="/koma?lang=ru">koma</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note5.svg?1640086090" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">19 Август 2015</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/Shamir-Secret-Sharing-Introduction" title="&#1044;&#1072; &#1079;&#1076;&#1088;&#1072;&#1074;&#1089;&#1090;&#1074;&#1091;&#1102;&#1090; &#1092;&#1088;&#1072;&#1085;&#1094;&#1091;&#1079;&#1089;&#1082;&#1080;&#1077; &#1084;&#1072;&#1090;&#1077;&#1084;&#1072;&#1090;&#1080;&#1082;&#1080;.">Shamir Secret Sharing - Introduction</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 1%; background-color: #ff4b4b;">1%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=4410&amp;lang=ru" title="Кто это подтвердил?">342</a>
+</span>
+</td>
+<td>30</td>
+<td class="show-for-medium-up">
+<a href="tag/Moyen?lang=ru" title="Moyen : Troisi&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3   difficulte3a" style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_5pre" title="Профиль просмотра Vozec" href="/Vozec?lang=ru">Vozec</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note4.svg?1640086082" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">5 Февраль 2024</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/AES-4-Rounds" title="&#1050;&#1083;&#1072;&#1089;&#1089;&#1080;&#1095;&#1077;&#1089;&#1082;&#1072;&#1103; &#1072;&#1090;&#1072;&#1082;&#1072; &#1085;&#1072; AES-128 &#1091;&#1084;&#1077;&#1085;&#1100;&#1096;&#1077;&#1085;&#1072; &#1076;&#1086; 4 &#1074;&#1099;&#1089;&#1090;&#1088;&#1077;&#1083;&#1086;&#1074;.">AES - 4 Rounds</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 1%; background-color: #ff4b4b;">1%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=1844&amp;lang=ru" title="Кто это подтвердил?">362</a>
+</span>
+</td>
+<td>35</td>
+<td class="show-for-medium-up">
+<a href="tag/Moyen?lang=ru" title="Moyen : Troisi&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3   difficulte3a" style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_5pre" title="Профиль просмотра Cryptanalyse" href="/Cryptanalyse?lang=ru">Cryptanalyse</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note5.svg?1640086090" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">5 Сентябрь 2018</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/ECDSA-Introduction" title="&#1054;&#1073;&#1099;&#1095;&#1085;&#1072;&#1103; &#1072;&#1090;&#1072;&#1082;&#1072; &#1085;&#1072; ECDSA">ECDSA - Introduction</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 1%; background-color: #ff4b4b;">1%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=2073&amp;lang=ru" title="Кто это подтвердил?">330</a>
+</span>
+</td>
+<td>35</td>
+<td class="show-for-medium-up">
+<a href="tag/Moyen?lang=ru" title="Moyen : Troisi&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3   difficulte3a" style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_6forum" title="Профиль просмотра Jrmbt" href="/Jrmbt?lang=ru">Jrmbt</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note5.svg?1640086090" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">22 Сентябрь 2019</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/ElGamal-Fault-attack-Introduction" title="&#1053;&#1077;&#1084;&#1085;&#1086;&#1075;&#1086; &#1087;&#1086;&#1096;&#1072;&#1083;&#1080;&#1090;&#1100;.">ElGamal - Fault attack (Introduction)</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 1%; background-color: #ff4b4b;">1%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=4589&amp;lang=ru" title="Кто это подтвердил?">19</a>
+</span>
+</td>
+<td>35</td>
+<td class="show-for-medium-up">
+<a href="tag/Moyen?lang=ru" title="Moyen : Troisi&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3   difficulte3a" style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_5pre" title="Профиль просмотра Vozec" href="/Vozec?lang=ru">Vozec</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note4.svg?1640086082" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">13 Декабрь 2024</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/RSA-Padding" title="PKCS#1 v1.5 - &#1057;&#1042;&#1054;&#1049;&#1057;&#1058;&#1042;&#1048;&#1045;">RSA - Padding</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 1%; background-color: #ff4b4b;">1%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=1056&amp;lang=ru" title="Кто это подтвердил?">293</a>
+</span>
+</td>
+<td>35</td>
+<td class="show-for-medium-up">
+<a href="tag/Moyen?lang=ru" title="Moyen : Troisi&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3   difficulte3a" style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_6forum" title="Профиль просмотра Tosh" href="/Tosh?lang=ru">Tosh</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note4.svg?1640086082" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">9 Октябрь 2016</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/RSA-Signature" title="&#1042;&#1087;&#1077;&#1088;&#1077;&#1076;!">RSA - Signature</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 1%; background-color: #ff4b4b;">1%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=1639&amp;lang=ru" title="Кто это подтвердил?">200</a>
+</span>
+</td>
+<td>35</td>
+<td class="show-for-medium-up">
+<a href="tag/Moyen?lang=ru" title="Moyen : Troisi&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3   difficulte3a" style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_6forum" title="Профиль просмотра sar" href="/s4r?lang=ru">sar</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note5.svg?1640086090" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">9 Март 2020</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/Shamir-Secret-Sharing-Traitor" title="&#1044;&#1077;&#1083;&#1100;&#1090;&#1072; &#1076;&#1083;&#1103; &#1089;&#1086;&#1082;&#1088;&#1086;&#1074;&#1080;&#1097;">Shamir Secret Sharing - Traitor</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 1%; background-color: #ff4b4b;">1%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=4411&amp;lang=ru" title="Кто это подтвердил?">94</a>
+</span>
+</td>
+<td>35</td>
+<td class="show-for-medium-up">
+<a href="tag/Moyen?lang=ru" title="Moyen : Troisi&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3   difficulte3a" style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_5pre" title="Профиль просмотра Vozec" href="/Vozec?lang=ru">Vozec</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note5.svg?1640086090" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">5 Февраль 2024</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/AES128-CTR" title="&#1064;&#1080;&#1092;&#1088;&#1086;&#1074;&#1072;&#1085;&#1080;&#1077; &#1089; &#1087;&#1086;&#1084;&#1086;&#1097;&#1100;&#1102; &#1088;&#1077;&#1078;&#1080;&#1084;&#1072; CTR">AES128 - CTR</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 1%; background-color: #ff4b4b;">1%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=905&amp;lang=ru" title="Кто это подтвердил?">725</a>
+</span>
+</td>
+<td>40</td>
+<td class="show-for-medium-up">
+<a href="tag/Moyen?lang=ru" title="Moyen : Troisi&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3   difficulte3a" style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_6forum" title="Профиль просмотра Tosh" href="/Tosh?lang=ru">Tosh</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note5.svg?1640086090" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">28 Август 2015</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/PHP-mt_rand" title="&#1047;&#1072;&#1087;&#1088;&#1086;&#1089; - &#1041;&#1083;&#1080;&#1079;&#1085;&#1077;&#1094;&#1099;">PHP - mt_rand</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 1%; background-color: #ff4b4b;">1%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=2864&amp;lang=ru" title="Кто это подтвердил?">166</a>
+</span>
+</td>
+<td>40</td>
+<td class="show-for-medium-up">
+<a href="tag/Moyen?lang=ru" title="Moyen : Troisi&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3   difficulte3a" style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_6forum" title="Профиль просмотра NonStandardModel" href="/NonStandardModel?lang=ru">NonStandardModel</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note4.svg?1640086082" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">28 Март 2022</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/Discrete-logarithm-problem" title="&#1050;&#1072;&#1082;&#1086;&#1077; &#1082;&#1088;&#1072;&#1089;&#1080;&#1074;&#1086;&#1077; &#1091;&#1088;&#1072;&#1074;&#1085;&#1077;&#1085;&#1080;&#1077;">Discrete logarithm problem</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 1%; background-color: #ff4b4b;">1%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=393&amp;lang=ru" title="Кто это подтвердил?">1311</a>
+</span>
+</td>
+<td>40</td>
+<td class="show-for-medium-up">
+<a href="tag/Moyen?lang=ru" title="Moyen : Troisi&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3   difficulte3a" style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_6forum" title="Профиль просмотра RFC4949" href="/RFC4949?lang=ru">RFC4949</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note4.svg?1640086082" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">8 Июнь 2014</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/RSA-Corrupted-key-2" title="&#1044;&#1072;&#1078;&#1077; &#1089; &#1084;&#1077;&#1085;&#1100;&#1096;&#1080;&#1084;, &#1090;&#1099; &#1089;&#1084;&#1086;&#1078;&#1077;&#1096;&#1100; &#1101;&#1090;&#1086; &#1089;&#1076;&#1077;&#1083;&#1072;&#1090;&#1100;!">RSA - Corrupted key 2</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 1%; background-color: #ff4b4b;">1%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=1673&amp;lang=ru" title="Кто это подтвердил?">323</a>
+</span>
+</td>
+<td>40</td>
+<td class="show-for-medium-up">
+<a href="tag/Moyen?lang=ru" title="Moyen : Troisi&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3   difficulte3a" style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_5pre" title="Профиль просмотра blackndoor" href="/blackndoor?lang=ru">blackndoor</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note4.svg?1640086082" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">11 Январь 2018</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/RSA-Corrupted-key-3" title="&#1058;&#1072;&#1082; &#1084;&#1072;&#1083;&#1086; &#1080; &#1090;&#1072;&#1082; &#1084;&#1085;&#1086;&#1075;&#1086;">RSA - Corrupted key 3</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 1%; background-color: #ff4b4b;">1%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=1674&amp;lang=ru" title="Кто это подтвердил?">188</a>
+</span>
+</td>
+<td>40</td>
+<td class="show-for-medium-up">
+<a href="tag/Moyen?lang=ru" title="Moyen : Troisi&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3   difficulte3a" style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_5pre" title="Профиль просмотра blackndoor" href="/blackndoor?lang=ru">blackndoor</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note5.svg?1640086090" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">5 Сентябрь 2019</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/RSA-Multiple-recipients" title="&#1082;&#1080;&#1090;&#1072;&#1077;&#1094;!">RSA - Multiple recipients</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 1%; background-color: #ff4b4b;">1%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=962&amp;lang=ru" title="Кто это подтвердил?">1651</a>
+</span>
+</td>
+<td>40</td>
+<td class="show-for-medium-up">
+<a href="tag/Moyen?lang=ru" title="Moyen : Troisi&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3   difficulte3a" style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_1comite" title="Профиль просмотра franb" href="/franb?lang=ru">franb</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note5.svg?1640086090" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">29 Ноябрь 2015</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/AES-Fault-attack-1" title="&#1042;&#1086;&#1089;&#1089;&#1090;&#1072;&#1085;&#1086;&#1074;&#1083;&#1077;&#1085;&#1080;&#1077; &#1082;&#1083;&#1102;&#1095;&#1072; &#1089; &#1087;&#1086;&#1084;&#1086;&#1097;&#1100;&#1102; &#1080;&#1084;&#1080;&#1090;&#1072;&#1094;&#1080;&#1086;&#1085;&#1085;&#1086;&#1081; &#1072;&#1090;&#1072;&#1082;&#1080; &#1085;&#1072; &#1085;&#1077;&#1080;&#1089;&#1087;&#1088;&#1072;&#1074;&#1085;&#1086;&#1089;&#1090;&#1100;">AES - Fault attack #1</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 1%; background-color: #ff4b4b;">1%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=1858&amp;lang=ru" title="Кто это подтвердил?">194</a>
+</span>
+</td>
+<td>50</td>
+<td class="show-for-medium-up">
+<a href="tag/Moyen?lang=ru" title="Moyen : Troisi&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3   difficulte3a" style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_5pre" title="Профиль просмотра Cryptanalyse" href="/Cryptanalyse?lang=ru">Cryptanalyse</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note5.svg?1640086090" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">20 Сентябрь 2018</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/FEAL-Differential-Cryptanalysis" title="&#1040;&#1090;&#1072;&#1082;&#1072; &#1087;&#1086; &#1074;&#1099;&#1073;&#1088;&#1072;&#1085;&#1085;&#1086;&#1084;&#1091; &#1086;&#1090;&#1082;&#1088;&#1099;&#1090;&#1086;&#1084;&#1091; &#1090;&#1077;&#1082;&#1089;&#1090;&#1091;">FEAL - Differential Cryptanalysis</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 1%; background-color: #ff4b4b;">1%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=1803&amp;lang=ru" title="Кто это подтвердил?">48</a>
+</span>
+</td>
+<td>50</td>
+<td class="show-for-medium-up">
+<a href="tag/Difficile?lang=ru" title="Difficile : Quatri&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3 " style="height: 0.6rem;"></span><span class="difficulte difficulte4   difficulte4a" style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_6forum" title="Профиль просмотра Tosh" href="/Tosh?lang=ru">Tosh</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note4.svg?1640086082" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">28 Март 2022</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/Goldreich-Goldwasser-Halevi-Weak-Parameter" title="&#1058;&#1072;&#1082; &#1073;&#1083;&#1080;&#1079;&#1082;&#1086;">Goldreich Goldwasser Halevi | Weak Parameter</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 1%; background-color: #ff4b4b;">1%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=4708&amp;lang=ru" title="Кто это подтвердил?">11</a>
+</span>
+</td>
+<td>50</td>
+<td class="show-for-medium-up">
+<a href="tag/Difficile?lang=ru" title="Difficile : Quatri&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3 " style="height: 0.6rem;"></span><span class="difficulte difficulte4   difficulte4a" style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_5pre" title="Профиль просмотра Vozec" href="/Vozec?lang=ru">Vozec</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note4.svg?1640086082" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">13 Декабрь 2024</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/Enigma-Machine" title="&#1074;&#1090;&#1086;&#1088;&#1072;&#1103; &#1084;&#1080;&#1088;&#1086;&#1074;&#1072;&#1103; &#1074;&#1086;&#1081;&#1085;&#1072;">Enigma Machine</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 1%; background-color: #ff4b4b;">1%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=906&amp;lang=ru" title="Кто это подтвердил?">266</a>
+</span>
+</td>
+<td>50</td>
+<td class="show-for-medium-up">
+<a href="tag/Moyen?lang=ru" title="Moyen : Troisi&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3   difficulte3a" style="height: 0.6rem;"></span><span class="difficulte difficulte4 " style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_6forum" title="Профиль просмотра peyman" href="/peyman?lang=ru">peyman</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note4.svg?1640086082" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">12 Октябрь 2016</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/Side-Channel-AES-CPA" title="CPA &#1088;&#1072;&#1091;&#1085;&#1076; 1">Side Channel - AES : CPA</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 1%; background-color: #ff4b4b;">1%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=2853&amp;lang=ru" title="Кто это подтвердил?">87</a>
+</span>
+</td>
+<td>50</td>
+<td class="show-for-medium-up">
+<a href="tag/Difficile?lang=ru" title="Difficile : Quatri&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3 " style="height: 0.6rem;"></span><span class="difficulte difficulte4   difficulte4a" style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_6forum" title="Профиль просмотра cb34" href="/cb34?lang=ru">cb34</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note4.svg?1640086082" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">28 Март 2022</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/ECDHE" title="&#1054;&#1073;&#1084;&#1077;&#1085; &#1082;&#1083;&#1102;&#1095;&#1072;&#1084;&#1080; &#1044;&#1080;&#1092;&#1092;&#1080;-&#1061;&#1077;&#1083;&#1083;&#1084;&#1072;&#1085; &#1085;&#1072; &#1101;&#1083;&#1083;&#1080;&#1087;&#1090;&#1080;&#1095;&#1077;&#1089;&#1082;&#1080;&#1093; &#1082;&#1088;&#1080;&#1074;&#1099;&#1093;">ECDHE</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 1%; background-color: #ff4b4b;">1%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=1366&amp;lang=ru" title="Кто это подтвердил?">245</a>
+</span>
+</td>
+<td>60</td>
+<td class="show-for-medium-up">
+<a href="tag/Difficile?lang=ru" title="Difficile : Quatri&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3 " style="height: 0.6rem;"></span><span class="difficulte difficulte4   difficulte4a" style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_6forum" title="Профиль просмотра Tosh" href="/Tosh?lang=ru">Tosh</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note5.svg?1640086090" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">20 Ноябрь 2016</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/NTRU-Multiple-Transmission" title="&#1050;&#1088;&#1072;&#1089;&#1080;&#1074;&#1072;&#1103; &#1087;&#1086;&#1089;&#1090;&#1086;&#1103;&#1085;&#1085;&#1072;&#1103; ...">NTRU | Multiple Transmission</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 1%; background-color: #ff4b4b;">1%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=4413&amp;lang=ru" title="Кто это подтвердил?">22</a>
+</span>
+</td>
+<td>60</td>
+<td class="show-for-medium-up">
+<a href="tag/Difficile?lang=ru" title="Difficile : Quatri&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3 " style="height: 0.6rem;"></span><span class="difficulte difficulte4   difficulte4a" style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_5pre" title="Профиль просмотра Vozec" href="/Vozec?lang=ru">Vozec</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note5.svg?1640086090" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">13 Декабрь 2024</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/NTRU-Weak-Parameter" title="BKZ">NTRU | Weak Parameter</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 1%; background-color: #ff4b4b;">1%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=4414&amp;lang=ru" title="Кто это подтвердил?">10</a>
+</span>
+</td>
+<td>60</td>
+<td class="show-for-medium-up">
+<a href="tag/Difficile?lang=ru" title="Difficile : Quatri&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3 " style="height: 0.6rem;"></span><span class="difficulte difficulte4   difficulte4a" style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_5pre" title="Профиль просмотра Vozec" href="/Vozec?lang=ru">Vozec</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note4.svg?1640086082" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">13 Декабрь 2024</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/RSA-H-rabin" title="&#1055;&#1088;&#1086;&#1082;&#1083;&#1103;&#1090;&#1099;&#1081; &#1101;&#1082;&#1089;&#1087;&#1086;&#1085;&#1077;&#1085;&#1090;!">RSA - H-rabin</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 1%; background-color: #ff4b4b;">1%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=4154&amp;lang=ru" title="Кто это подтвердил?">88</a>
+</span>
+</td>
+<td>60</td>
+<td class="show-for-medium-up">
+<a href="tag/Difficile?lang=ru" title="Difficile : Quatri&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3 " style="height: 0.6rem;"></span><span class="difficulte difficulte4   difficulte4a" style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_5pre" title="Профиль просмотра Vozec" href="/Vozec?lang=ru">Vozec</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note5.svg?1640086090" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">21 Март 2023</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/RSA-Lee-cooper" title="&#1057;&#1072;&#1084;&#1099;&#1081; &#1082;&#1086;&#1088;&#1086;&#1090;&#1082;&#1080;&#1081; &#1087;&#1091;&#1090;&#1100;">RSA - Lee cooper</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 1%; background-color: #ff4b4b;">1%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=1669&amp;lang=ru" title="Кто это подтвердил?">164</a>
+</span>
+</td>
+<td>60</td>
+<td class="show-for-medium-up">
+<a href="tag/Difficile?lang=ru" title="Difficile : Quatri&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3 " style="height: 0.6rem;"></span><span class="difficulte difficulte4   difficulte4a" style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_5pre" title="Профиль просмотра blackndoor" href="/blackndoor?lang=ru">blackndoor</a> ,  
+<a class="txt_6forum" title="Профиль просмотра Synacktiv" href="/Synacktiv?lang=ru">Synacktiv</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note5.svg?1640086090" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">7 Ноябрь 2019</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/Service-CBC-Padding" title="&#1053;&#1077; &#1077;&#1079;&#1076;&#1080; &#1089;&#1083;&#1080;&#1096;&#1082;&#1086;&#1084; &#1073;&#1099;&#1089;&#1090;&#1088;&#1086;.">Service - CBC Padding</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 1%; background-color: #ff4b4b;">1%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=267&amp;lang=ru" title="Кто это подтвердил?">1373</a>
+</span>
+</td>
+<td>60</td>
+<td class="show-for-medium-up">
+<a href="tag/Difficile?lang=ru" title="Difficile : Quatri&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3 " style="height: 0.6rem;"></span><span class="difficulte difficulte4   difficulte4a" style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_6forum" title="Профиль просмотра koma" href="/koma?lang=ru">koma</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note5.svg?1640086090" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">4 Октябрь 2012</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/Side-Channel-AES-first-round" title="&#1048; &#1074;&#1089;&#1077; &#1101;&#1090;&#1086; &#1074;&#1086; &#1074;&#1088;&#1077;&#1084;&#1103; &#1085;&#1086;&#1095;&#1085;&#1086;&#1081; &#1087;&#1088;&#1086;&#1075;&#1091;&#1083;&#1082;&#1080; &#1089; &#1074;&#1072;&#1096;&#1080;&#1084; &#1076;&#1088;&#1091;&#1075;&#1086;&#1084; Rijndael...">Side Channel - AES : first round</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 1%; background-color: #ff4b4b;">1%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=2959&amp;lang=ru" title="Кто это подтвердил?">88</a>
+</span>
+</td>
+<td>60</td>
+<td class="show-for-medium-up">
+<a href="tag/Difficile?lang=ru" title="Difficile : Quatri&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3 " style="height: 0.6rem;"></span><span class="difficulte difficulte4   difficulte4a" style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_6forum" title="Профиль просмотра walafc0" href="/walafc0?lang=ru">walafc0</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note5.svg?1640086090" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">28 Март 2022</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/Polyalphabetic-substitution-One-Time-Pad" title="&#1048;&#1076;&#1077;&#1072;&#1083;&#1100;&#1085;&#1099;&#1081; &#1096;&#1080;&#1092;&#1088;, &#1090;&#1086;&#1083;&#1100;&#1082;&#1086; &#1077;&#1089;&#1083;&#1080;...">Polyalphabetic substitution - One Time Pad</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 1%; background-color: #ff4b4b;">1%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=349&amp;lang=ru" title="Кто это подтвердил?">382</a>
+</span>
+</td>
+<td>60</td>
+<td class="show-for-medium-up">
+<a href="tag/Difficile?lang=ru" title="Difficile : Quatri&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3 " style="height: 0.6rem;"></span><span class="difficulte difficulte4   difficulte4a" style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_6forum" title="Профиль просмотра Thanat0s" href="/Thanat0s?lang=ru">Thanat0s</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note2.svg?1640086068" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">2 Июнь 2013</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/White-Box-Cryptography" title="&#1054;&#1073;&#1088;&#1072;&#1090;&#1085;&#1099;&#1081; &#1087;&#1080;&#1090;&#1086;&#1085;">White-Box Cryptography</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 1%; background-color: #ff4b4b;">1%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=1854&amp;lang=ru" title="Кто это подтвердил?">248</a>
+</span>
+</td>
+<td>60</td>
+<td class="show-for-medium-up">
+<a href="tag/Difficile?lang=ru" title="Difficile : Quatri&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3 " style="height: 0.6rem;"></span><span class="difficulte difficulte4   difficulte4a" style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_5pre" title="Профиль просмотра Cryptanalyse" href="/Cryptanalyse?lang=ru">Cryptanalyse</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note5.svg?1640086090" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">21 Октябрь 2018</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/AES-Weaker-variant" title="&#1042;&#1089;&#1077; &#1101;&#1083;&#1077;&#1084;&#1077;&#1085;&#1090;&#1072;&#1088;&#1085;&#1099;&#1077; &#1087;&#1088;&#1077;&#1086;&#1073;&#1088;&#1072;&#1079;&#1086;&#1074;&#1072;&#1085;&#1080;&#1103; &#1087;&#1086;&#1083;&#1077;&#1079;&#1085;&#1099;">AES - Weaker variant</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 1%; background-color: #ff4b4b;">1%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=1832&amp;lang=ru" title="Кто это подтвердил?">147</a>
+</span>
+</td>
+<td>70</td>
+<td class="show-for-medium-up">
+<a href="tag/Difficile?lang=ru" title="Difficile : Quatri&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3 " style="height: 0.6rem;"></span><span class="difficulte difficulte4   difficulte4a" style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_5pre" title="Профиль просмотра Cryptanalyse" href="/Cryptanalyse?lang=ru">Cryptanalyse</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note4.svg?1640086082" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">29 Август 2018</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/Shamir-Secret-Sharing-Reduction" title="3*L">Shamir Secret Sharing - Reduction</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 1%; background-color: #ff4b4b;">1%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=4412&amp;lang=ru" title="Кто это подтвердил?">48</a>
+</span>
+</td>
+<td>70</td>
+<td class="show-for-medium-up">
+<a href="tag/Difficile?lang=ru" title="Difficile : Quatri&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3 " style="height: 0.6rem;"></span><span class="difficulte difficulte4   difficulte4a" style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_5pre" title="Профиль просмотра Vozec" href="/Vozec?lang=ru">Vozec</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note5.svg?1640086090" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">5 Февраль 2024</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/Hash-SHA-3" title="&#1054;&#1073;&#1088;&#1072;&#1090;&#1085;&#1099;&#1081; &#1072;&#1083;&#1075;&#1086;&#1088;&#1080;&#1090;&#1084; &#1050;&#1077;&#1082;&#1095;&#1072;&#1082;&#1072;.">Hash - SHA-3</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 1%; background-color: #ff4b4b;">1%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=1380&amp;lang=ru" title="Кто это подтвердил?">162</a>
+</span>
+</td>
+<td>75</td>
+<td class="show-for-medium-up">
+<a href="tag/Difficile?lang=ru" title="Difficile : Quatri&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3 " style="height: 0.6rem;"></span><span class="difficulte difficulte4   difficulte4a" style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_6forum" title="Профиль просмотра Revenger" href="/Revenger?lang=ru">Revenger</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note5.svg?1640086090" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">10 Декабрь 2016</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/AES-Fault-attack-2" title="&#1042;&#1086;&#1089;&#1089;&#1090;&#1072;&#1085;&#1086;&#1074;&#1080;&#1090;&#1100; &#1082;&#1083;&#1102;&#1095; &#1087;&#1086;&#1089;&#1083;&#1077; &#1080;&#1084;&#1080;&#1090;&#1072;&#1094;&#1080;&#1080; &#1072;&#1090;&#1072;&#1082;&#1080; &#1085;&#1072; &#1085;&#1077;&#1080;&#1089;&#1087;&#1088;&#1072;&#1074;&#1085;&#1086;&#1089;&#1090;&#1100;.">AES - Fault attack #2</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 1%; background-color: #ff4b4b;">1%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=1886&amp;lang=ru" title="Кто это подтвердил?">140</a>
+</span>
+</td>
+<td>80</td>
+<td class="show-for-medium-up">
+<a href="tag/Difficile?lang=ru" title="Difficile : Quatri&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3 " style="height: 0.6rem;"></span><span class="difficulte difficulte4   difficulte4a" style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_5pre" title="Профиль просмотра Cryptanalyse" href="/Cryptanalyse?lang=ru">Cryptanalyse</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note5.svg?1640086090" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">20 Сентябрь 2018</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/Shamir-Secret-Sharing-Irreducible" title="2 * L + L">Shamir Secret Sharing - Irreducible ?</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 1%; background-color: #ff4b4b;">1%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=4415&amp;lang=ru" title="Кто это подтвердил?">31</a>
+</span>
+</td>
+<td>90</td>
+<td class="show-for-medium-up">
+<a href="tag/Difficile?lang=ru" title="Difficile : Quatri&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3 " style="height: 0.6rem;"></span><span class="difficulte difficulte4   difficulte4a" style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_5pre" title="Профиль просмотра Mister7F" href="/Mister7F?lang=ru">Mister7F</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note5.svg?1640086090" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">5 Февраль 2024</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/AES-PMAC" title="&#1055;&#1086;&#1076;&#1076;&#1077;&#1083;&#1100;&#1085;&#1072;&#1103; &#1072;&#1090;&#1072;&#1082;&#1072; &#1085;&#1072; &#1101;&#1092;&#1092;&#1077;&#1082;&#1090;&#1080;&#1074;&#1085;&#1086;&#1077; &#1074;&#1085;&#1077;&#1076;&#1088;&#1077;&#1085;&#1080;&#1077; AES-PMAC.">AES-PMAC</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 1%; background-color: #ff4b4b;">1%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=1973&amp;lang=ru" title="Кто это подтвердил?">39</a>
+</span>
+</td>
+<td>100</td>
+<td class="show-for-medium-up">
+<a href="tag/Difficile?lang=ru" title="Difficile : Quatri&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3 " style="height: 0.6rem;"></span><span class="difficulte difficulte4   difficulte4a" style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_5pre" title="Профиль просмотра Cryptanalyse" href="/Cryptanalyse?lang=ru">Cryptanalyse</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note4.svg?1640086082" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">26 Май 2019</td>
+</tr>
+<tr>
+<td>
+<img class="vmiddle" src="squelettes/img/pas_valide.svg" width="12" height="12" alt="pas_valide" />
+</td>
+<td class="text-left">
+<a href="ru/Zadachi-i-problemy/Kriptoanaliz/ECDSA-Implementation-error" title="&#1069;&#1090;&#1086; &#1089;&#1083;&#1091;&#1095;&#1072;&#1081;&#1085;&#1086;...">ECDSA - Implementation error</a>
+</td>
+<td class="hide-for-small-only text-left">
+<span class="gras left text-left" style="display: inline-block; border-radius: 5px; padding: 2px; width: 1%; background-color: #ff4b4b;">1%</span>
+<span class="right">
+<a class="txs gris mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=inclusions%2Fqui_a_valid&amp;id_r=18&amp;id_c=2032&amp;lang=ru" title="Кто это подтвердил?">66</a>
+</span>
+</td>
+<td>100</td>
+<td class="show-for-medium-up">
+<a href="tag/Difficile?lang=ru" title="Difficile : Quatri&#232;me niveau des challenges"><span class="difficulte difficulte1 " style="height: 0.2rem;"></span><span class="difficulte difficulte2 " style="height: 0.4rem;"></span><span class="difficulte difficulte3 " style="height: 0.6rem;"></span><span class="difficulte difficulte4   difficulte4a" style="height: 0.8rem;"></span><span class="difficulte difficulte36 " style="height: 1rem;"></span></a>
+</td>
+<td class="show-for-large-up">
+<a class="txt_6forum" title="Профиль просмотра Tosh" href="/Tosh?lang=ru">Tosh</a>
+</td>
+<td class="show-for-medium-up"><img src="squelettes/img/note/note5.svg?1640086090" alt="" width="16" height="16" class="note_smiley" /></td>
+<td class="show-for-large-up">0</td>
+<td class="show-for-large-up">29 Сентябрь 2019</td>
+</tr>
+</tbody>
+</table>
+</div><!--ajaxbloc-->                
+</div>
+</div>
+</div>
+</div><!--ajaxbloc-->    
+<div class='ajaxbloc' data-ajax-env='gkgDd8YU53CkfW2o3cTExhgwL0h1G+9n88BsaQPZYYluVFF2T+KrwxfeTT5rpUfO5qjHf9KHXveMKI62noMC5+xMQbWZSHixXePyEaEYq3fbk+BMF+sfT+RasX4PkTbEax2GM0tUtdqat/HnkOd0H+e33UsGPysW2r0F59djjqntg8DvT2ONgUwHR/mvUmkPfYFyJfnxJv6mIODcOaxOTx215B45VObmJgC0ufggIpjKMOPb6vyb8SieTE/2S8fS/YgD8mVz6YKDpa328fpcHdm1HUVn7U4QVzyFEceRDnHnI9fEslRW3XTfZfNGNdEbyyX5/6Sc+FGXskYZ+zEUyS3gA8r2OQ==' data-origin="/ru/Zadachi-i-problemy/Kriptoanaliz/">
+<div  class="small-12 columns"  >
+<div class="tile">
+<div class="t-body tb-padding"  >
+<a id='pagination_dernieres_validations' class='pagination_ancre'></a>
+<h1><img src="squelettes/img/valid.svg" alt="Результаты испытаний" class="vmiddle" width="48" height="48"/>&nbsp;Результаты испытаний</h1>
+<div class="box">
+<table class="text-center mauto" style="width: 100%;">
+<thead>
+<tr class="row_first">
+<td style="width: 20%;">Псевдоним</td>
+<td style="width: 35%;">Событие</td>
+<td class="hide-for-small-only" style="width: 10%;">Язык</td>
+<td class="hide-for-small-only" style="width: 30%;">Дата</td>
+</tr>
+</thead>
+<tbody>
+<tr class="row_even">
+<td><a class=" txt_6forum"  title="Профиль просмотра trap -SIGKILL $1" href="/trap-SIGKILL-1?lang=ru">trap -SIGKILL $1</a></td>
+<td>
+<a href="en/Challenges/Cryptanalysis/" title="Cryptanalysis"><img src='IMG/logo/rubon18.svg?1637496499' alt='Cryptanalysis' width='16' height='16' class='vmiddle' />&nbsp;</a>
+<a href="en/Challenges/Cryptanalysis/Hash-Message-Digest-5" title="Bob found that Ronald Rivest is a terrific cryptanalyst. ">Hash - Message Digest 5</a>
+</td>
+<td class="hide-for-small-only"><img src='squelettes/img/pays/en.svg?1637569714' alt='en' width='16' height='16' /></td>
+<td class="hide-for-small-only">15 Июнь 2025&nbsp;to&nbsp;15:02</td>
+</tr>
+<tr class="row_odd">
+<td><a class=" txt_6forum"  title="Профиль просмотра bassim" href="/bassim?lang=ru">bassim</a></td>
+<td>
+<a href="fr/Challenges/Cryptanalyse/" title="Cryptanalyse"><img src='IMG/logo/rubon18.svg?1637496499' alt='Cryptanalyse' width='16' height='16' class='vmiddle' />&nbsp;</a>
+<a href="fr/Challenges/Cryptanalyse/Chiffrement-par-decalage" title="Retrouvez le mot de passe">Chiffrement par décalage</a>
+</td>
+<td class="hide-for-small-only"><img src='squelettes/img/pays/fr.svg?1594376628' alt='fr' width='16' height='16' /></td>
+<td class="hide-for-small-only">15 Июнь 2025&nbsp;to&nbsp;14:52</td>
+</tr>
+<tr class="row_even">
+<td><a class=" txt_6forum"  title="Профиль просмотра Alexandre GIRARD" href="/Alexandre-GIRARD?lang=ru">Alexandre GIRARD</a></td>
+<td>
+<a href="fr/Challenges/Cryptanalyse/" title="Cryptanalyse"><img src='IMG/logo/rubon18.svg?1637496499' alt='Cryptanalyse' width='16' height='16' class='vmiddle' />&nbsp;</a>
+<a href="fr/Challenges/Cryptanalyse/Circular-Bit-Shift" title="Un m&#233;lim&#233;lo bien ordonn&#233;">Circular Bit Shift</a>
+</td>
+<td class="hide-for-small-only"><img src='squelettes/img/pays/fr.svg?1594376628' alt='fr' width='16' height='16' /></td>
+<td class="hide-for-small-only">15 Июнь 2025&nbsp;to&nbsp;14:22</td>
+</tr>
+<tr class="row_odd">
+<td><a class=" txt_6forum"  title="Профиль просмотра Munto" href="/Munto?lang=ru">Munto</a></td>
+<td>
+<a href="fr/Challenges/Cryptanalyse/" title="Cryptanalyse"><img src='IMG/logo/rubon18.svg?1637496499' alt='Cryptanalyse' width='16' height='16' class='vmiddle' />&nbsp;</a>
+<a href="fr/Challenges/Cryptanalyse/Probleme-du-logarithme-discret" title="Quelle belle d&#233;composition!">Problème du logarithme discret</a>
+</td>
+<td class="hide-for-small-only"><img src='squelettes/img/pays/fr.svg?1594376628' alt='fr' width='16' height='16' /></td>
+<td class="hide-for-small-only">15 Июнь 2025&nbsp;to&nbsp;14:22</td>
+</tr>
+<tr class="row_even">
+<td><a class=" txt_6forum"  title="Профиль просмотра corpsfini" href="/corpsfini?lang=ru">corpsfini</a></td>
+<td>
+<a href="fr/Challenges/Cryptanalyse/" title="Cryptanalyse"><img src='IMG/logo/rubon18.svg?1637496499' alt='Cryptanalyse' width='16' height='16' class='vmiddle' />&nbsp;</a>
+<a href="fr/Challenges/Cryptanalyse/ElGamal-Attaque-par-fautes-Introduction" title="Un petit flip par-ci par-l&#224;">ElGamal - Attaque par fautes (Introduction)</a>
+</td>
+<td class="hide-for-small-only"><img src='squelettes/img/pays/fr.svg?1594376628' alt='fr' width='16' height='16' /></td>
+<td class="hide-for-small-only">15 Июнь 2025&nbsp;to&nbsp;14:09</td>
+</tr>
+<tr class="row_odd">
+<td><a class=" txt_6forum"  title="Профиль просмотра OceaneLLM" href="/OceaneLLM?lang=ru">OceaneLLM</a></td>
+<td>
+<a href="fr/Challenges/Cryptanalyse/" title="Cryptanalyse"><img src='IMG/logo/rubon18.svg?1637496499' alt='Cryptanalyse' width='16' height='16' class='vmiddle' />&nbsp;</a>
+<a href="fr/Challenges/Cryptanalyse/Hash-NT" title="Une r&#232;gle pour les maitriser toutes">Hash - NT</a>
+</td>
+<td class="hide-for-small-only"><img src='squelettes/img/pays/fr.svg?1594376628' alt='fr' width='16' height='16' /></td>
+<td class="hide-for-small-only">15 Июнь 2025&nbsp;to&nbsp;14:03</td>
+</tr>
+<tr class="row_even">
+<td><a class=" txt_6forum"  title="Профиль просмотра amback" href="/amback?lang=ru">amback</a></td>
+<td>
+<a href="en/Challenges/Cryptanalysis/" title="Cryptanalysis"><img src='IMG/logo/rubon18.svg?1637496499' alt='Cryptanalysis' width='16' height='16' class='vmiddle' />&nbsp;</a>
+<a href="en/Challenges/Cryptanalysis/Shift-cipher" title="Recover the password">Shift cipher</a>
+</td>
+<td class="hide-for-small-only"><img src='squelettes/img/pays/en.svg?1637569714' alt='en' width='16' height='16' /></td>
+<td class="hide-for-small-only">15 Июнь 2025&nbsp;to&nbsp;14:00</td>
+</tr>
+<tr class="row_odd">
+<td><a class=" txt_6forum"  title="Профиль просмотра PropHeighT" href="/PropHeighT?lang=ru">PropHeighT</a></td>
+<td>
+<a href="fr/Challenges/Cryptanalyse/" title="Cryptanalyse"><img src='IMG/logo/rubon18.svg?1637496499' alt='Cryptanalyse' width='16' height='16' class='vmiddle' />&nbsp;</a>
+<a href="fr/Challenges/Cryptanalyse/Hash-DCC" title=" ">Hash - DCC</a>
+</td>
+<td class="hide-for-small-only"><img src='squelettes/img/pays/fr.svg?1594376628' alt='fr' width='16' height='16' /></td>
+<td class="hide-for-small-only">15 Июнь 2025&nbsp;to&nbsp;13:59</td>
+</tr>
+<tr class="row_even">
+<td><a class=" txt_6forum"  title="Профиль просмотра AS14520" href="/AS14520?lang=ru">AS14520</a></td>
+<td>
+<a href="fr/Challenges/Cryptanalyse/" title="Cryptanalyse"><img src='IMG/logo/rubon18.svg?1637496499' alt='Cryptanalyse' width='16' height='16' class='vmiddle' />&nbsp;</a>
+<a href="fr/Challenges/Cryptanalyse/Shamir-Secret-Sharing-Introduction" title="Vive les math&#233;maticiens fran&#231;ais.">Shamir Secret Sharing - Introduction </a>
+</td>
+<td class="hide-for-small-only"><img src='squelettes/img/pays/fr.svg?1594376628' alt='fr' width='16' height='16' /></td>
+<td class="hide-for-small-only">15 Июнь 2025&nbsp;to&nbsp;13:52</td>
+</tr>
+<tr class="row_odd">
+<td><a class=" txt_6forum"  title="Профиль просмотра amback" href="/amback?lang=ru">amback</a></td>
+<td>
+<a href="en/Challenges/Cryptanalysis/" title="Cryptanalysis"><img src='IMG/logo/rubon18.svg?1637496499' alt='Cryptanalysis' width='16' height='16' class='vmiddle' />&nbsp;</a>
+<a href="en/Challenges/Cryptanalysis/Hash-SHA-2" title="">Hash - SHA-2</a>
+</td>
+<td class="hide-for-small-only"><img src='squelettes/img/pays/en.svg?1637569714' alt='en' width='16' height='16' /></td>
+<td class="hide-for-small-only">15 Июнь 2025&nbsp;to&nbsp;13:51</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pagination-centered">
+<ul class="pagination">
+<li class="current"><a href='/ru/Zadachi-i-problemy/Kriptoanaliz/?debut_dernieres_validations=0#pagination_dernieres_validations' class='lien_pagination gris' rel='nofollow'>0</a></li>
+<li><a href='/ru/Zadachi-i-problemy/Kriptoanaliz/?debut_dernieres_validations=10#pagination_dernieres_validations' class='lien_pagination gris' rel='nofollow'>10</a></li>
+<li><a href='/ru/Zadachi-i-problemy/Kriptoanaliz/?debut_dernieres_validations=20#pagination_dernieres_validations' class='lien_pagination gris' rel='nofollow'>20</a></li>
+<li><a href='/ru/Zadachi-i-problemy/Kriptoanaliz/?debut_dernieres_validations=30#pagination_dernieres_validations' class='lien_pagination gris' rel='nofollow'>30</a></li>
+<li><a href='/ru/Zadachi-i-problemy/Kriptoanaliz/?debut_dernieres_validations=40#pagination_dernieres_validations' class='lien_pagination gris' rel='nofollow'>40</a></li>
+<li><a href='/ru/Zadachi-i-problemy/Kriptoanaliz/?debut_dernieres_validations=50#pagination_dernieres_validations' class='lien_pagination gris' rel='nofollow'>50</a></li>
+<li><a href='/ru/Zadachi-i-problemy/Kriptoanaliz/?debut_dernieres_validations=60#pagination_dernieres_validations' class='lien_pagination gris' rel='nofollow'>60</a></li>
+<li><a href='/ru/Zadachi-i-problemy/Kriptoanaliz/?debut_dernieres_validations=70#pagination_dernieres_validations' class='lien_pagination gris' rel='nofollow'>70</a></li>
+<li><a href='/ru/Zadachi-i-problemy/Kriptoanaliz/?debut_dernieres_validations=80#pagination_dernieres_validations' class='lien_pagination gris' rel='nofollow'>80</a></li>
+<li><a href='/ru/Zadachi-i-problemy/Kriptoanaliz/?debut_dernieres_validations=490#pagination_dernieres_validations' class='lien_pagination ajax' rel='nofollow'>...</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div><!--ajaxbloc-->        
+</div><!--ajaxbloc-->                  </main>
+<footer id="footer" role="contentinfo" itemscope itemtype="https://schema.org/WPFooter">
+<div class="text-center">
+<div class="columns small-12">
+<img src="IMG/logo/siteon0.svg?1637496509" class="vmiddle grayscale" alt="Root-Me" width="48" height="48"/>
+</div>
+<div class="columns small-12">
+<a class="gris2" title="Конфиденциальность" href="https://www.root-me.org?page=structure&amp;inc=page-confidentialite&amp;lang=ru">Конфиденциальность</a>
+&nbsp;|&nbsp;
+<a class="gris2" title="Официальное уведомление" href="https://www.root-me.org?page=structure&amp;inc=page-mentions_legales&amp;lang=ru">Официальное уведомление</a>
+&nbsp;|&nbsp;
+<a class="gris2" title="Условия использования" href="https://www.root-me.org?page=structure&amp;inc=page-CGU&amp;lang=ru">Условия использования</a><br/>
+Root Me : <span lang="fr">plateforme d’apprentissage dédiée au Hacking et à la Sécurité de l’Information</span><br/>
+©&nbsp;2010&nbsp;-&nbsp;2025<br/>
+<hr/>
+</div>
+</div>
+<div class="text-center">
+<div class="small-10 large-3 small-centered columns">
+<div class="small-2 columns"><a href="https://www.twitch.tv/rootme" title="Twitch"><img src='squelettes/img/twitch.svg?1683788777' alt='Twitch' class='vmiddle grayscale grayscale_hoveroff' width='24' height='24' /></a></div>
+<div class="small-2 columns"><a href="https://www.youtube.com/channel/UCnvB1SJdVYv-1zkByuYM73g" title="Youtube"><img src='squelettes/img/youtube.svg?1683788771' alt='Youtube' class='vmiddle grayscale grayscale_hoveroff' width='24' height='24' /></a></div>
+<div class="small-2 columns"><a href="https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fwww.root-me.org%2F&region=follow_link&screen_name=rootme_org&tw_p=followbutton" title="Twitter"><img src='squelettes/img/twitter.svg?1573023931' alt='Twitter' class='vmiddle grayscale grayscale_hoveroff' width='24' height='24' /></a></div>
+<div class="small-2 columns"><a href="https://fr.linkedin.com/company/root-me-pro" title="Linkedin"><img src='squelettes/img/linkedin.svg?1573023925' alt='Linkedin' class='vmiddle grayscale grayscale_hoveroff' width='24' height='24' /></a></div>
+<div class="small-2 columns"><a href="https://www.root-me.org?page=flux_rss&amp;lang=ru" title="Динамический поток"><img src='squelettes/img/rss.svg?1573023935' alt='&#1044;&#1080;&#1085;&#1072;&#1084;&#1080;&#1095;&#1077;&#1089;&#1082;&#1080;&#1081; &#1087;&#1086;&#1090;&#1086;&#1082;' class='vmiddle grayscale grayscale_hoveroff' width='24' height='24' /></a></div>
+<div class="small-2 columns"><a href="https://discord.gg/XejsBJdUch" title="Discord"><img src='squelettes/img/discord.svg?1640079279' alt='Discord' class='vmiddle grayscale grayscale_hoveroff' width='24' height='24' /></a></div>
+</div>
+</div>
+</footer>              </div>            
+</div>
+</div>    
+</body>
+</html>
