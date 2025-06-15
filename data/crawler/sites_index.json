@@ -20188,5 +20188,11 @@
     "title": "Account settings: Your browser is not supported.",
     "description": "",
     "date_found": "2025-06-15T14:25:26.293991"
+  },
+  {
+    "url": "https://myactivity.google.com/myactivity?hl=fr",
+    "title": "Welcome to My Activity",
+    "description": "",
+    "date_found": "2025-06-15T14:25:27.978516"
   }
 ]
