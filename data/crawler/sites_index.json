@@ -20650,5 +20650,11 @@
     "title": "Configure a Button  |  YouTube Subscribe Button  |  Google for Developers",
     "description": "",
     "date_found": "2025-06-15T14:28:08.746922"
+  },
+  {
+    "url": "https://developers.google.com/youtube/v3/live/getting-started",
+    "title": "YouTube Live Streaming API Overview  |  Google for Developers",
+    "description": "Create, update, and manage live events on YouTube.",
+    "date_found": "2025-06-15T14:28:10.745521"
   }
 ]
