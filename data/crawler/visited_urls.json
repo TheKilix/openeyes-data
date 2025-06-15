@@ -1586,6 +1586,7 @@
   "https://github.com/trending/org?since=daily",
   "https://www.lemonde.fr/campus/article/2025/06/02/thomas-paroissien-25-ans-chef-de-chantier-2-900-euros-par-mois-je-pense-que-d-ici-cinq-ou-dix-ans-je-gagnerai-plus-d-argent-que-mon-pere_6610136_4401467.html",
   "https://www.youtube.com/culture-and-trends/",
+  "https://io.wikipedia.org/",
   "https://github.com/trending/plantuml?since=daily",
   "https://github.com/trending/faust?since=daily",
   "https://github.com/security/advanced-security/demo?utm_campaign=Demo_utmroutercampaign&ref_cta=Request%20demo&ref_loc=hero&ref_page=%2Fsolutions_usecase_devsecops&scid=adv-security&utm_campaign=Security&utm_contentsite&utm_medium=github",
@@ -2834,4 +2835,5 @@
   "https://www.microsoft.com/surface/devices/surface-pro",
   "https://www.reddit.com/r/popular/best/?geo_filter=ie",
   "https://www.youtube.com/intl/ALL_fr/ads/how-it-works/create-a-video-ad/"
+]"https://www.youtube.com/intl/ALL_fr/ads/how-it-works/create-a-video-ad/"
 ]
