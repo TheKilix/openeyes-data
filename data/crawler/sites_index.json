@@ -15996,63 +15996,81 @@
     "date_found": "2025-06-15T13:19:45.349968"
   },
   {
-    "url": "https://www.reddit.com/r/all/",
-    "title": "r/all",
-    "description": "Today's top content from hundreds of thousands of Reddit communities.",
-    "date_found": "2025-06-15T13:25:30.224928"
-  },
-  {
-    "url": "https://www.reddit.com/r/books",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://news.ycombinator.com/",
+    "title": "Hacker News",
     "description": "",
-    "date_found": "2025-06-15T13:25:31.449179"
+    "date_found": "2025-06-15T13:25:30.029031"
   },
   {
-    "url": "https://www.redditinc.com/policies/user-agreement",
-    "title": "User Agreement",
-    "description": "User Agreement - Reddit",
-    "date_found": "2025-06-15T13:25:33.665358"
-  },
-  {
-    "url": "https://reddit.com/t/streamers/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://en.wikipedia.org/wiki/Chicken_eyeglasses",
+    "title": "Chicken eyeglasses - Wikipedia",
     "description": "",
-    "date_found": "2025-06-15T13:25:37.464083"
+    "date_found": "2025-06-15T13:25:32.285322"
   },
   {
-    "url": "https://reddit.com/t/tech_news_and_discussion/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://news.ycombinator.com/user?id=gone35",
+    "title": "Profile: gone35 | Hacker News",
     "description": "",
-    "date_found": "2025-06-15T13:25:40.840712"
+    "date_found": "2025-06-15T13:25:34.714830"
   },
   {
-    "url": "https://reddit.com/t/tarot_and_astrology/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://news.ycombinator.com/hide?id=44279850&goto=news",
+    "title": "",
     "description": "",
-    "date_found": "2025-06-15T13:25:42.239877"
+    "date_found": "2025-06-15T13:25:36.723842"
   },
   {
-    "url": "https://www.reddit.com/r/all/?feedViewType=cardView",
-    "title": "r/all",
-    "description": "Today's top content from hundreds of thousands of Reddit communities.",
-    "date_found": "2025-06-15T13:25:44.547209"
-  },
-  {
-    "url": "https://reddit.com/t/virtual_and_augmented_reality/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://cen.acs.org/pharmaceuticals/drug-discovery/Bioprospectors-mine-microbial-genomes-antibiotic/103/web/2025/06",
+    "title": "Bioprospectors mine microbial genomes for antibiotic gold",
     "description": "",
-    "date_found": "2025-06-15T13:25:47.864923"
+    "date_found": "2025-06-15T13:25:39.936953"
   },
   {
-    "url": "https://www.reddit.com/r/OnePiece",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://news.ycombinator.com/user?id=crescit_eundo",
+    "title": "Profile: crescit_eundo | Hacker News",
     "description": "",
-    "date_found": "2025-06-15T13:25:50.879841"
+    "date_found": "2025-06-15T13:25:42.265411"
   },
   {
-    "url": "https://reddit.com/t/adventure_games/",
-    "title": "Reddit - The heart of the internet",
+    "url": "https://news.ycombinator.com/item?id=44279579",
+    "title": "Fixing the mechanics of my bullet chess | Hacker News",
     "description": "",
-    "date_found": "2025-06-15T13:25:53.966241"
+    "date_found": "2025-06-15T13:25:43.063163"
+  },
+  {
+    "url": "https://news.ycombinator.com/from?site=wikipedia.org",
+    "title": "Submissions from wikipedia.org | Hacker News",
+    "description": "",
+    "date_found": "2025-06-15T13:25:44.012460"
+  },
+  {
+    "url": "https://placing.technology/notes-on-the-history-of-the-map-tile",
+    "title": "Notes on the history of the map tile - Placing Technologies",
+    "description": "Web map tiles—the storing of geospatial data at different zoom levels in x/y/z indexed squares of raster (and later, vector) data for efficient",
+    "date_found": "2025-06-15T13:25:46.249501"
+  },
+  {
+    "url": "https://www.esa.int/Science_Exploration/Space_Science/Solar_Orbiter/Solar_Orbiter_gets_world-first_views_of_the_Sun_s_poles",
+    "title": "ESA - Solar Orbiter gets world-first views of the Sun’s poles",
+    "description": "Thanks to its newly tilted orbit around the Sun, the European Space Agency-led Solar Orbiter spacecraft is the first to image the Sun’s poles from outside the ecliptic plane. Solar Orbiter’s unique viewing angle will&nbsp;change our understanding of the Sun’s magnetic field, the solar cycle and the workings of space weather.&nbsp;",
+    "date_found": "2025-06-15T13:25:47.942301"
+  },
+  {
+    "url": "https://news.ycombinator.com/from?site=ostif.org",
+    "title": "Submissions from ostif.org | Hacker News",
+    "description": "",
+    "date_found": "2025-06-15T13:25:49.044483"
+  },
+  {
+    "url": "https://news.ycombinator.com/hide?id=44246187&goto=news",
+    "title": "",
+    "description": "",
+    "date_found": "2025-06-15T13:25:51.792005"
+  },
+  {
+    "url": "https://news.ycombinator.com/security.html",
+    "title": "Hacker News Security",
+    "description": "",
+    "date_found": "2025-06-15T13:25:54.480452"
   }
 ]
