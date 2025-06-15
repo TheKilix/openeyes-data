@@ -20874,15 +20874,21 @@
     "date_found": "2025-06-15T14:29:32.854619"
   },
   {
-    "url": "https://news.google.com/search?q=intitle:hack",
+    "url": "https://news.google.com/search?q=intitle:ia",
     "title": "Before you continue",
     "description": "",
-    "date_found": "2025-06-15T15:38:18.575093"
+    "date_found": "2025-06-15T15:38:18.584491"
   },
   {
-    "url": "https://consent.google.com/dl?continue=https://news.google.com/search?q%3Dintitle:hack&gl=FR&hl=en-US&cm=2&pc=n&src=1",
-    "title": "Personalization settings & cookies",
+    "url": "https://policies.google.com/terms?hl=en-US&utm_source=ucb",
+    "title": "Google Terms of Service – Privacy & Terms – Google",
     "description": "",
-    "date_found": "2025-06-15T15:38:20.937969"
+    "date_found": "2025-06-15T15:38:19.482776"
+  },
+  {
+    "url": "https://accounts.google.com/ServiceLogin?hl=en-US&continue=https://news.google.com/search?q%3Dintitle:ia&gae=cb-",
+    "title": "Sign in - Google Accounts",
+    "description": "",
+    "date_found": "2025-06-15T15:38:21.492127"
   }
 ]
