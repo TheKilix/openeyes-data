@@ -1,643 +1,367 @@
- 
-  
-   
-      <!DOCTYPE html>
+
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" class="no-js" lang="fr" xml:lang="fr">
 <head>
-    
-        
-        
-                        
-                
-                    
-                        
-                            
-
-                                <title>
-                                    
-                                     
-                                      
-                                    
-                                    
-                                    [Root Me : plateforme d'apprentissage dédiée au Hacking et à la Sécurité de l'Information]
-                                </title>
-                                <meta name="description" content="Root Me est une plateforme permettant &#224; chacun de tester et d&#039;am&#233;liorer ses connaissances dans le domaine de la s&#233;curit&#233; informatique et du hacking &#224; travers la publication de challenges, de solutions, d&#039;articles." />
-                                <meta name="keywords" content="hack, hacking, challenge, solution, exercice, hacking challenge, hack challenge, exercice hack, exercice hacking, capture the flag, CTF, security, sécurité, Documentation,Applicatif,Cryptologie,Challenges,R&#233;seaux,Cracking,Web - Client,Programmation,Cryptanalyse,Communaut&#233;,Chat Box,Application,Pr&#233;sentation,Session,Transport ,R&#233;seau,Liaison,Physique,St&#233;ganographie,Web - Serveur,Cracking,R&#233;aliste,Informations,L&#039;association,Faiblesses D&#233;couvertes,Forum,Le projet,Challenges, Hacking et S&#233;curit&#233; Informatique,G&#233;n&#233;ral,Contribuer,Serveur Discord,R&#233;seau,Capture The Flag,App - Script,Calendrier,CTF all the day,Capture The Flag,Sponsors &#38; Partenaires Root-Me PRO,App - Syst&#232;me,Forensic,Web,Discuter," />
-                            
-                        
-                    
-                    
-            
-        
-    
-
-    <link rel="alternate" type="application/rss+xml" title="RSS [Root Me : plateforme d&#039;apprentissage d&#233;di&#233;e au Hacking et &#224; la S&#233;curit&#233; de l&#039;Information]" href="https://www.root-me.org?page=backend&amp;lang=fr" />
-    <link rel="alternate" type="application/rss+xml" title="RSS (breves) [Root Me : plateforme d&#039;apprentissage d&#233;di&#233;e au Hacking et &#224; la S&#233;curit&#233; de l&#039;Information]" href="https://www.root-me.org?page=backend-breves&amp;lang=fr" />
-    <link rel="alternate" type="application/rss+xml" title="RSS Forum [Root Me : plateforme d&#039;apprentissage d&#233;di&#233;e au Hacking et &#224; la S&#233;curit&#233; de l&#039;Information]" href="https://www.root-me.org?page=backend-forums&amp;lang=fr" />
-    <link rel="alternate" type="application/rss+xml" title="RSS challenges [Root Me : plateforme d&#039;apprentissage d&#233;di&#233;e au Hacking et &#224; la S&#233;curit&#233; de l&#039;Information]" href="https://www.root-me.org?page=backend-challenges&amp;lang=fr" />
-    <link rel="alternate" type="application/rss+xml" title="RSS solutions [Root Me : plateforme d&#039;apprentissage d&#233;di&#233;e au Hacking et &#224; la S&#233;curit&#233; de l&#039;Information]" href="https://www.root-me.org?page=backend-solutions&amp;lang=fr" />
-    <link rel="alternate" type="application/rss+xml" title="RSS CTF all the day [Root Me : plateforme d&#039;apprentissage d&#233;di&#233;e au Hacking et &#224; la S&#233;curit&#233; de l&#039;Information]" href="https://www.root-me.org?page=backend-ctfalltheday&amp;lang=fr" />
-    <link rel="alternate" type="application/rss+xml" title="RSS CTF calendar [Root Me : plateforme d&#039;apprentissage d&#233;di&#233;e au Hacking et &#224; la S&#233;curit&#233; de l&#039;Information]" href="https://www.root-me.org?page=backend-ctf&amp;lang=fr" />
-
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />            
-    <meta name="color-scheme" content="light dark"/>
-    
-    
-    <link rel='stylesheet' href='local/cache-css/79909d31a85f6ab49a36ee1047c62d85.css?1749548917' type='text/css' />    
-    
-    
-    
-    
-    <script type="text/javascript">/* <![CDATA[ */
+<title>
+Bienvenue                                        
+[Root Me : plateforme d'apprentissage dédiée au Hacking et à la Sécurité de l'Information]
+</title>
+<meta name="description" content="Root Me est une plateforme permettant &#224; chacun de tester et d&#039;am&#233;liorer ses connaissances dans le domaine de la s&#233;curit&#233; informatique et du hacking &#224; travers la publication de challenges, de solutions, d&#039;articles." />
+<meta name="keywords" content="hack, hacking, challenge, solution, exercice, hacking challenge, hack challenge, exercice hack, exercice hacking, capture the flag, CTF, security, sécurité, Documentation,Applicatif,Cryptologie,Challenges,R&#233;seaux,Cracking,Web - Client,Programmation,Cryptanalyse,Communaut&#233;,Chat Box,Application,Pr&#233;sentation,Session,Transport ,R&#233;seau,Liaison,Physique,St&#233;ganographie,Web - Serveur,Cracking,R&#233;aliste,Informations,L&#039;association,Faiblesses D&#233;couvertes,Forum,Le projet,Challenges, Hacking et S&#233;curit&#233; Informatique,G&#233;n&#233;ral,Contribuer,Serveur Discord,R&#233;seau,Capture The Flag,App - Script,Calendrier,CTF all the day,Capture The Flag,Sponsors &#38; Partenaires Root-Me PRO,App - Syst&#232;me,Forensic,Web,Discuter," />
+<link rel="alternate" type="application/rss+xml" title="RSS [Root Me : plateforme d&#039;apprentissage d&#233;di&#233;e au Hacking et &#224; la S&#233;curit&#233; de l&#039;Information]" href="https://www.root-me.org?page=backend&amp;lang=fr" />
+<link rel="alternate" type="application/rss+xml" title="RSS (breves) [Root Me : plateforme d&#039;apprentissage d&#233;di&#233;e au Hacking et &#224; la S&#233;curit&#233; de l&#039;Information]" href="https://www.root-me.org?page=backend-breves&amp;lang=fr" />
+<link rel="alternate" type="application/rss+xml" title="RSS Forum [Root Me : plateforme d&#039;apprentissage d&#233;di&#233;e au Hacking et &#224; la S&#233;curit&#233; de l&#039;Information]" href="https://www.root-me.org?page=backend-forums&amp;lang=fr" />
+<link rel="alternate" type="application/rss+xml" title="RSS challenges [Root Me : plateforme d&#039;apprentissage d&#233;di&#233;e au Hacking et &#224; la S&#233;curit&#233; de l&#039;Information]" href="https://www.root-me.org?page=backend-challenges&amp;lang=fr" />
+<link rel="alternate" type="application/rss+xml" title="RSS solutions [Root Me : plateforme d&#039;apprentissage d&#233;di&#233;e au Hacking et &#224; la S&#233;curit&#233; de l&#039;Information]" href="https://www.root-me.org?page=backend-solutions&amp;lang=fr" />
+<link rel="alternate" type="application/rss+xml" title="RSS CTF all the day [Root Me : plateforme d&#039;apprentissage d&#233;di&#233;e au Hacking et &#224; la S&#233;curit&#233; de l&#039;Information]" href="https://www.root-me.org?page=backend-ctfalltheday&amp;lang=fr" />
+<link rel="alternate" type="application/rss+xml" title="RSS CTF calendar [Root Me : plateforme d&#039;apprentissage d&#233;di&#233;e au Hacking et &#224; la S&#233;curit&#233; de l&#039;Information]" href="https://www.root-me.org?page=backend-ctf&amp;lang=fr" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />            
+<meta name="color-scheme" content="light dark"/>
+<link rel='stylesheet' href='local/cache-css/79909d31a85f6ab49a36ee1047c62d85.css?1749548917' type='text/css' />    
+<script type="text/javascript">/* <![CDATA[ */
 var mediabox_settings={"auto_detect":true,"ns":"box","tt_img":true,"sel_g":"#documents_portfolio a[type='image\/jpeg'],#documents_portfolio a[type='image\/png'],#documents_portfolio a[type='image\/gif']","sel_c":".mediabox, .popin","str_ssStart":"Diaporama","str_ssStop":"Arr\u00eater","str_cur":"{current}\/{total}","str_prev":"Pr\u00e9c\u00e9dent","str_next":"Suivant","str_close":"Fermer","str_loading":"Chargement\u2026","str_petc":"Taper \u2019Echap\u2019 pour fermer","str_dialTitDef":"Boite de dialogue","str_dialTitMed":"Affichage d\u2019un media","splash_url":"","colorbox":{"skin":"black-striped","transition":"elastic","speed":"100","maxWidth":"90%","maxHeight":"90%","minWidth":"400px","minHeight":"","slideshow_speed":"2500","opacite":"0.8"}};
 /* ]]> */</script>
 <!-- insert_head_css -->
-
-
-
-
-
-
-
-
-
-    
-    
-    
-        
-    
-
-    
-        
 <script type='text/javascript'>
 var jQl={q:[],dq:[],gs:[],ready:function(a){"function"==typeof a&&jQl.q.push(a);return jQl},getScript:function(a,c){jQl.gs.push([a,c])},unq:function(){for(var a=0;a<jQl.q.length;a++)jQl.q[a]();jQl.q=[]},ungs:function(){for(var a=0;a<jQl.gs.length;a++)jQuery.getScript(jQl.gs[a][0],jQl.gs[a][1]);jQl.gs=[]},bId:null,boot:function(a){"undefined"==typeof window.jQuery.fn?jQl.bId||(jQl.bId=setInterval(function(){jQl.boot(a)},25)):(jQl.bId&&clearInterval(jQl.bId),jQl.bId=0,jQl.unqjQdep(),jQl.ungs(),jQuery(jQl.unq()), "function"==typeof a&&a())},booted:function(){return 0===jQl.bId},loadjQ:function(a,c){setTimeout(function(){var b=document.createElement("script");b.src=a;document.getElementsByTagName("head")[0].appendChild(b)},1);jQl.boot(c)},loadjQdep:function(a){jQl.loadxhr(a,jQl.qdep)},qdep:function(a){a&&("undefined"!==typeof window.jQuery.fn&&!jQl.dq.length?jQl.rs(a):jQl.dq.push(a))},unqjQdep:function(){if("undefined"==typeof window.jQuery.fn)setTimeout(jQl.unqjQdep,50);else{for(var a=0;a<jQl.dq.length;a++)jQl.rs(jQl.dq[a]); jQl.dq=[]}},rs:function(a){var c=document.createElement("script");document.getElementsByTagName("head")[0].appendChild(c);c.text=a},loadxhr:function(a,c){var b;b=jQl.getxo();b.onreadystatechange=function(){4!=b.readyState||200!=b.status||c(b.responseText,a)};try{b.open("GET",a,!0),b.send("")}catch(d){}},getxo:function(){var a=!1;try{a=new XMLHttpRequest}catch(c){for(var b=["MSXML2.XMLHTTP.5.0","MSXML2.XMLHTTP.4.0","MSXML2.XMLHTTP.3.0","MSXML2.XMLHTTP","Microsoft.XMLHTTP"],d=0;d<b.length;++d){try{a= new ActiveXObject(b[d])}catch(e){continue}break}}finally{return a}}};if("undefined"==typeof window.jQuery){var $=jQl.ready,jQuery=$;$.getScript=jQl.getScript};
 jQl.loadjQ('local/cache-js/6c8ba9bacc1af4bf083ba9fa64516c50.js?1749548918')
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- insert_head -->
-
-
-
-
-
-
-
-
-
-        <script>jQl.loadjQ("https://www.root-me.org/local/cache-js/jsdyn-script_onload_js-1146a546.js?1749548917");</script>
-        
-		<script  defer src="https://www.googletagmanager.com/gtag/js?id=G-SRYSKX09J7"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-			gtag('config', 'G-SRYSKX09J7', { 'anonymize_ip': true });
-		</script>        
-        
-
-    <link rel="icon" type="image/x-icon" href="https://www.root-me.org/squelettes/img/rblack.ico?1448449194" />
-    <link rel="icon" type="image/png" href="https://www.root-me.org/squelettes/img/rblackGrand32.png?1556531825" sizes="32x32" />
-    <link rel="icon" type="image/png" href="https://www.root-me.org/squelettes/img/rblackGrand16.png?1556531831" sizes="16x16" />   
-    
+<script>jQl.loadjQ("https://www.root-me.org/local/cache-js/jsdyn-script_onload_js-1146a546.js?1749548917");</script>
+<script  defer src="https://www.googletagmanager.com/gtag/js?id=G-SRYSKX09J7"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-SRYSKX09J7', { 'anonymize_ip': true });
+</script>        
+<link rel="icon" type="image/x-icon" href="https://www.root-me.org/squelettes/img/rblack.ico?1448449194" />
+<link rel="icon" type="image/png" href="https://www.root-me.org/squelettes/img/rblackGrand32.png?1556531825" sizes="32x32" />
+<link rel="icon" type="image/png" href="https://www.root-me.org/squelettes/img/rblackGrand16.png?1556531831" sizes="16x16" />   
 </head>
-      <body class="antialiased hide-extras" dir="ltr" itemscope itemtype="https://schema.org/WebPage">
-
-
-      <header id="header" role="banner">
-    <nav class="top-bar" data-topbar>
-
-        <ul class="title-area" itemprop="isPartOf" itemscope itemtype="https://schema.org/WebSite">
-            <li class="name">
-                <a itemprop="url" href="https://www.root-me.org?lang=fr" title="la root est longue mais la voie est Libre" target="_top">
-                    <img width="48" height="48" class="show-for-medium-up vmiddle invert" alt="logo https://www.root-me.org" src="IMG/logo/siteon0.svg?1637496509" itemprop="image"  />
-                    <img width="48" height="48" class="show-for-small-only toggleSidebar vmiddle" alt="logo https://www.root-me.org" src="IMG/logo/siteon0.svg?1637496509" itemprop="image" />
-                    <span class="show-for-large-up blanc" itemprop="name">Root&nbsp;Me</span>
-                </a>
-            </li>    
-        </ul>
-        
-        <section class="top-bar-section">
-            <ul class="right">    
-                <li class="lang">
-                    <span>
-                        <span>
-    
-    
-        
-    
-            
-
-                
-
-                     
-                            
-                    
-
-                    
-                    
-                    
-
-                    
-
-
-                    
-                        <a id="url_en" href="./?page=structure&amp;inc=page-CGU&amp;lang=en" title="English"><img class="vmiddle" src="squelettes/img/pays/en.svg" alt="English" height="16" width="16"/></a>
-                    
-                        <a id="url_de" href="./?page=structure&amp;inc=page-CGU&amp;lang=de" title="Deutsch"><img class="vmiddle" src="squelettes/img/pays/de.svg" alt="Deutsch" height="16" width="16"/></a>
-                    
-                        <a id="url_es" href="./?page=structure&amp;inc=page-CGU&amp;lang=es" title="Espa&#241;ol"><img class="vmiddle" src="squelettes/img/pays/es.svg" alt="Espa&#241;ol" height="16" width="16"/></a>
-                    
-                        <a id="url_ru" href="./?page=structure&amp;inc=page-CGU&amp;lang=ru" title="&#1088;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;"><img class="vmiddle" src="squelettes/img/pays/ru.svg" alt="&#1088;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;" height="16" width="16"/></a>
-                    
-                        <a id="url_zh" href="./?page=structure&amp;inc=page-CGU&amp;lang=zh" title="&#20013;&#25991;"><img class="vmiddle" src="squelettes/img/pays/zh.svg" alt="&#20013;&#25991;" height="16" width="16"/></a>
-                    
-                                                    
-                
-            
-        
-    
+<body class="antialiased hide-extras" dir="ltr" itemscope itemtype="https://schema.org/WebPage">
+<div id="container" class="sommaire">
+<div id="sommaire">
+<header id="header" role="banner">
+<nav class="top-bar" data-topbar>
+<ul class="title-area" itemprop="isPartOf" itemscope itemtype="https://schema.org/WebSite">
+<li class="name">
+<a itemprop="url" href="https://www.root-me.org?lang=fr" title="la root est longue mais la voie est Libre" target="_top">
+<img width="48" height="48" alt="logo https://www.root-me.org" src="IMG/logo/siteon0.svg?1637496509" itemprop="image"  />
+<span class="show-for-large-up noir" itemprop="name">Root&nbsp;Me</span>
+</a>
+</li>
+</ul>
+<section class="top-bar-section">
+<ul class="right">    
+<li class="lang">
+<span>
+<span>
+<a id="url_en" href="./?lang=en" title="English"><img class="vmiddle" src="squelettes/img/pays/en.svg" alt="English" height="16" width="16"/></a>
+<a id="url_de" href="./?lang=de" title="Deutsch"><img class="vmiddle" src="squelettes/img/pays/de.svg" alt="Deutsch" height="16" width="16"/></a>
+<a id="url_es" href="./?lang=es" title="Espa&#241;ol"><img class="vmiddle" src="squelettes/img/pays/es.svg" alt="Espa&#241;ol" height="16" width="16"/></a>
+<a id="url_ru" href="./?lang=ru" title="&#1088;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;"><img class="vmiddle" src="squelettes/img/pays/ru.svg" alt="&#1088;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;" height="16" width="16"/></a>
+<a id="url_zh" href="./?lang=zh" title="&#20013;&#25991;"><img class="vmiddle" src="squelettes/img/pays/zh.svg" alt="&#20013;&#25991;" height="16" width="16"/></a>
 </span>
-                        <a href="#"><img width="16" height="16" src="squelettes/img/pays/fr.svg" alt="fr" class="grayscale" title="fr"/></a>
-                    </span>
-                </li>
-                <li>
-        <a style="height: 24px; padding: 10px 10px 0 10px;" class="mediabox pageajax boxHeight-620px" data-box-type="ajax" href="./?page=identifiants&amp;lang=fr" title="Créer un compte"><img src="squelettes/img/register.svg" height="16" width="16" alt="0x0" class="vtop"/></a>
-        <a style="height: 24px; padding: 15px 10px 0 10px;" class="mediabox pageajax boxHeight-390px" data-box-type="ajax" href="./?page=login&amp;lang=fr" title="Se connecter"><img src="squelettes/img/login.svg" height="16" width="16" alt="0x0" class="vtop"/></a>
-    </li>            </ul>   
-                
-            <ul class="left">
-                <li class="hide-for-small-only"><a title="Foire Aux Questions" href="https://www.root-me.org?page=faq&amp;lang=fr"><img src='squelettes/img/faq_nb.svg?1566640929' alt='faq' width='32' height='32' /></a></li>
-                <li class="hide-for-small-only"><a title="Plan du site" href="https://www.root-me.org?page=plan&amp;lang=fr"><img src='squelettes/img/plan_nb.svg?1566640893' alt='plan' width='32' height='32' /></a></li>
-                 <li class="hide-for-small-only"><a title="Contact" href="https://www.root-me.org?page=contact&amp;lang=fr"><img src='squelettes/img/contact_nb.svg?1566640717' alt='contact' width='32' height='32' /></a></li>
-                <li class="hide-for-small-only"><a title="État des services" href="https://www.root-me.org?page=structure&amp;inc=inclusions%2Fservices&amp;lang=fr"><img src="squelettes/img/service_state_nb.svg" width="32" height="32" alt="services" /></a></li>
-                <li class="hide-for-small-only"><a title="Shop" href="https://shop.root-me.org"><img src="squelettes/img/shop_nb.svg" alt="shop" width="32" height="32"/></a></li>            
-
-                
-                <li class="search">
-					
-                    <form action="https://www.root-me.org" method="get">
-                        <input type="hidden" value="recherche" name="page"/>
-                        <input type="hidden" value="fr" name="lang" />                    
-                        <input class="search" name="recherche" placeholder="Rechercher" minlength="3" type="search" />
-                    </form>
-
-                </li>
-            </ul>
-			
-        </section>
-    </nav>
+<a href="#"><img width="16" height="16" src=squelettes/img/pays/fr.svg alt="fr" class="grayscale" title="fr"/></a>
+</span>
+</li>
+<li>
+<span class="show-for-medium-up">
+<a class="button login mediabox pageajax boxHeight-390px" data-box-type="ajax" href="./?page=login&amp;lang=fr" title="J'ai déjà un compte">J'ai déjà un compte</a>
+</span>
+<a class="hide-for-medium-up mediabox pageajax boxHeight-390px" data-box-type="ajax" href="./?page=login&amp;lang=fr" title="J'ai déjà un compte"><img src="squelettes/img/login.svg" alt="login" class="vmiddle" width="32" height="32"/></a>
+</li>      
+<li class="hide-for-small-only"><a id="ss_box_rmp" title="Accès écoles & entreprise" class="shake  expand gras" href="#acces_rmp"><img src="squelettes/img/university.svg" alt="Root Me for Pro" class="vmiddle" width="32" height="32"/></a></li>         
+</ul>
+</section>
+</nav>
 </header>
-      <div id="container">
-          <div id="main_row">
-          
-              <div id="aside_wrapper">
-    <aside id="aside" role="complementary" itemscope itemtype="https://schema.org/WPSideBar">
-        <nav class="top-bar" data-topbar="" >
-            <div class="top-bar-section" role="navigation" itemprop="hasPart" itemscope itemtype="https://schema.org/SiteNavigationElement">
-                <ul class="right">
-                    
-                        
-                        
-                            
-                            
-
-                            <li class="has-dropdown">
-                                <a itemprop="url" href="fr/Capture-The-Flag/">
-                                    <span class="logo left">
-                                        <img  class="grayscale grayscale_hoveroff" src="IMG/logo/rubon188.svg?1637496499" width="16" height="16" alt="0x0"/>
-                                    </span>
-                                    <span class="hide-for-medium-only">Capture The Flag</span>
-                                </a>
-                                
-                                    <ul class="dropdown">
-                                        <li class="show-for-medium-only first">Capture The Flag</li>
-                                        
-                                            <li class="hide-for-small-only">
-                                              <a class="smenu" href="fr/Capture-The-Flag/Calendrier/" title="Le calendrier des CTF &#224; venir. N&#039;h&#233;sitez pas &#224; nous indiquer ceux que l&#039;on aurait oubli&#233; en envoyant un message via [la page de contact-&gt;./?page=contact&#38;lang=fr]"  itemprop="url">
-                                                <img src='IMG/logo/rubon195.svg?1637496499' alt='Calendrier' width='16' height='16' class='vmiddle grayscale grayscale_hoveroff' />
-                                                Calendrier
-                                              </a>
-                                            </li>
-                                        
-                                            <li class="hide-for-small-only">
-                                              <a class="smenu" href="fr/Capture-The-Flag/CTF-all-the-day/" title="Am&#233;liorez vos techniques de hack dans un environnement r&#233;el o&#249; l&#039;objectif est de compromettre, &#171; rooter &#187; compl&#232;tement la machine !"  itemprop="url">
-                                                <img src='IMG/logo/rubon196.svg?1637496499' alt='CTF all the day' width='16' height='16' class='vmiddle grayscale grayscale_hoveroff' />
-                                                CTF all the day
-                                              </a>
-                                            </li>
-                                        
-                                    </ul>
-                                
-                            </li>
-                            
-                        
-                            
-                            
-
-                            <li class="has-dropdown">
-                                <a itemprop="url" href="fr/Challenges/">
-                                    <span class="logo left">
-                                        <img  class="grayscale grayscale_hoveroff" src="IMG/logo/rubon5.svg?1637496507" width="16" height="16" alt="0x0"/>
-                                    </span>
-                                    <span class="hide-for-medium-only">Challenges</span>
-                                </a>
-                                
-                                    <ul class="dropdown">
-                                        <li class="show-for-medium-only first">Challenges</li>
-                                        
-                                            <li class="hide-for-small-only">
-                                              <a class="smenu" href="fr/Challenges/App-Script/" title="Cette s&#233;rie d&#039;&#233;preuves vous confronte aux vuln&#233;rabilit&#233;s li&#233;es &#224; des faiblesses d&#039;environnement, de configuration ou encore &#224; des erreurs de d&#233;veloppement dans des langages de script ou de programmation."  itemprop="url">
-                                                <img src='IMG/logo/rubon189.svg?1637496499' alt='App - Script' width='16' height='16' class='vmiddle grayscale grayscale_hoveroff' />
-                                                App - Script
-                                              </a>
-                                            </li>
-                                        
-                                            <li class="hide-for-small-only">
-                                              <a class="smenu" href="fr/Challenges/App-Systeme/" title="Cette s&#233;rie d&#039;&#233;preuves vous confronte aux vuln&#233;rabilit&#233;s applicatives principalement li&#233;es aux erreurs de programmation aboutissant &#224; des corruptions de zones m&#233;moire."  itemprop="url">
-                                                <img src='IMG/logo/rubon203.svg?1637496500' alt='App - Syst&#232;me' width='16' height='16' class='vmiddle grayscale grayscale_hoveroff' />
-                                                App - Système
-                                              </a>
-                                            </li>
-                                        
-                                            <li class="hide-for-small-only">
-                                              <a class="smenu" href="fr/Challenges/Cracking/" title="Ces challenges permettent de comprendre le sens du terme &#171; langage compil&#233; &#187;. Ce sont des fichiers binaires &#224; d&#233;cortiquer pour aller chercher les instructions bas niveau permettant de r&#233;pondre au probl&#232;me pos&#233;."  itemprop="url">
-                                                <img src='IMG/logo/rubon69.svg?1637496508' alt='Cracking' width='16' height='16' class='vmiddle grayscale grayscale_hoveroff' />
-                                                Cracking
-                                              </a>
-                                            </li>
-                                        
-                                            <li class="hide-for-small-only">
-                                              <a class="smenu" href="fr/Challenges/Cryptanalyse/" title="Retrouvez les secrets prot&#233;g&#233;s par des syst&#232;mes de chiffrement plus ou moins solides en r&#233;alisant des attaques cryptographiques."  itemprop="url">
-                                                <img src='IMG/logo/rubon18.svg?1637496499' alt='Cryptanalyse' width='16' height='16' class='vmiddle grayscale grayscale_hoveroff' />
-                                                Cryptanalyse
-                                              </a>
-                                            </li>
-                                        
-                                            <li class="hide-for-small-only">
-                                              <a class="smenu" href="fr/Challenges/Forensic/" title="Mettez &#224; l&#039;&#233;preuve vos techniques d&#039;investigations num&#233;riques en analysant des traces m&#233;moire, des fichiers de journalisation, des captures r&#233;seaux..."  itemprop="url">
-                                                <img src='IMG/logo/rubon208.svg?1637496500' alt='Forensic' width='16' height='16' class='vmiddle grayscale grayscale_hoveroff' />
-                                                Forensic
-                                              </a>
-                                            </li>
-                                        
-                                            <li class="hide-for-small-only">
-                                              <a class="smenu" href="fr/Challenges/Programmation/" title="Automatisez des t&#226;ches de plus en plus complexes pour valider ces challenges en moins de quelques secondes."  itemprop="url">
-                                                <img src='IMG/logo/rubon17.svg?1637496498' alt='Programmation' width='16' height='16' class='vmiddle grayscale grayscale_hoveroff' />
-                                                Programmation
-                                              </a>
-                                            </li>
-                                        
-                                            <li class="hide-for-small-only">
-                                              <a class="smenu" href="fr/Challenges/Realiste/" title="Vous allez vous retrouver dans des environnements complets sur des th&#232;mes divers et vari&#233;s. &#192; vous d&#039;en comprendre le fonctionnement, d&#039;identifier les faiblesses et de cibler les vuln&#233;rabilit&#233;s &#224; exploiter."  itemprop="url">
-                                                <img src='IMG/logo/rubon70.svg?1637496509' alt='R&#233;aliste' width='16' height='16' class='vmiddle grayscale grayscale_hoveroff' />
-                                                Réaliste
-                                              </a>
-                                            </li>
-                                        
-                                            <li class="hide-for-small-only">
-                                              <a class="smenu" href="fr/Challenges/Reseau/" title="Apprenez &#224; analyser et &#224; manipuler les diff&#233;rents protocoles et services les plus courants pour les tourner &#224; votre avantage."  itemprop="url">
-                                                <img src='IMG/logo/rubon182.svg?1637496499' alt='R&#233;seau' width='16' height='16' class='vmiddle grayscale grayscale_hoveroff' />
-                                                Réseau
-                                              </a>
-                                            </li>
-                                        
-                                            <li class="hide-for-small-only">
-                                              <a class="smenu" href="fr/Challenges/Steganographie/" title="Si la cryptographie est l&#039;art du secret, la st&#233;ganographie est l&#039;art de la dissimulation : l&#039;objet de la st&#233;ganographie n&#039;est pas de rendre un message inintelligible aux personnes non autoris&#233;es mais de le faire passer inaper&#231;u. "  itemprop="url">
-                                                <img src='IMG/logo/rubon67.svg?1637496507' alt='St&#233;ganographie' width='16' height='16' class='vmiddle grayscale grayscale_hoveroff' />
-                                                Stéganographie
-                                              </a>
-                                            </li>
-                                        
-                                            <li class="hide-for-small-only">
-                                              <a class="smenu" href="fr/Challenges/Web-Client/" title="Apprenez &#224; exploiter les failles des applications web pour impacter leurs utilisateurs ou contourner des m&#233;canismes de s&#233;curit&#233; c&#244;t&#233; client."  itemprop="url">
-                                                <img src='IMG/logo/rubon16.svg?1637496498' alt='Web - Client' width='16' height='16' class='vmiddle grayscale grayscale_hoveroff' />
-                                                Web - Client
-                                              </a>
-                                            </li>
-                                        
-                                            <li class="hide-for-small-only">
-                                              <a class="smenu" href="fr/Challenges/Web-Serveur/" title="Ces &#233;preuves vous permettront d&#039;appr&#233;hender les techniques intrusives retrouv&#233;es sur le web, allant de l&#039;exploitation de faiblesses de configuration jusqu&#039;aux injections de code c&#244;t&#233; serveur."  itemprop="url">
-                                                <img src='IMG/logo/rubon68.svg?1637496507' alt='Web - Serveur' width='16' height='16' class='vmiddle grayscale grayscale_hoveroff' />
-                                                Web - Serveur
-                                              </a>
-                                            </li>
-                                        
-                                    </ul>
-                                
-                            </li>
-                            
-                        
-                            
-                            
-
-                            <li class="has-dropdown">
-                                <a itemprop="url" href="fr/Communaute/">
-                                    <span class="logo left">
-                                        <img  class="grayscale grayscale_hoveroff" src="IMG/logo/rubon19.svg?1714487248" width="16" height="16" alt="0x0"/>
-                                    </span>
-                                    <span class="hide-for-medium-only">Communauté</span>
-                                </a>
-                                
-                                    <ul class="dropdown">
-                                        <li class="show-for-medium-only first">Communauté</li>
-                                        
-                                            <li class="hide-for-small-only">
-                                              <a class="smenu" href="fr/Communaute/Contribuer/" title="Vous avez des id&#233;es, des comp&#233;tences dans le domaine de la s&#233;curit&#233; informatique ? N&#039;h&#233;sitez pas, participez ;-)"  itemprop="url">
-                                                <img src='IMG/logo/rubon175.svg?1637496498' alt='Contribuer' width='16' height='16' class='vmiddle grayscale grayscale_hoveroff' />
-                                                Contribuer
-                                              </a>
-                                            </li>
-                                        
-                                            <li class="hide-for-small-only">
-                                              <a class="smenu" href="fr/Communaute/Discuter/" title="Plusieurs canaux de communication sont &#224; votre disposition pour &#233;changer avec les autres utilisateurs de la plateforme."  itemprop="url">
-                                                <img src='IMG/logo/rubon388.svg?1647250612' alt='Discuter' width='16' height='16' class='vmiddle grayscale grayscale_hoveroff' />
-                                                Discuter
-                                              </a>
-                                            </li>
-                                        
-                                    </ul>
-                                
-                            </li>
-                            
-                        
-                            
-                            
-
-                            <li class="has-dropdown">
-                                <a itemprop="url" href="fr/Informations/">
-                                    <span class="logo left">
-                                        <img  class="grayscale grayscale_hoveroff" src="IMG/logo/rubon106.svg?1637496496" width="16" height="16" alt="0x0"/>
-                                    </span>
-                                    <span class="hide-for-medium-only">Informations</span>
-                                </a>
-                                
-                                    <ul class="dropdown">
-                                        <li class="show-for-medium-only first">Informations</li>
-                                        
-                                            <li class="hide-for-small-only">
-                                              <a class="smenu" href="fr/Informations/Faiblesses-Decouvertes/" title="Comme n&#039;importe quel syst&#232;me d&#039;informations ce portail comporte des vuln&#233;rabilit&#233;s... "  itemprop="url">
-                                                <img src='IMG/logo/rubon111.svg?1637496496' alt='Faiblesses D&#233;couvertes' width='16' height='16' class='vmiddle grayscale grayscale_hoveroff' />
-                                                Faiblesses Découvertes
-                                              </a>
-                                            </li>
-                                        
-                                            <li class="hide-for-small-only">
-                                              <a class="smenu" href="fr/Informations/L-association/" title="Root-Me est une association loi de 1901 &#224; but non lucratif dont l&#039;objectif est de promouvoir la diffusion libre du savoir relatif au hacking et &#224; la s&#233;curit&#233; de l&#039;information."  itemprop="url">
-                                                <img src='IMG/logo/rubon107.svg?1637496496' alt='L&#039;association' width='16' height='16' class='vmiddle grayscale grayscale_hoveroff' />
-                                                L&#8217;association
-                                              </a>
-                                            </li>
-                                        
-                                            <li class="hide-for-small-only">
-                                              <a class="smenu" href="fr/Informations/Sponsors-Partenaires/" title="Voici les entreprises et institutions qui permettent &#224; l&#039;association de perdurer et continuer de proposer toujours plus de contenus ! Pour plus d&#039;informations sur comment devenir Sponsor ou Partenaire, contactez [Root-Me PRO-&gt;https://pro.root-me.org/]."  itemprop="url">
-                                                <img src='IMG/logo/rubon201.svg?1637496500' alt='Sponsors &#38; Partenaires Root-Me PRO' width='16' height='16' class='vmiddle grayscale grayscale_hoveroff' />
-                                                Sponsors &amp; Partenaires Root-Me PRO
-                                              </a>
-                                            </li>
-                                        
-                                    </ul>
-                                
-                            </li>
-                            
-                        
-                    
-
-                </ul>
-            </div>
-        </nav>
-
-        <div class="small-12 columns hide-for-medium-only">
-            <h3>3178 visiteurs en ce moment</h3>
-  derniers inscrits&nbsp;:
-  <ul class="inline-list ts">
-      
-          <li><a class=" txt_6forum"  title="profil de Alejandro" href="/Alejandro-1007498?lang=fr">Alejandro</a></li>
-      
-          <li><a class=" txt_6forum"  title="profil de ajaj" href="/ajaj-1007497?lang=fr">ajaj</a></li>
-      
-          <li><a class=" txt_6forum"  title="profil de jean mayderson" href="/spip.php?auteur1007495&amp;lang=fr">jean mayderson</a></li>
-      
-          <li><a class=" txt_6forum"  title="profil de Borgen83" href="/Borgen83?lang=fr">Borgen83</a></li>
-      
-          <li><a class=" txt_6forum"  title="profil de web101" href="/spip.php?auteur1007493&amp;lang=fr">web101</a></li>
-      
-          <li><a class=" txt_6forum"  title="profil de lyrol00" href="/lyrol00?lang=fr">lyrol00</a></li>
-      
-          <li><a class=" txt_6forum"  title="profil de mass140" href="/mass140?lang=fr">mass140</a></li>
-      
-  </ul>     
-            <div class='ajaxbloc' data-ajax-env='glcJU8AE+3Ck3WVrK+U2ArY/RIAgXq6WxnjFjBAoo9B88aUQ69WF2joYlf7qnn3qfkokdB5r/Ym8+S+v7rkFDsCo7JFlkbQ1c1fBF1vH2GLjfNcCUhzyYJrwJywlicBiDgYssSKnfAs5cZJxfzy7PxSCPWFIa7ueF2FBlq9WNEj5Zgdsu4pluVRILnzAMUEE5wk/chl/FXiNweh8J9s+YsuvtS7+zKuDAvVC6Q==' data-origin="./?page=structure&amp;inc=page-CGU&amp;lang=fr">
-
-
-    <h3>Offres</h3>
-    <a id='pagination_offres' class='pagination_ancre'></a>
-    <ul>
-    
-        	
-        
-        
-        
-        
-        
-        <li>
-            <a href="https://elysium-security.com" title="Elysium Security" target="_BLANK"><span style="background: white; border-radius: 3px;width:24px; height: 24px; line-height: 32px; padding: 2px; margin:2px;"><img class="vmiddle" src="https://console.pro.root-me.org/IMG/logo/organisationon32.png?1678276537" alt="organisation_logo" style="width: 20px; height:20px; object-fit: cover;" /></span></a>&nbsp;<span class="gras txs">CDI</span>&nbsp;<a title="Elysium Security : Consultant en cybers&#233;curit&#233; - offensif/d&#233;fensif - confirm&#233; (H/F)" class="txs" href="./?page=news&amp;inc=offre&amp;id_offre=93&amp;lang=fr">Consultant sécurité</a>
-        </li>
-    
-    </ul>
-    <div class="pagination"></div>
-
-</div><!--ajaxbloc-->                        <h3>Sponsorisé par</h3>
-<ul>
-    <li><a href="https://www.algosecure.fr" target="_BLANK" >Algosecure</a></li>
-    <li><a href="https://www.ecole2600.com/" target="_BLANK" >École 2600</a></li>
-    <li><a href="https://www.elysium-security.com/" target="_BLANK" >Elysium Security</a></li>
-    <li><a href="https://public.geoide.fr" target="_BLANK" >GEOIDE</a></li>    
-    <li><a href="https://www.oteria.fr/?utm_source=RootMe&utm_medium=partnership" target="_BLANK" >Oteria Cyber School</a></li>
-    <li><a href="https://www.synacktiv.com" target="_BLANK" >Synacktiv</a></li>
-
-    <li><a class="mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=page-don&amp;lang=fr">Vous&nbsp;;-)</a></li>
-</ul>        </div>
-
-
-        
-    </aside>
-    
-</div>              <div id="main_wrapper" class="row">
-                  <ul id="breadcrumb" class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
-    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-      <a href="https://www.root-me.org?lang=fr" title="Home" itemprop="item"><span itemprop="name">Home</span></a>
-      <meta itemprop="position" content="1">
-    </li>
-    
-    
-        
-            
-              
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-			
-			
-            
-            
-            
-        
-    
-</ul>                  <main id="main" itemprop="mainContentOfPage" itemscope itemtype="https://schema.org/WebPageElement">
-                      <div  class="small-12 columns"  >
-    <div class="tile">
-        <div class="t-body tb-padding"  >
-                      
-                       
-                          <h1 class="crayon article-titre-1009 " itemprop="headline name"><img src='squelettes/img/cgu.svg?1574068666' width='48' height='48' />&nbsp;Conditions Générales d&#8217;Utilisation</h1>
-  <div class="crayon article-texte-1009 ">
-    <h2 class="spip">1. Préambule</h2>
-<p>1. Démarche éthique : la cybersécurité est l’affaire de tous. C’est pourquoi, l’apprentissage et l’amélioration des compétences de chacun en matière de détection des incidents et des vulnérabilités est essentielle pour préserver la sécurité des systèmes d’information et des réseaux.</p>
-<p>2. Ainsi, l’association Root-Me est engagée dans une démarche éthique avec pour unique objectif de sensibiliser et de promouvoir auprès de ses utilisateurs et surtout d’améliorer la sécurité des systèmes d’information et des réseaux en apportant ses compétences en la matière. L’internaute qui souhaite utiliser le site web accessible depuis l’adresse suivante <a href="https://www.root-me.org/" class="spip_url auto" rel="nofollow">https://www.root-me.org/</a> (ci- après « le site web) est supposé avoir pris connaissance des présentes conditions générales d’utilisation du site web.</p>
-<p>3. Il est tenu à chaque visite de prendre connaissance d’éventuelles évolutions de ces dernières.</p>
-<p>4. Ces conditions générales d’utilisation du site web ne sont pas des conditions générales de vente ou des conditions générales de prestations de services.</p>
-<p>5. Elles ont vocation à constituer la règle que doit respecter tout internaute visiteur se rendant sur le site web.</p>
-<h2 class="spip">2. Définitions</h2>
-<p>6. Les termes ci-dessous définis auront entre les parties la signification suivante :</p>
-<ul class="spip"><li> « service » : fonctionnalité proposée par le site web aux utilisateurs, telle que, notamment, la mise en ligne de contenus, l’accès aux contenus publiés, etc. ;</li><li> « l’internaute » : toute personne accédant et mettant en œuvre les fonctionnalités du présent site.</li></ul><h2 class="spip">3. Objet</h2>
-<p>7. Les présentes ont pour objet de fixer les conditions d’utilisation du site web accessible à la présente adresse <a href="https://www.root-me.org/" class="spip_url auto" rel="nofollow">https://www.root-me.org/</a>.</p>
-<p>8. Conformément aux dispositions de l’article 6-I 1° de la loi n°2004-575 du 21 juin 2004 relative à la confiance dans l’économie numérique, l’éditeur du site <a href="http://www.root-me.org" class="spip_url spip_out auto" rel="nofollow external">www.root-me.org</a> est :</p>
-<ul class="spip"><li> Root-Me, association loi de 1901, enregistrée au répertoire national des associations sous la matricule W381011632, dont le siège social est situé 29b chemin de Grave 69450 Saint-Cyr-au-Mont-d’Or.</li><li> Adresse électronique : <a href="contact%20-%20at%20-%20root-me.org">contact - at - root-me.org</a></li></ul>
-<p>9. Le directeur de la publication du site web <a href="http://www.root-me.org" class="spip_url spip_out auto" rel="nofollow external">www.root-me.org</a> est M. Matthieu POUMAILLOUX, en qualité de président de l’association.</p>
-<p>10. Le prestataire assurant le stockage direct et permanent est la société Online, société anonyme simplifiée, inscrite au RCS Paris sous le numéro B 433 115 904, dont le siège social est ONLINE SAS – BP 438 – 75366 Paris CEDEX 08, numéro de téléphone +33 (0)1 84 13 00 00.</p>
-<h2 class="spip">4. Documents</h2>
-<p>11. Les documents contractuels sont, par ordre de priorité décroissant :</p>
-<ul class="spip"><li> les présentes conditions générales d’utilisation ;</li><li> la charte éthique.</li></ul>
-<p>12. En cas de contradiction entre des documents de nature différente ou de rang différent, il est expressément convenu entre les parties que les dispositions contenues dans le document de rang supérieur prévaudront pour les obligations se trouvant en conflit d’interprétation.<br class="autobr" />
-En cas de contradiction entre les termes des documents de même ordre, les derniers documents en date prévaudront sur les autres.</p>
-<p>13. Nonobstant les règles d’interprétation des contrats définies dans le Code civil, il sera fait application de critères de rang selon les principes suivants :</p>
-<ul class="spip"><li> obligation par obligation ;</li><li> ou, à défaut, alinéa par alinéa ;</li><li> ou, à défaut, article par article.</li></ul><h2 class="spip">5. Entrée en vigueur - Durée</h2>
-<p>14. Les présentes conditions générales d’utilisation entrent en vigueur à la date de leur mise en ligne et seront opposables à la date de la première utilisation du site par l’utilisateur.</p>
-<p>15. Les présentes conditions d’utilisation sont opposables pendant toute la durée<br class="autobr" />
-d’utilisation du site web et jusqu’à ce que de nouvelles conditions générales d’utilisation remplacent les présentes.</p>
-<p>16. L’utilisateur peut à tout moment renoncer à utiliser les services et le site web mais reste responsable de toute utilisation antérieure. Association Root-Me/Assistance juridique contrats</p>
-<h2 class="spip">6. Accès au site</h2>
-<p>17. Le site web n’est accessible qu’aux seuls utilisateurs munis d’un compte personnel et d’un mot de passe, selon les termes et conditions figurant sur les présentes conditions générales d’utilisation.</p>
-<p>18. Le membre garantit l’exactitude des informations fournies pour les besoins de son inscription.</p>
-<p>19. Une fois le formulaire validé, un courrier électronique de confirmation d’inscription sera adressé afin d’ouvrir ledit compte.</p>
-<p>20. L’internaute ne disposant pas d’espace personnel s’interdit tout accès à l’espace personnel et s’engage à ne pas s’introduire ou tenter de s’introduire dans cet espace. Un tel accès sera considéré comme un accès frauduleux au sens des dispositions du Code pénal.</p>
-<p>21. Si l’internaute ne disposant pas d’espace personnel entrait dans un tel espace, sans droit, par inadvertance, il s’engage à en informer l’éditeur du site web à l’adresse suivante électronique suivante <a href="contact%20-%20at%20-%20root-me.org">contact - at - root-me.org</a>. L’internaute s’engage à considérer que toutes les données dont il aura eu connaissance à l’occasion d’un tel accès à l’espace personnel sont des données confidentielles et s’engage, en conséquence, à ne pas les divulguer.</p>
-<h2 class="spip">7. Mot de passe</h2>
-<p>22. Les mots de passe sont strictement personnels et confidentiels.</p>
-<p>23. L’internaute est seul responsable de la préservation et de la confidentialité de son mot de passe et des autres données confidentielles associées. Il s’engage à prendre toute mesure utile pour assurer cette parfaite confidentialité.</p>
-<p>24. Toute utilisation d’un mot de passe fait présumer de manière irréfragable une utilisation des services du site web par l’internaute.</p>
-<p>25. L’internaute s’engage à notifier sans délai tous vols de son mot de passe. Cette notification devra être adressée à l’association Root-Me à l’adresse électronique suivante <a href="contact%20-%20at%20-%20root-me.org">contact - at - root-me.org</a></p>
-<h2 class="spip">8. Publicité et promotion sur le site</h2>
-<p>26. L’association Root-Me se réserve la possibilité de diffuser, à titre gracieux ou payant, des messages publicitaires ou promotionnels sur son site web.</p>
-<h2 class="spip">9. Liens hypertextes</h2>
-<p>27. L’association Root-Me se réserve la possibilité de mettre en place des hyperliens sur son site web donnant accès à des pages web autres que celles de son site web.</p>
-<p>28. L’association Root-Me décline toute responsabilité quant au contenu des informations fournies sur ces sites au titre de l’activation des hyperliens.</p>
-<p>29. L’internaute qui dispose d’un site internet à titre personnel et désire placer, à des fins personnelles, sur son site un lien simple renvoyant directement sur la page d’accueil du site web de l’association Root-Me, ne doit pas obtenir l’autorisation expresse de L’association Root-Me pour établir ce lien. Toutefois l’internaute ne placera pas un lien simple renvoyant directement sur la page d’accueil du site web de l’association Root-me sur son site internet diffusant des informations à caractère polémique, pornographique, xénophobe ou pouvant, dans une plus large mesure, porter atteinte à la sensibilité du plus grand nombre, ou causer un préjudice quelconque à l’association Root-Me, à son image ainsi qu’à celle de l’ensemble de ses membres et utilisateurs.</p>
-<p>30. En aucun cas, cette autorisation ne pourra être qualifiée de convention implicite d’affiliation.</p>
-<p>31. En toute hypothèse, les liens hypertextes renvoyant au site web devront être retirés à première demande de l’association Root-Me.</p>
-<h2 class="spip">10. Données à caractère personnel</h2>
-<p>32. L’association Root-Me fait ses meilleurs efforts pour traiter les données personnelles dans le respect de la réglementation relative à la protection des données à caractère personnel en ce inclus le règlement (UE) 2016/679 du Parlement européen et du Conseil du 27 avril 2016 relatif à la protection des données, dit « RGPD », la loi n°78-17 du 6 janvier 1978 modifiée relative à l’informatique, aux fichiers et aux libertés, et toute réglementation<br class="autobr" />
-subséquente.</p>
-<p>33. Les informations communiquées par l’internaute par le biais d’un compte personnel sont destinées aux personnes habilitées de l’association Root-Me ayant pour principales finalités :</p>
-<ul class="spip"><li> la gestion de l’accès et du fonctionnement du site web ;</li><li> la gestion et le suivi de la création de compte et des services associés ;</li><li> la mesure de la qualité et de la satisfaction.</li></ul>
-<p>34. Pour plus d’informations, la politique externe de protection des données Root-Me est accessible depuis le lien suivant <a href="https://www.root-me.org/?page=structure&amp;inc=page-confidentialite&amp;lang=fr" class="spip_url auto" rel="nofollow">https://www.root-me.org/?page=structure&amp;inc=page-confidentialite&amp;lang=fr</a>.</p>
-<h2 class="spip">11 Responsabilité</h2>
-<p><strong>11.1 Responsabilité générale</strong><br class="autobr" />
-35. L’association Root-Me ne saurait être responsable :</p>
-<ul class="spip"><li> de la qualité du service, le service étant proposé « en l’état » ;</li><li> de la perturbation de l’utilisation du site web ;</li><li> de l’impossibilité d’utiliser le site web ;</li><li> des atteintes à la sécurité informatique, pouvant causer des dommages aux matériels informatiques des utilisateurs et à leurs données ;</li><li> de l’atteinte aux droits des utilisateurs de manière générale.</li></ul>
-<p><strong>11.2 Responsabilité à l’égard des informations présentes sur le site</strong></p>
-<p>36. L’association Root-Me ne saurait être tenue responsable des dommages directs ou indirects qui pourraient résulter de l’accès ou de l’utilisation du site web ou des informations y figurant quelle qu’en soit la nature.</p>
-<p>37. L’association Root-Me fait ses meilleurs efforts pour proposer sur son site web des informations à jour. Toutes les informations portées à la connaissance des personnes accédant au site web ont été sélectionnées à une date déterminée.</p>
-<p>38. L’association Root-Me ne saurait être tenue responsable de toute erreur ou omission. Toute mise à jour, nouvelle prestation ou nouvelle caractéristique qui améliore ou augmente un ou plusieurs contenus d’informations existants sera soumis aux présentes conditions.</p>
-<p>39. L’association Root-Me décline toute responsabilité concernant l’opportunité des<br class="autobr" />
-décisions et les modalités de son exécution prises par les utilisateurs sur la seule foi des informations publiées sur le site web.</p>
-<p><strong>11.3 Responsabilité du client</strong><br class="autobr" />
-40. L’internaute s’engage à n’utiliser les services du site web ainsi que l’ensemble des informations auxquelles il pourra avoir accès que pour des raisons personnelles et dans un but conforme à l’ordre public, aux bonnes mœurs et aux droits des tiers.</p>
-<p>41. Il s’engage à ne pas perturber l’usage que pourraient faire les autres utilisateurs du présent site web, de ne pas accéder aux comptes d’utilisateurs tiers et de ne pas accéder à des parties du site dont l’accès est réservé.</p>
-<p>42. Il est rappelé à l’internaute les dispositions de la loi Godfrain ci-après rappelés :</p>
-<ul class="spip"><li> l’article 323-1 du Code pénal : « Le fait d’accéder ou de se maintenir, frauduleusement, dans tout ou partie d’un système de traitement automatisé de données est puni de deux ans d’emprisonnement et de 60 000 € d’amende. lorsqu’il en est résulté soit la suppression ou la modification de données contenues dans le système, soit une altération du fonctionnement de ce système, la peine est de trois ans d’emprisonnement et de 100 000 € d’amende.<br class="autobr" />
-Lorsque les infractions prévues aux deux premiers alinéas ont été commises à l’encontre d’un système de traitement automatisé de données à caractère personnel mis en œuvre par l’État, la peine est portée à cinq ans d’emprisonnement et à 150 000 € d’amende » ;</li><li> l’article 323-2 du Code pénal : « Le fait d’entraver ou de fausser le fonctionnement d’un système de traitement automatisé de données est puni de cinq ans d’emprisonnement et de 150 000 € d’amende.<br class="autobr" />
-Lorsque cette infraction a été commise à l’encontre d’un système de traitement automatisé de données à caractère personnel mis en œuvre par l’État, la peine est portée à sept ans d’emprisonnement et à 300 000 € d’amende » ;</li><li> l’article 323-3 du Code pénal : « Le fait d’introduire frauduleusement des données dans un système de traitement automatisé, d’extraire, de détenir, de reproduire, de transmettre, de supprimer ou de modifier frauduleusement les données qu’il contient est puni de cinq ans d’emprisonnement et de 150 000 € d’amende. <br class="autobr" />
-Lorsque cette infraction a été commise à l’encontre d’un système de traitement automatisé de données à caractère personnel mis en œuvre par l’Etat, la peine est portée à sept ans d’emprisonnement et à 300 000 € d’amende » ;</li><li> l’article 323-3-1 du Code pénal : « Le fait, sans motif légitime, notamment de recherche ou de sécurité informatique, d’importer, de détenir, d’offrir, de céder ou de mettre à disposition un équipement, un instrument, un programme informatique ou toute donnée conçus ou spécialement adaptés pour commettre une ou plusieurs des infractions prévues par les articles 323-1 à 323-3 est puni des peines prévues respectivement pour l’infraction elle-même ou pour l’infraction la plus sévèrement réprimée » ;</li><li> l’article 323-4 du Code pénal : « La participation à un groupement formé ou à une entente établie en vue de la préparation, caractérisée par un ou plusieurs faits matériels, d’une ou de plusieurs des infractions prévues par les articles 323-1 à 323-3-1 est punie des peines prévues pour l’infraction elle-même ou pour l’infraction la plus sévèrement réprimée » ;</li><li> l’article 323-4-1 du Code pénal : « Lorsque les infractions prévues aux articles 323-1 à 323-3-1 ont été commises en bande organisée et à l’encontre d’un système de traitement automatisé de données à caractère personnel mis en œuvre par l’État, la peine est portée à dix ans d’emprisonnement et à 300 000 € d’amende » ;</li><li> l’article 323-5 du Code pénal : « Les personnes physiques coupables des délits prévus au présent chapitre encourent également les peines complémentaires suivantes :
-<ol class="spip"><li> L’interdiction, pour une durée de cinq ans au plus, des droits civiques, civils et de famille, suivant les modalités de l’article 131-26 ;</li><li> L’interdiction, pour une durée de cinq ans au plus, d’exercer une fonction publique ou d’exercer l’activité professionnelle ou sociale dans l’exercice de laquelle ou à l’occasion de laquelle l’infraction a été commise ;</li><li> La confiscation de la chose qui a servi ou était destinée à commettre l’infraction ou de la chose qui en est le produit, à l’exception des objets susceptibles de restitution ;</li><li> La fermeture, pour une durée de cinq ans au plus, des établissements ou de l’un ou de plusieurs des établissements de l’entreprise ayant servi à commettre les faits incriminés ;</li><li> L’exclusion, pour une durée de cinq ans au plus, des marchés publics ;</li><li> L’interdiction, pour une durée de cinq ans au plus, d’émettre des chèques autres que ceux qui permettent le retrait de fonds par le tireur auprès du tiré ou ceux qui sont certifiés ;</li></ol></li><li> L’affichage ou la diffusion de la décision prononcée dans les conditions prévues par l’article 131-35 » ;</li></ul><ul class="spip"><li> l’article 323-6 du Code pénal : « Les personnes morales déclarées responsables pénalement, dans les conditions prévues par l’article 121-2, des infractions définies au présent chapitre encourent, outre l’amende suivant les modalités prévues par<br class="autobr" />
-l’article 131-38, les peines prévues par l’article 131-39.<br class="autobr" />
-L’interdiction mentionnée au 2° de l’article 131-39 porte sur l’activité dans l’exercice ou à l’occasion de l’exercice de laquelle l’infraction a été commise » ;</li><li> l’article 323-7 du Code pénal : « La tentative des délits prévus par les articles 323-1 à 323-3-1 est punie des mêmes peines ».</li></ul><h2 class="spip">12. Propriété intellectuelle</h2>
-<p>43. Le contenu du site web, la structure générale ainsi que les logiciels, textes, images animées ou non, photographies, son savoir-faire et tous les autres éléments composant le site sont la propriété exclusive de l’association Root-Me ou des tiers qui lui ont concédé une licence.</p>
-<p>44. Les présentes conditions générales d’utilisation n’emportent aucune cession d’aucune sorte de droit de propriété intellectuelle sur les éléments appartenant à l’association Root-Me ou ayants droit tels que les sons, photographies, images, textes littéraires, travaux artistiques, logiciels, marques, chartes graphiques, logos au bénéfice du consommateur.</p>
-<p>45. L’internaute s’interdit notamment de modifier, copier, reproduire, télécharger, diffuser, transmettre, exploiter commercialement et/ou distribuer de quelque façon que ce soit les services, les pages du site web, ou les codes informatiques des éléments composant les services et le site web.</p>
-<p>46. Toute reproduction et/ou représentation, totale ou partielle d’un de ces droits, sans l’autorisation expresse de l’association Root-Me, est interdite et constituerait une contrefaçon susceptible d’engager la responsabilité civile et pénale du contrefacteur.</p>
-<p>47. En conséquence, l’internaute s’interdit tout agissement et tout acte susceptible de porter atteinte directement ou non aux droits de propriété intellectuelle de l’association Root-Me.</p>
-<p>48. Il en est de même des bases de données figurant, le cas échéant sur le site web qui sont protégées par les articles du Code de la propriété intellectuelle.</p>
-<p>49. Les signes distinctifs l’association Root-Me et de ses partenaires, tels que les noms de domaine, marques, dénominations ainsi que les logos figurant sur le site web sont protégés par le Code de la propriété intellectuelle. Toute reproduction totale ou partielle de ces signes distinctifs effectuée à partir des éléments du site sans autorisation expresse de l’association Root-Me est donc prohibée, au sens du Code de la propriété intellectuelle.</p>
-<p>50. Seule une utilisation conforme à la destination de ce site web est autorisée.<br class="autobr" />
-Association Root-Me/Assistance juridique contrats</p>
-<p>51. Toutes les autres utilisations, non expressément autorisée par écrit et au préalable par l’association Root-Me est prohibée et constitutive de contrefaçon.</p>
-<h2 class="spip">13. Loi applicable</h2>
-<p>52. Tout litige qui résulte des présentes conditions générales d’utilisation du site web ou qui est lié à ces dernières est régi par le droit et les tribunaux du pays de résidence de l’internaute. Les litiges dont le montant ne dépasse pas la somme de 5000 euros (frais non compris) peuvent être transmis via la plateforme de règlement des petits litiges de la Commission européenne en vue d’être réglés en ligne. Toutefois, l’association Root-Me ne s’engage pas à régler les litiges devant une entité de règlement alternatif des litiges et n’y est pas obligée.</p>
-<p>53. Il en est ainsi pour les règles de fond et les règles de forme et ce, nonobstant les lieux d’exécution des obligations substantielles ou accessoires.</p>
-  </div>                      
-                      </div>
-    </div>
+<main id="main" itemprop="mainContentOfPage" itemscope itemtype="https://schema.org/WebPageElement">
+<div class="row text-center" style="background: #000; padding: 40px 0 15px 0; margin-bottom: 30px;">
+<div class="small-12 medium-10 small-centered columns" >
+<div class="small-12 large-6 columns">
+<img alt="logo https://www.root-me.org" src="IMG/logo/siteon0.svg?1637496509" width="150" height="150" class="invert vmiddle"/>
+<h1 class="blanc">Une plateforme rapide, accessible et réaliste pour tester vos compétences en hacking.</h1>
+<h3 style="padding-bottom: 15px">la root est longue mais la voie est Libre</h3>
+</div>    
+<div id="inscription" class="small-12 large-6 columns noir columns"  >
+<div class="tile">
+<div class="t-body tb-padding"  >
+<div id="sommaire_inscription">
+<noscript><br/><a class="button large" href="./?page=identifiants&amp;lang=fr">Créer un compte</a></noscript>
 </div>
-                  </main>
-                  <footer id="footer" role="contentinfo" itemscope itemtype="https://schema.org/WPFooter">
-  <div class="text-center">
-      <div class="columns small-12">
-            <img src="IMG/logo/siteon0.svg?1637496509" class="vmiddle grayscale" alt="Root-Me" width="48" height="48"/>
-        </div>
-        <div class="columns small-12">
-        <a class="gris2" title="Confidentialité" href="https://www.root-me.org?page=structure&amp;inc=page-confidentialite&amp;lang=fr">Confidentialité</a>
-        &nbsp;|&nbsp;
-        <a class="gris2" title="Mentions Légales" href="https://www.root-me.org?page=structure&amp;inc=page-mentions_legales&amp;lang=fr">Mentions Légales</a>
-        &nbsp;|&nbsp;
-        <a class="gris2" title="Conditions Générales d'Utilisation" href="https://www.root-me.org?page=structure&amp;inc=page-CGU&amp;lang=fr">Conditions Générales d'Utilisation</a><br/>
-       
-        Root Me&nbsp;: plateforme d&#8217;apprentissage dédiée au Hacking et à la Sécurité de l&#8217;Information<br/>
-        ©&nbsp;2010&nbsp;-&nbsp;2025<br/>
-        <hr/>
-      </div>
-    </div>
-    <div class="text-center">
-      <div class="small-10 large-3 small-centered columns">
-        <div class="small-2 columns"><a href="https://www.twitch.tv/rootme" title="Twitch"><img src='squelettes/img/twitch.svg?1683788777' alt='Twitch' class='vmiddle grayscale grayscale_hoveroff' width='24' height='24' /></a></div>
-        <div class="small-2 columns"><a href="https://www.youtube.com/channel/UCnvB1SJdVYv-1zkByuYM73g" title="Youtube"><img src='squelettes/img/youtube.svg?1683788771' alt='Youtube' class='vmiddle grayscale grayscale_hoveroff' width='24' height='24' /></a></div>
-        <div class="small-2 columns"><a href="https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fwww.root-me.org%2F&region=follow_link&screen_name=rootme_org&tw_p=followbutton" title="Twitter"><img src='squelettes/img/twitter.svg?1573023931' alt='Twitter' class='vmiddle grayscale grayscale_hoveroff' width='24' height='24' /></a></div>
-        <div class="small-2 columns"><a href="https://fr.linkedin.com/company/root-me-pro" title="Linkedin"><img src='squelettes/img/linkedin.svg?1573023925' alt='Linkedin' class='vmiddle grayscale grayscale_hoveroff' width='24' height='24' /></a></div>
-        <div class="small-2 columns"><a href="https://www.root-me.org?page=flux_rss&amp;lang=fr" title="Flux Dynamique"><img src='squelettes/img/rss.svg?1573023935' alt='Flux Dynamique' class='vmiddle grayscale grayscale_hoveroff' width='24' height='24' /></a></div>
-        <div class="small-2 columns"><a href="https://discord.gg/XejsBJdUch" title="Discord"><img src='squelettes/img/discord.svg?1640079279' alt='Discord' class='vmiddle grayscale grayscale_hoveroff' width='24' height='24' /></a></div>
-            
-    </div>
-  </div>
-</footer>              </div>
-          </div>
-      </div>
-
-      </body>
-      </html>
-  
-  
-
+<script>
+//<![CDATA[
+$(document).ready(function(){
+$("#sommaire_inscription").load("/?page=identifiants&ajah=1&lang=fr");
+});
+//]]>
+</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row small-12 medium-11 large-10">
+<div id="box_forum" class="large-6 columns"  >
+<div class="tile">
+<div class="t-body tb-padding"  style="padding: 0;">
+<div id="acces_forum" class="div_svg medium-12 large-12 columns">
+<div class="opacify">
+<h3 class="text-center txt_6forum"><img src="squelettes/img/statut_forum.svg" alt="0x0" width="48" height="48"/>&nbsp;Accès visiteur</h3>
+<ul class="features lforum">
+<li>une communauté ouverte <b>à toutes et tous</b> <a class="mediabox pageajax" data-box-type="ajax" href="https://www.root-me.org?page=structure&amp;inc=page-mentions_legales&amp;lang=fr" title="Mentions Légales"><img src="squelettes/img/question_mark.svg" width="16" height="16" alt="Mentions Légales"/></a></li>
+<li>entrainez vous gratuitement sur <b>des exercices variés</b></li>
+<li>consultez les solutions proposées par les autres membres</li>
+<li><b>cotisez à l'association</b> <a class="mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=modeles%2Finformations_cotisation&amp;lang=fr" title="en tant que membre vous pouvez"><img src="squelettes/img/question_mark.svg" width="16" height="16" alt="en tant que membre vous pouvez"/></a> et bénéficiez d'un <a href="#acces_comite" class="txt_1comite">accès contributeur</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>      
+<div id="box_comite" class="large-6 columns"  >
+<div class="tile">
+<div class="t-body tb-padding"  style="padding: 0;">
+<div id="acces_comite" class="div_svg medium-12 large-12 columns">
+<div class="opacify right">
+<h3 class="text-center txt_1comite">Accès contributeur&nbsp;<img src="squelettes/img/statut_comite.svg" alt="0x0" width="48" height="48"/></h3>
+<ul class="features lright lcomite">
+<li><b>soyez récompensé</b> <a href="#recompense_process"><img src="squelettes/img/question_mark.svg" class="img_nb" width="16" height="16" alt=""/></a> pour vos créations</li>
+<li><b>contribuez</b> à la modération, la relecture des solutions</li>
+<li>bénéficiez des <b>derniers exercices</b> imaginés par les contributeurs</li>
+<li><b>participez à la création</b> et aux tests des exercices</li>
+</ul>
+</div>                    
+</div>
+</div>
+</div>
+</div>
+</div>  
+<div class="row">
+<div id="box_rmp" class="small-12 medium-11 large-10 small-centered columns columns"  >
+<div class="tile">
+<div class="t-body tb-padding"  style="padding: 0;">
+<div id="acces_rmp" class="div_svg medium-12 large-12 columns" >
+<div class="right opacify">
+<h3 class="text-center noir">Accès écoles & entreprise</h3>
+<ul class="features lright" style="margin-right: 25px">
+<li><b>entraînez vos équipes</b> sur des environnements professionnels</li>
+<li><b>suivez la progression</b> de vos équipes</li>
+<li>identifiez de nouveaux talents</li>
+<li><b>organisez votre CTF</b> lors de vos évenements</li>
+</ul>
+<div style="margin: 25px 0 0 0; padding-bottom: 15px;">
+<h3 class="noir text-center"><a class="noir" href="http://pro.root-me.org/?lang=fr">pro.root-me.org</a></h3>
+</div>                  
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>  
+<div class="row small-12 medium-11 large-10 small-centered text-center">
+<div  class="large-4 columns"  >
+<div class="tile">
+<div class="t-body tb-padding"  >
+<div class="large-12 columns">
+<div class="img_round"><img src='IMG/logo/rubon5.svg?1637496507' alt='challenges' class='vmiddle' width='48' height='48' /></div>
+<h3 class="noir"><span class="color1">599</span>&nbsp;Challenges</h3>
+</div>
+<div class="large-12 columns text-center">
+<p class="text-center">Plusieurs centaines de challenges sont à votre disposition pour vous entrainer dans des environnements variés, réalistes et maitriser un grand nombre de techniques de hack !</p>
+<p class="text-center">
+<a href="fr/Challenges/Web-Client/" title="Apprenez &#224; exploiter les failles des applications web pour impacter leurs utilisateurs ou contourner des m&#233;canismes de s&#233;curit&#233; c&#244;t&#233; client."><img src='IMG/logo/rubon16.svg?1637496498' alt='Web - Client' class='vmiddle' width='24' height='24' /></a>
+&nbsp;
+<a href="fr/Challenges/Programmation/" title="Automatisez des t&#226;ches de plus en plus complexes pour valider ces challenges en moins de quelques secondes."><img src='IMG/logo/rubon17.svg?1637496498' alt='Programmation' class='vmiddle' width='24' height='24' /></a>
+&nbsp;
+<a href="fr/Challenges/Cryptanalyse/" title="Retrouvez les secrets prot&#233;g&#233;s par des syst&#232;mes de chiffrement plus ou moins solides en r&#233;alisant des attaques cryptographiques."><img src='IMG/logo/rubon18.svg?1637496499' alt='Cryptanalyse' class='vmiddle' width='24' height='24' /></a>
+&nbsp;
+<a href="fr/Challenges/Steganographie/" title="Si la cryptographie est l&#039;art du secret, la st&#233;ganographie est l&#039;art de la dissimulation : l&#039;objet de la st&#233;ganographie n&#039;est pas de rendre un message inintelligible aux personnes non autoris&#233;es mais de le faire passer inaper&#231;u."><img src='IMG/logo/rubon67.svg?1637496507' alt='St&#233;ganographie' class='vmiddle' width='24' height='24' /></a>
+&nbsp;
+<a href="fr/Challenges/Web-Serveur/" title="Ces &#233;preuves vous permettront d&#039;appr&#233;hender les techniques intrusives retrouv&#233;es sur le web, allant de l&#039;exploitation de faiblesses de configuration jusqu&#039;aux injections de code c&#244;t&#233; serveur."><img src='IMG/logo/rubon68.svg?1637496507' alt='Web - Serveur' class='vmiddle' width='24' height='24' /></a>
+&nbsp;
+<a href="fr/Challenges/Cracking/" title="Ces challenges permettent de comprendre le sens du terme &#171; langage compil&#233; &#187;. Ce sont des fichiers binaires &#224; d&#233;cortiquer pour aller chercher les instructions bas niveau permettant de r&#233;pondre au probl&#232;me pos&#233;."><img src='IMG/logo/rubon69.svg?1637496508' alt='Cracking' class='vmiddle' width='24' height='24' /></a>
+&nbsp;
+<a href="fr/Challenges/Realiste/" title="Vous allez vous retrouver dans des environnements complets sur des th&#232;mes divers et vari&#233;s. &#192; vous d&#039;en comprendre le fonctionnement, d&#039;identifier les faiblesses et de cibler les vuln&#233;rabilit&#233;s &#224; exploiter."><img src='IMG/logo/rubon70.svg?1637496509' alt='R&#233;aliste' class='vmiddle' width='24' height='24' /></a>
+&nbsp;
+<a href="fr/Challenges/Reseau/" title="Apprenez &#224; analyser et &#224; manipuler les diff&#233;rents protocoles et services les plus courants pour les tourner &#224; votre avantage."><img src='IMG/logo/rubon182.svg?1637496499' alt='R&#233;seau' class='vmiddle' width='24' height='24' /></a>
+&nbsp;
+<a href="fr/Challenges/App-Script/" title="Cette s&#233;rie d&#039;&#233;preuves vous confronte aux vuln&#233;rabilit&#233;s li&#233;es &#224; des faiblesses d&#039;environnement, de configuration ou encore &#224; des erreurs de d&#233;veloppement dans des langages de script ou de programmation."><img src='IMG/logo/rubon189.svg?1637496499' alt='App - Script' class='vmiddle' width='24' height='24' /></a>
+&nbsp;
+<a href="fr/Challenges/App-Systeme/" title="Cette s&#233;rie d&#039;&#233;preuves vous confronte aux vuln&#233;rabilit&#233;s applicatives principalement li&#233;es aux erreurs de programmation aboutissant &#224; des corruptions de zones m&#233;moire."><img src='IMG/logo/rubon203.svg?1637496500' alt='App - Syst&#232;me' class='vmiddle' width='24' height='24' /></a>
+&nbsp;
+<a href="fr/Challenges/Forensic/" title="Mettez &#224; l&#039;&#233;preuve vos techniques d&#039;investigations num&#233;riques en analysant des traces m&#233;moire, des fichiers de journalisation, des captures r&#233;seaux..."><img src='IMG/logo/rubon208.svg?1637496500' alt='Forensic' class='vmiddle' width='24' height='24' /></a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div  class="large-4 columns"  >
+<div class="tile">
+<div class="t-body tb-padding"  >
+<div class="large-12 columns">                    
+<div class="img_round"><img src='plugins/ctf_alltheday/img/ctf_liste_salle.svg?1566653899' alt='ctf_alltheday' class='vmiddle' width='48' height='48' /></div>
+<h3 class="noir"><span class="color1">178</span>&nbsp;Environnements Virtuels</h3>                
+</div>
+<div class="large-12 columns">
+<p class="text-center">Des dizaines d'environnements virtuels sont à votre disposition, accessibles en quelques clics, pour vous offrir un terrain de jeu toujours plus réaliste, sans aucune limitation.</p>
+<p class="text-center">
+<img src='squelettes/img/logo/linux.png?1544125073' alt='linux' class='vmiddle' width='24' height='24' />
+<img src='squelettes/img/logo/windows.png?1544125123' alt='windows' class='vmiddle' width='24' height='24' />
+<img src='squelettes/img/logo/android.png?1544125068' alt='android' class='vmiddle' width='24' height='24' />
+<img src='squelettes/img/logo/java.png?1544125093' alt='java' class='vmiddle' width='24' height='24' />                          
+<img src='squelettes/img/logo/python.png?1544125089' alt='python' class='vmiddle' width='24' height='24' />
+<img src='squelettes/img/logo/php.png?1544125086' alt='php' class='vmiddle' width='24' height='24' />
+<img src='squelettes/img/logo/mysql.png?1544125097' alt='mysql' class='vmiddle' width='24' height='24' />
+<img src='squelettes/img/logo/postgresql.png?1544125800' alt='postgresql' class='vmiddle' width='24' height='24' />
+<img src='squelettes/img/logo/apache.png?1544125529' alt='apache' class='vmiddle' width='24' height='24' />
+<img src='squelettes/img/logo/nginx.png?1544125461' alt='nginx' class='vmiddle' width='24' height='24' />
+</p>
+</div>
+</div>
+</div>
+</div>
+<div  class="large-4 columns"  >
+<div class="tile">
+<div class="t-body tb-padding"  >
+<div class="large-12 columns">
+<div class="img_round"><img src='squelettes/img/solution.svg?1566640207' alt='solution' class='vmiddle' width='48' height='48' /></div>
+<h3 class="noir"><span class="color1">5992</span>&nbsp;Solutions</h3>
+</div>
+<div class="large-12 columns">
+<p class="text-center">Chaque challenge est associé à une multitude de solutions, de ressources associées vous permettant d'apprendre et de voir le raisonnement suivi par d'autres internautes.</p>
+<p class="text-center">
+<img src='squelettes/img/pays/fr.svg?1594376628' alt='fr' class='vmiddle' width='24' height='24' title='fr' />
+&nbsp;
+<img src='squelettes/img/pays/en.svg?1637569714' alt='en' class='vmiddle' width='24' height='24' title='in' />
+&nbsp;
+<img src='squelettes/img/pays/de.svg?1594376628' alt='de' class='vmiddle' width='24' height='24' title='de' />
+&nbsp;
+<img src='squelettes/img/pays/es.svg?1594376629' alt='es' class='vmiddle' width='24' height='24' title='es' />
+&nbsp;
+<img src='squelettes/img/pays/ru.svg?1594376629' alt='ru' class='vmiddle' width='24' height='24' title='ru' />
+&nbsp;
+<img src='squelettes/img/pays/zh.svg?1637570498' alt='zh' class='vmiddle' width='24' height='24' title='zh' />
+</p>
+</div>
+</div>
+</div>
+</div> 
+</div>
+<div class="row text-center" style="background: #000; padding: 45px 15px 15px 15px;">
+<div class="small-12 medium-11 large-10 small-centered columns text-centered">
+<div  class="small-12 columns" style="padding-bottom: 0;" >
+<div class="tile">
+<div class="t-body tb-padding"  >
+<h1 id="recompense_process">Soyez récompensé pour vos créations&nbsp;*</h1>
+<div class="row text-center" style="padding-top: 10px;">
+<div class="small-12 large-4 columns">
+<h3 class="step">
+<span>1</span>
+choisissez parmi les sujets proposés
+</h3>
+<p class="text-center">
+<a href="fr/Communaute/Contribuer/"><img src='squelettes/img/creations_recompensees.svg?1573023060' alt='creations_recompensees' class='img_nb' width='64' height='64' /></a>
+</p>
+</div>
+<div class="small-12 large-4 columns">
+<h3 class="step">                    
+<span>2</span>
+faites valider votre travail
+</h3>                        
+<div class="approuve_par_le_staff" style="background: url('squelettes/img/team.svg') bottom no-repeat; background-size: 64px; width: 128px; height: 100px; margin: 10px auto 0 auto; padding-top: 0.25rem;">
+<div class="tl gras" style="transform: rotate(7deg); padding: 5px; margin: 0 auto; color: red; border: 3px solid red; border-radius: 5px; width: 80%; text-transform: uppercase;">
+approuvé par le staff
+</div>
+</div>
+</div>
+<div class="small-12 large-4 columns">
+<h3 class="step">                    
+<span>3</span>
+soyez publié et récompensé*
+</h3>
+<p class="text-center">
+<img src='squelettes/img/recompense.svg?1573023121' alt='recompense' class='img_nb' width='64' height='64' />
+</p>
+</div>
+</div>
+<div class="row txs text-right">
+* Réservé aux membres de l'association&nbsp;&nbsp;<a class="mediabox pageajax" data-box-type="ajax" href="./?page=structure&amp;inc=modeles%2Finformations_cotisation&amp;lang=fr" title="en tant que membre vous pouvez"><img src="squelettes/img/question_mark.svg" width="16" height="16" alt="en tant que membre vous pouvez"/></a>
+</div>
+</div>
+</div>
+</div>              
+</div>    
+</div>
+<div class="row text-center" style="padding-top: 30px;">
+<div class="small-12 medium-11 large-10 small-centered columns">
+<div  class="small-12 columns"  >
+<div class="tile">
+<div class="t-body tb-padding"  >
+<h1>Ils nous font confiance</h1>
+<h3 style="margin-bottom: 25px">Root-Me est utilisé mondialement par plus de 792&nbsp;000 étudiants, particuliers et professionnels</h3>
+<div class="row">
+<div class="columns small-12 logos_users">
+<img src="IMG/png/synacktiv-2.png?1704902952" alt="" class="vmiddle grayscale grayscale_hoveroff" width="100" height="32" /> <img src="IMG/png/geoide-black.png?1704902981" alt="" class="vmiddle grayscale grayscale_hoveroff" width="100" height="33" /> <img src="IMG/jpg/enstabretagne-logoh-rvb-couleur-200.jpg?1601275378" alt="" class="vmiddle grayscale grayscale_hoveroff" width="100" height="39" /> <img src="https://www.esiee-it.fr/themes/custom/generic/medias/logo-esiee-it.png" alt="" class="vmiddle grayscale grayscale_hoveroff" width="100" height="31" /> <img src="https://www.flexgrid.fr/wp-content/uploads/2017/11/cfai84.jpg" alt="" class="vmiddle grayscale grayscale_hoveroff" width="100" height="67" /> <img src="IMG/png/1280px-logo_mines_paristech.svg.png?1705488655" alt="" class="vmiddle grayscale grayscale_hoveroff" width="100" height="33" /> <img src="https://www.imerir.com/content/uploads/2021/03/imerir-pwa-icon-512.png" alt="" class="vmiddle grayscale grayscale_hoveroff" width="100" height="100" /> <img src="https://upload.wikimedia.org/wikipedia/fr/8/81/Sciences_SU.png" alt="" class="vmiddle grayscale grayscale_hoveroff" width="100" height="40" /> <img src="https://www.ipi-ecoles.com/wp-content/themes/ipi/img/common/ipi-ecole-informatique-01.png" alt="" class="vmiddle grayscale grayscale_hoveroff" width="100" height="66" /> <img src="IMG/png/images.png?1741013653" alt="" class="vmiddle grayscale grayscale_hoveroff" width="100" height="100" /> <img src="IMG/jpg/151989180134c858.jpg?1650365304" alt="" class="vmiddle grayscale grayscale_hoveroff" width="100" height="100" /> <img src="IMG/jpg/rootmjoble.jpg?1645616634" alt="" class="vmiddle grayscale grayscale_hoveroff" width="100" height="28" /> <img src="IMG/png/gh21_header-2.png?1645718924" alt="" class="vmiddle grayscale grayscale_hoveroff" width="100" height="26" /> <img src="IMG/png/index-2.png?1645718933" alt="" class="vmiddle grayscale grayscale_hoveroff" width="100" height="32" /> <img src="IMG/jpg/oteria_blanc.jpg?1720434372" alt="" class="vmiddle grayscale grayscale_hoveroff" width="100" height="32" /> <img src="IMG/png/oc_purple_.png?1661528641" alt="" class="vmiddle grayscale grayscale_hoveroff" width="100" height="8" /> <img src="IMG/png/logort_valide.png?1661528641" alt="" class="vmiddle grayscale grayscale_hoveroff" width="100" height="27" /> <img src="IMG/jpg/logo-promeo.jpg?1672319654" alt="" class="vmiddle grayscale grayscale_hoveroff" width="100" height="52" /> <img src="IMG/jpg/logo_esna_rvb.jpg?1672320192" alt="" class="vmiddle grayscale grayscale_hoveroff" width="100" height="100" /> <img src="IMG/jpg/cesi_logo_alternance_rvb.jpg?1672320197" alt="" class="vmiddle grayscale grayscale_hoveroff" width="100" height="52" /> <img src="IMG/png/logo-ul_2x.png?1672320816" alt="" class="vmiddle grayscale grayscale_hoveroff" width="100" height="33" /> <img src="IMG/png/uimm.png?1707399485" alt="" class="vmiddle grayscale grayscale_hoveroff" width="100" height="93" /> <img src="IMG/png/image.png?1673001002" alt="" class="vmiddle grayscale grayscale_hoveroff" width="100" height="20" /> <img src="IMG/png/logo-almond-2023-vert.png?1680788954" alt="" class="vmiddle grayscale grayscale_hoveroff" width="100" height="26" /> <img src="IMG/jpg/logo_cmq_metiers_securite.jpg?1680789632" alt="" class="vmiddle grayscale grayscale_hoveroff" width="100" height="61" /> <img src="IMG/png/logo-algosecure-coul.png?1704902775" alt="" class="vmiddle grayscale grayscale_hoveroff" width="100" height="20" /> <img src="IMG/png/logo-faculte-des-metiers-essonne.png?1709556579" alt="" class="vmiddle grayscale grayscale_hoveroff" width="100" height="27" /> <img src="IMG/png/favicon.png?1717748025" alt="" class="vmiddle grayscale grayscale_hoveroff" width="100" height="100" /> <img src="IMG/jpg/logo_fonce__avec_contour.jpg?1740474647" alt="École 2600" class="vmiddle grayscale grayscale_hoveroff" width="100" height="100" />
+<img src='squelettes/img/logo/ENSTA-Bretagne.jpg?1601275360' alt='ENSTA Bretagne' class='vmiddle grayscale grayscale_hoveroff' width='100' height='39' />
+<img src='squelettes/img/logo/supelec.png?1499326651' alt='Sup&#233;lec' class='vmiddle grayscale grayscale_hoveroff' width='100' height='100' />
+<img src='squelettes/img/logo/epitech.png?1454502656' alt='Epitech' class='vmiddle grayscale grayscale_hoveroff' width='100' height='37' />
+<img src='squelettes/img/logo/insa_lyon.png?1454503352' alt='INSA Lyon' class='vmiddle grayscale grayscale_hoveroff' width='100' height='23' />
+<img src='squelettes/img/logo/polytech_marseille.png?1499326195' alt='PolyTech Marseille' class='vmiddle grayscale grayscale_hoveroff' width='100' height='30' />
+<img src='squelettes/img/logo/telecom_nancy.png?1454503631' alt='Telecom Nancy' class='vmiddle grayscale grayscale_hoveroff' width='100' height='49' />
+<img src='squelettes/img/logo/42.png?1455205002' alt='42' class='vmiddle grayscale grayscale_hoveroff' width='100' height='80' />
+<img src='squelettes/img/logo/universite_lorraine.png?1454503549' alt='Universit&#233; de Lorraine' class='vmiddle grayscale grayscale_hoveroff' width='100' height='44' />
+<img src='squelettes/img/logo/esaip.png?1454502907' alt='ESAIP' class='vmiddle grayscale grayscale_hoveroff' width='100' height='67' />
+<img src='squelettes/img/logo/ingesup.png?1454503667' alt='Ingesup' class='vmiddle grayscale grayscale_hoveroff' width='100' height='29' />
+<img src='squelettes/img/logo/ESIEA.png?1454502864' alt='ESIEA' class='vmiddle grayscale grayscale_hoveroff' width='100' height='52' />
+<img src='squelettes/img/logo/eisti.png?1454503597' alt='EISTI' class='vmiddle grayscale grayscale_hoveroff' width='100' height='77' />
+<img src='squelettes/img/logo/epita.png?1454502704' alt='Epita' class='vmiddle grayscale grayscale_hoveroff' width='100' height='51' />
+<img src='squelettes/img/logo/haute_ecole_fribourg.png?1454502670' alt='Haute &#201;cole de Fribourg' class='vmiddle grayscale grayscale_hoveroff' width='100' height='38' />
+<img src='squelettes/img/logo/supinfo.png?1454502919' alt='Supinfo' class='vmiddle grayscale grayscale_hoveroff' width='100' height='27' />
+<img src='squelettes/img/logo/universite_reims.png?1455095406' alt='Universit&#233; de Reims' class='vmiddle grayscale grayscale_hoveroff' width='100' height='61' />
+<img src='squelettes/img/logo/TLS-SEC.png?1473067649' alt='Toulouse-S&#233;curit&#233;' class='vmiddle grayscale grayscale_hoveroff' width='100' height='24' />
+</div>        
+</div>
+<div class="row txs text-right">
+Vous utilisez Root-Me ?&nbsp;<a href="./?page=contact&amp;lang=fr" title="Contact">Laissez nous savoir ;-)</a>
+</div>                
+</div>
+</div>
+</div>
+</div>    
+</div>    
+</main>
+<footer id="footer" role="contentinfo" itemscope itemtype="https://schema.org/WPFooter">
+<div class="text-center">
+<div class="columns small-12">
+<img src="IMG/logo/siteon0.svg?1637496509" class="vmiddle grayscale" alt="Root-Me" width="48" height="48"/>
+</div>
+<div class="columns small-12">
+<a class="gris2" title="Confidentialité" href="https://www.root-me.org?page=structure&amp;inc=page-confidentialite&amp;lang=fr">Confidentialité</a>
+&nbsp;|&nbsp;
+<a class="gris2" title="Mentions Légales" href="https://www.root-me.org?page=structure&amp;inc=page-mentions_legales&amp;lang=fr">Mentions Légales</a>
+&nbsp;|&nbsp;
+<a class="gris2" title="Conditions Générales d'Utilisation" href="https://www.root-me.org?page=structure&amp;inc=page-CGU&amp;lang=fr">Conditions Générales d'Utilisation</a><br/>
+Root Me&nbsp;: plateforme d&#8217;apprentissage dédiée au Hacking et à la Sécurité de l&#8217;Information<br/>
+©&nbsp;2010&nbsp;-&nbsp;2025<br/>
+<hr/>
+</div>
+</div>
+<div class="text-center">
+<div class="small-10 large-3 small-centered columns">
+<div class="small-2 columns"><a href="https://www.twitch.tv/rootme" title="Twitch"><img src='squelettes/img/twitch.svg?1683788777' alt='Twitch' class='vmiddle grayscale grayscale_hoveroff' width='24' height='24' /></a></div>
+<div class="small-2 columns"><a href="https://www.youtube.com/channel/UCnvB1SJdVYv-1zkByuYM73g" title="Youtube"><img src='squelettes/img/youtube.svg?1683788771' alt='Youtube' class='vmiddle grayscale grayscale_hoveroff' width='24' height='24' /></a></div>
+<div class="small-2 columns"><a href="https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fwww.root-me.org%2F&region=follow_link&screen_name=rootme_org&tw_p=followbutton" title="Twitter"><img src='squelettes/img/twitter.svg?1573023931' alt='Twitter' class='vmiddle grayscale grayscale_hoveroff' width='24' height='24' /></a></div>
+<div class="small-2 columns"><a href="https://fr.linkedin.com/company/root-me-pro" title="Linkedin"><img src='squelettes/img/linkedin.svg?1573023925' alt='Linkedin' class='vmiddle grayscale grayscale_hoveroff' width='24' height='24' /></a></div>
+<div class="small-2 columns"><a href="https://www.root-me.org?page=flux_rss&amp;lang=fr" title="Flux Dynamique"><img src='squelettes/img/rss.svg?1573023935' alt='Flux Dynamique' class='vmiddle grayscale grayscale_hoveroff' width='24' height='24' /></a></div>
+<div class="small-2 columns"><a href="https://discord.gg/XejsBJdUch" title="Discord"><img src='squelettes/img/discord.svg?1640079279' alt='Discord' class='vmiddle grayscale grayscale_hoveroff' width='24' height='24' /></a></div>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</body>
+</html>
