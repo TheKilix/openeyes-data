@@ -20986,5 +20986,11 @@
     "title": "Sign in - Google Accounts",
     "description": "",
     "date_found": "2025-06-15T15:39:27.068556"
+  },
+  {
+    "url": "https://consent.google.com/dl?continue=https://news.google.com/search?q%3Dintitle:ia&gl=FR&hl=en-US&cm=2&pc=n&src=1",
+    "title": "Personalization settings & cookies",
+    "description": "",
+    "date_found": "2025-06-15T15:39:28.769236"
   }
 ]
