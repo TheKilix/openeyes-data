@@ -16270,5 +16270,11 @@
     "title": "GitHub - yousef-rafat/miniDiffusion: A reimplementation of Stable Diffusion 3.5 in pure PyTorch",
     "description": "A reimplementation of Stable Diffusion 3.5 in pure PyTorch - yousef-rafat/miniDiffusion",
     "date_found": "2025-06-15T13:27:20.878952"
+  },
+  {
+    "url": "https://github.com/SakanaAI/text-to-lora",
+    "title": "GitHub - SakanaAI/text-to-lora: Hypernetworks that adapt LLMs for specific benchmark tasks using only textual task description as the input",
+    "description": "Hypernetworks that adapt LLMs for specific benchmark tasks using only textual task description as the input - SakanaAI/text-to-lora",
+    "date_found": "2025-06-15T13:27:22.291723"
   }
 ]
