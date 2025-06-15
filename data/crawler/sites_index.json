@@ -20170,5 +20170,11 @@
     "title": "Sign in - Google Accounts",
     "description": "",
     "date_found": "2025-06-15T14:25:20.271325"
+  },
+  {
+    "url": "https://support.google.com/mail?p=privpol_signinactivity&hl=fr",
+    "title": "Dernière activité sur le compte - Aide Gmail",
+    "description": "Vous pouvez afficher l'historique de vos connexions, ainsi que les dates et heures auxquelles votre compte Gmail a été consulté. Les adresses&nbsp;IP utilisées pour accéder à votre compte sont égaleme",
+    "date_found": "2025-06-15T14:25:22.128799"
   }
 ]
